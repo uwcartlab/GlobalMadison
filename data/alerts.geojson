@@ -1,0 +1,95 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+  {
+      "type": "Feature",
+      "properties": {
+        "id": "childrens_museum",
+        "routeid": 0,
+        "alert": "The large cluster of street signs here is part of the Madison Children's Museum. Ignore it."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.3843150138855,
+          43.07671720715926
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "e_johnson_at_blair",
+        "routeid": 0,
+        "alert": "Heavy traffic on Blair Street. Use caution when crossing."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.37964797019958,
+          43.07919357632618
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "blair_at_e_washington",
+        "routeid": 1,
+        "alert": "You MUST cross East Washington on the south side of the intersection. Heed the walk signal in the median and DO NOT WALK when the farther signal indicates to, as drivers opposite you have a left turn signal then.<img src='images/crossingno.jpg'><br/><img src='images/crossingyes.jpg'>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.3787521123886,
+          43.07852747420627
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "blair_at_bike_trail",
+        "routeid": 2,
+        "alert": "From the railroad station, cross Blair Street and enter the Capital City Bike Trail through the driveway alongside the railroad tracks. Do not cross Williamson Street."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.37530815601347,
+          43.07635671469533
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "livingston_at_williamson",
+        "routeid": 3,
+        "alert": "Use caution crossing Williamson Street. There is busy cross traffic and no signal here."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.37148869037628,
+          43.07821401187953
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+      "id": "brearly_at_williamson",
+        "routeid": 4,
+        "alert": "Cross Williamson Street using pedestrian signal at Paterson Street, 1 block southwest of here."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.36807155609131,
+          43.08075301061472
+        ]
+      }
+    }
+  ]
+}
