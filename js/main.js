@@ -1,7 +1,40 @@
+/***CLASS-LEVEL VARIABLES***/
 var map;
 
+function initialize(){
+    navMenu();
+    showSplash();
+}
+
+window.onload = initialize();
+$(window).resize(navMenu);
+
+function showSplash(){
+    var splash = new bootstrap.Modal(document.getElementById('splash'), {
+        keyboard: false
+    })
+    splash.show();
+}
+
+function navMenu(){
+    var w = $(window).width();
+    
+    if (w < 768){
+        $("#dropdownMenuLink").click(function(){
+            $(".nav-link").css("display","none");
+        })
+        $(".back-button, .menu-toggler").click(function(){
+            $(".nav-link").css("display","block");
+            $(".dropdown-menu").removeClass("show");
+        })
+    }
+    else{
+        $(".back-button, .menu-toggler, #dropdownMenuLink").off();
+    }
+}
+
 //function to instantiate the Leaflet map
-function createMap(){
+/*function createMap(){
     
     //create the map
     map = L.map('map', {
@@ -16,22 +49,5 @@ function createMap(){
 
     //call getData function
     getData(map);
-};
-
-//function to retrieve the data and place it on the map
-/*function getData(map){
-    //load the data, then map
-    $.getJSON("data/MegaCities.geojson", function(response){
-
-            //create a Leaflet GeoJSON layer and add it to the map
-            L.geoJson(response, {
-                //use filter function to only show cities with 2015 populations greater than 20 million
-                filter: function(feature, layer) {
-                    return feature.properties.Pop_2015 > 20;
-                }
-            }).addTo(map);
-    }); 
 };*/
 
-
-$(document).ready(createMap);
