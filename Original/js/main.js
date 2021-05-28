@@ -439,6 +439,8 @@ function callback(error, routes, PointsofInterest, alerts, help){
     //select whether regular or highlighted marker
     itype = itype == "red" ? "icon_red_larger" : "icon_larger";
     
+    console.log(PointsofInterest.features)
+
     POIlayer = L.geoJson(PointsofInterest.features[i], {
       pointToLayer: function(feature, latlng){
         return L.marker(latlng, {icon: L.icon(feature.properties[itype])}); //gray icon

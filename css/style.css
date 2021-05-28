@@ -1,23 +1,31 @@
 /*******GLOBAL CLASSES******/
+html, body {
+    height: 100%;
+   }
 .inline{
     display:inline-block;
 }
-/*******SPLASH********/
-.redButtonContainer{
-    text-align:center;
+#map{
+    position: absolute;
+    width:100%;
 }
-.redButton{
+/*******SPLASH********/
+.red-button-container{
+    text-align:center;
+    width:100%;
+}
+.red-button{
     margin: 0 18px 20px 18px;
     background:#C41E3A;
     border-radius:5px;
 }
-.goToMap{
+.go-to-map{
     color:white;
     text-decoration: none;
     padding:15px 5px;
     display:inline-block;
 }
-.goToMap:hover{
+.go-to-map:hover{
     color:white;
 }
 #loading{
@@ -33,6 +41,7 @@
 #splash-title{
     font-size: 3em;
     text-align: center;
+    margin:30px 0 30px;
 }
 #splash-content{
     background:rgba(255,255,255,0.9);
@@ -59,6 +68,14 @@
     color:#666666;
     padding:10px;
 }
+/*Landmark Dropdown*/
+.dropdown-item{
+    color:white;
+}
+.dropdown-item:hover{
+    background:#cccccc;
+    cursor:pointer;
+}
 #landmark-dropdown{
     padding:0;
     margin:0;
@@ -70,14 +87,7 @@
 #landmark-dropdown:hover{
     border-radius:0;
 }
-.dropdown-item{
-    color:white;
-}
-.dropdown-item:hover{
-    background:#cccccc;
-    cursor:pointer;
-}
-
+/*****INFO PANELS******/
 .fakeButton {
     background: #C41E3A;
     padding: 5px;
@@ -93,23 +103,60 @@
     font-weight: normal;
     text-transform: none;
 }
-
-
+/******SLIDESHOW*******/
+.container{
+    padding:20px 0 0;
+}
+#text-image img{
+    width:100%;
+}
+#next-button-container{
+    float:right;
+}
+#read-button-container{
+    float:center;
+}
+#back-button-container{
+    float:left;
+}
+/******RESPONSIVE DESIGN******/
 @media only screen and (min-width:768px){
-    .back-button{
-        display:none;
+    /******MAP/CONTAINER*****/
+    #container, #map{
+        height: calc(100% - 50px);
     }
+    /******SPLASH SCREEN******/
     #splash-body{
         padding:25px 6.5% 25px;
         background-image:url("../img/splashbackground_desktop.jpg");
         background-size:cover;
     }
+    #splash-content{
+        flex:0 1 auto;
+    }
+    /****FULL NAVBAR****/
+    .back-button{
+        display:none;
+    }
 }
 @media only screen and (max-width:768px){
+    /******MAP/CONTAINER*****/
+    #container, #map{
+        height: 100%;
+        z-index:1;
+    }
+    /******SPLASH SCREEN******/
+    #splash-body{
+        padding:25px;
+        background-image:url("../img/splashbackground.jpg");
+        background-size:cover;
+    }
+    /****COLLAPSED NAVBAR****/
     .navbar{
         position:absolute;
         bottom:0;
         width:100%;
+        z-index:10;
     }
     .menu-toggler.collapsed{
         width:140px;
@@ -138,21 +185,16 @@
     .nav-link, .dropdown-item{
         padding-left:10px !important;
     }
+    .menu-icon{
+        width:25px;
+        height:25px;
+        margin:0px 10px 0px;
+    }
     #landmark-dropdown{
         width:100%;
     }
     #arrow{
         float:right;
         margin-right:10px;
-    }
-    .menu-icon{
-        width:25px;
-        height:25px;
-        margin:0px 10px 0px;
-    }
-    #splash-body{
-        padding:25px;
-        background-image:url("../img/splashbackground.jpg");
-        background-size:cover;
     }
 }

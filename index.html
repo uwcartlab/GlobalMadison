@@ -12,22 +12,23 @@
     </head>
 
     <body>
+    <!--SPLASH SCREEN-->
         <div class="modal" id="splash" tabindex="-1" aria-labelledby="splash" aria-hidden="true">
-            <div class="modal-dialog modal-fullscreen">
+            <div class="modal-dialog modal-dialog-scrollable modal-fullscreen modal-xl">
                 <div id="splash-body" class="modal-content">
                     <div id="splash-content" class="modal-body">
                         <h1 id="splash-title">Global Madison: Paths To Change</h1>
                         <p><em>"It is a sense of place, an understanding of 'its character', which can only be constructed by linking that place to places beyond... What we need, it seems to me, is a global sense of the local, a global sense of place."</em><br><span id="massey">&mdash;Doreen Massey</span></p>
                         <p>On wide screens, some photos may appear cropped at the bottom. In this situation, reduce your browser's width for better viewing. This website was designed for modern mobile and desktop browsers; you may encounter significant problems on older browsers that do not fully support HTML5 (e.g. IE&lt;10, Safari&lt;6).</p>
                         <p>The second button below will take you to the map to begin your journey, showing the route from the UW campus to the first landmark. If you are not starting from campus, you can click the first button to get Google Maps directions from your current location to the first landmark.</p>
-                        <div class="redButtonContainer">
-                            <div class="redButton inline">
-                              <a class="goToMap" href="#" data-bs-dismiss="modal" aria-label="Close">
+                        <div class="red-button-container">
+                            <div class="red-button inline">
+                              <a class="go-to-map" href="#" data-bs-dismiss="modal" aria-label="Close">
                                   <b>Go to the Map!</b>
                               </a>
                             </div>
-                            <div class="redButton inline">
-                              <a class="goToMap" href="https://www.google.com/maps/place/43%C2%B004'52.5%22N+89%C2%B022'42.8%22W/@43.081258,-89.378567,15z/data=!3m1!4b1!4m2!3m1!1s0x0:0x0" target="_blank" title="Get directions from Google Maps">
+                            <div class="red-button inline">
+                              <a class="go-to-map" href="https://www.google.com/maps/place/43%C2%B004'52.5%22N+89%C2%B022'42.8%22W/@43.081258,-89.378567,15z/data=!3m1!4b1!4m2!3m1!1s0x0:0x0" target="_blank" title="Get directions from Google Maps">
                                   Directions
                               </a>
                             </div>
@@ -40,44 +41,44 @@
                 </div>
             </div>
         </div>
-        
+    <!--NAVBAR-->
         <nav class="navbar navbar-expand-md navbar-light bg-light">
             <div class="container-fluid">
-                <button class="menu-toggler collapsed d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="menu-toggler collapsed d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-nav" aria-controls="navbar-nav" aria-expanded="false" aria-label="Toggle navigation">
                     MENU<img class="menu-icon" src="img/icons/menu-white.png">
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="collapse navbar-collapse" id="navbar-nav">
                     <ul class="navbar-nav">
                         <li class="nav-item landmark-link">
-                            <a class="nav-link" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link" href="#" role="button" id="landmark-dropdown-link" data-bs-toggle="dropdown" aria-expanded="false">
                                 <img class="landmarks" src="img/icons/landmarks.png" alt="Landmarks" >
                                 Landmarks
                                 <span id="arrow" class="dropdown-toggle"></span>
                             </a>
-                            <ul id="landmark-dropdown" class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <ul id="landmark-dropdown" class="dropdown-menu" aria-labelledby="landmark-dropdown">
                                 <li><a class="dropdown-item back-button">BACK</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#helpModal">
+                            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#help-modal">
                                 <img class="help" src="img/icons/help.png" alt="Help">
                                 Help
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#aboutModal">
+                            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#about-modal">
                                 <img class="about" src="img/icons/information.png" alt="About">
                                 About
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#text-modal">
                                 <img class="text" src="img/icons/text.png" alt="Text">
                                 Text
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#assignmentModal">
+                            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#assignment-modal">
                                 <img class="assignment" src="img/icons/assignment.png" alt="Assignment">
                                 Assignment
                             </a>
@@ -86,12 +87,12 @@
                 </div>
             </div>
         </nav>
-
-        <div class="modal fade" id="helpModal" tabindex="-1" aria-labelledby="helpModal" aria-hidden="true">
-            <div class="modal-dialog modal-fullscreen-md-down">
+    <!--HELP WINDOW-->
+        <div class="modal fade" id="help-modal" tabindex="-1" aria-labelledby="help-modal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-fullscreen-md-down modal-xl">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h1 class="modal-title" id="helpModalLabel">Help</h1>
+                        <h1 class="modal-title" id="help-modal-label">Help</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -135,12 +136,12 @@
                 </div>
             </div>
         </div>
-
-        <div class="modal fade" id="aboutModal" tabindex="-1" aria-labelledby="aboutModal" aria-hidden="true">
-            <div class="modal-dialog modal-fullscreen-md-down">
+    <!--ABOUT WINDOW-->
+        <div class="modal fade" id="about-modal" tabindex="-1" aria-labelledby="about-modal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-fullscreen-md-down modal-xl">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h1 class="modal-title" id="aboutModalLabel">About this Project</h1>
+                        <h1 class="modal-title" id="about-modal-label">About this Project</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -213,25 +214,66 @@
                 </div>
             </div>
         </div>
-
-        <div class="modal fade" id="textModal" tabindex="-1" aria-labelledby="textModal" aria-hidden="true">
-            <div class="modal-dialog modal-fullscreen-md-down">
+    <!--TEXT SLIDESHOW CONTAINER-->
+        <div class="modal fade" id="text-modal" tabindex="-1" aria-labelledby="text-modal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-fullscreen-md-down modal-xl">
                 <div class="modal-content">
-                    <div id="place-title" class="modal-header">
+                    <div id="text-title" class="modal-header">
+                        <div class="red-button-container">
+                            <div id="back-button-container" class="red-button inline">
+                              <a id="back-button" class="go-to-map">
+                                  Previous
+                              </a>
+                            </div>
+                            <div id="read-button-container" class="red-button inline">
+                                <a id="read-button" class="go-to-map">
+                                    Read Text Aloud
+                                </a>
+                            </div>
+                            <div id="next-button-container" class="red-button inline">
+                              <a id="next-button" class="go-to-map">
+                                  Next
+                              </a>
+                            </div>
+                        </div>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div id="place-content" class="modal-body">
+                    <div id="text-content" class="modal-body">
+                        <h3 class="modal-title" id="text-modal-label"></h3>
+                        <div class="container">
+                            <div class="row">
+                                <div id="text-image" class="col-12 col-md-4">
+
+                                </div>
+                                <div id="text-script" class="col-12 col-md-8">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--LANDMARK SLIDESHOW CONTAINER-->
+        <div class="modal fade" id="landmark-modal" tabindex="-1" aria-labelledby="landmark-modal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-fullscreen-md-down modal-xl">
+                <div class="modal-content">
+                    <div id="landmark-title" class="modal-header">
+                        <h3 class="modal-title" id="landmark-modal-label"></h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div id="landmark-content" class="modal-body">
 
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="modal fade" id="assignmentModal" tabindex="-1" aria-labelledby="assignmentModal" aria-hidden="true">
-            <div class="modal-dialog modal-fullscreen-md-down">
+    <!--ASSIGNMENT WINDOW-->
+        <div class="modal fade" id="assignment-modal" tabindex="-1" aria-labelledby="assignment-modal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-fullscreen-md-down modal-xl">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h1 class="modal-title" id="assignmentModalLabel">Assignment</h1>
+                        <h1 class="modal-title" id="assignment-modal-label">Assignment</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -255,10 +297,15 @@
                 </div>
             </div>
         </div>
+    <!--CONTENT CONTAINR-->
+        <div id="container">
+            <div id="map"> 
+        </div>
 
         <script type="text/javascript" src="lib/jquery-3.6.0.min.js"></script>
         <script type="text/javascript" src="lib/bootstrap.js"></script>
         <script type="text/javascript" src="lib/leaflet/leaflet.js"></script>
+        <script type="text/javascript" src="lib/d3.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
     </body>
 </html>
