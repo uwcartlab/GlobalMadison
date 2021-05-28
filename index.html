@@ -23,12 +23,12 @@
                         <p>The second button below will take you to the map to begin your journey, showing the route from the UW campus to the first landmark. If you are not starting from campus, you can click the first button to get Google Maps directions from your current location to the first landmark.</p>
                         <div class="red-button-container">
                             <div class="red-button inline">
-                              <a class="go-to-map" href="#" data-bs-dismiss="modal" aria-label="Close">
+                              <a class="red-button-link" href="#" data-bs-dismiss="modal" aria-label="Close">
                                   <b>Go to the Map!</b>
                               </a>
                             </div>
                             <div class="red-button inline">
-                              <a class="go-to-map" href="https://www.google.com/maps/place/43%C2%B004'52.5%22N+89%C2%B022'42.8%22W/@43.081258,-89.378567,15z/data=!3m1!4b1!4m2!3m1!1s0x0:0x0" target="_blank" title="Get directions from Google Maps">
+                              <a class="red-button-link" href="https://www.google.com/maps/place/43%C2%B004'52.5%22N+89%C2%B022'42.8%22W/@43.081258,-89.378567,15z/data=!3m1!4b1!4m2!3m1!1s0x0:0x0" target="_blank" title="Get directions from Google Maps">
                                   Directions
                               </a>
                             </div>
@@ -221,17 +221,17 @@
                     <div id="text-title" class="modal-header">
                         <div class="red-button-container">
                             <div id="back-button-container" class="red-button inline">
-                              <a id="back-button" class="go-to-map">
+                              <a id="back-button-text" class="red-button-link back-button">
                                   Previous
                               </a>
                             </div>
                             <div id="read-button-container" class="red-button inline">
-                                <a id="read-button" class="go-to-map">
+                                <a id="read-button-text" class="red-button-link">
                                     Read Text Aloud
                                 </a>
                             </div>
                             <div id="next-button-container" class="red-button inline">
-                              <a id="next-button" class="go-to-map">
+                              <a id="next-button-text" class="red-button-link next-button">
                                   Next
                               </a>
                             </div>
@@ -242,11 +242,11 @@
                         <h3 class="modal-title" id="text-modal-label"></h3>
                         <div class="container">
                             <div class="row">
-                                <div id="text-image" class="col-12 col-md-4">
-
+                                <div class="col-12 col-md-4">
+                                    <img id="text-image">
                                 </div>
-                                <div id="text-script" class="col-12 col-md-8">
-                                    
+                                <div class="col-12 col-md-8">
+                                    <p id="text-script"></p>
                                 </div>
                             </div>
                         </div>
@@ -259,11 +259,24 @@
             <div class="modal-dialog modal-dialog-scrollable modal-fullscreen-md-down modal-xl">
                 <div class="modal-content">
                     <div id="landmark-title" class="modal-header">
-                        <h3 class="modal-title" id="landmark-modal-label"></h3>
+                        <div class="red-button-container">
+                            <div id="back-button-container" class="red-button inline">
+                              <a id="back-button-landmark" class="red-button-link back-button">
+                                  Previous
+                              </a>
+                            </div>
+                            <div id="next-button-container" class="red-button inline">
+                              <a id="next-button-landmark" class="red-button-link next-button">
+                                  Next
+                              </a>
+                            </div>
+                        </div>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div id="landmark-content" class="modal-body">
-
+                        <h3 class="modal-title" id="landmark-modal-label"></h3>
+                        <img id="landmark-image">
+                        <p id="landmark-script"></p>
                     </div>
                 </div>
             </div>

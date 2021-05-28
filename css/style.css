@@ -9,24 +9,36 @@ html, body {
     position: absolute;
     width:100%;
 }
-/*******SPLASH********/
 .red-button-container{
     text-align:center;
     width:100%;
 }
 .red-button{
-    margin: 0 18px 20px 18px;
     background:#C41E3A;
     border-radius:5px;
 }
-.go-to-map{
+.red-button-link{
     color:white;
     text-decoration: none;
     padding:15px 5px;
     display:inline-block;
 }
-.go-to-map:hover{
+.red-button-link:hover{
     color:white;
+    cursor:pointer;
+}
+.inactive{
+    color:gray !important;
+    background:#C46273;
+    border-radius:5px;
+}
+.inactive:hover{
+    color:gray;
+    cursor:auto;
+}
+/*******SPLASH********/
+#splash .red-button{
+    margin: 0 18px 20px 18px;
 }
 #loading{
     color: #C41E3A;
@@ -107,7 +119,7 @@ html, body {
 .container{
     padding:20px 0 0;
 }
-#text-image img{
+#text-image, #landmark-image{
     width:100%;
 }
 #next-button-container{

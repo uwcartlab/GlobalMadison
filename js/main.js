@@ -49,19 +49,38 @@ function callback(data){
     updateRoute();
     highlightRoute();
     updateMarkers();
-    //slideshow function
-    textSlideshow();
+    //slideshow variables
+    var textModalEl = document.getElementById('text-modal'),
+        textModal = new bootstrap.Modal(textModalEl),
+        landmarkModalEl = document.getElementById('landmark-modal'),
+        landmarkModal = new bootstrap.Modal(landmarkModalEl),
+        showText = false,
+        slide = 0;
 
+    textModalEl.addEventListener('show.bs.modal', function(){
+        resetSlide();
+        startSlideshow("text");
+    });
+    landmarkModalEl.addEventListener('show.bs.modal', function(){
+        resetSlide();
+        startSlideshow("landmark");
+    });
+    //reset slides and gray back button
+    resetSlide();
+    function resetSlide(){
+        slide = 0;
+        inactiveButton();
+    }
     //add routes
     function updateRoute(){
         //add current route
-        if (siteID < 5){
-            var newroute = L.geoJson(routes.features[siteID], routeStyle).addTo(map);
+        if (currentSite < 5 && $.inArray(currentSite, visitedSites) == -1){
+            var newroute = L.geoJson(routes.features[currentSite], routeStyle).addTo(map);
         }
         //add current alert layer
         alertlayer ? map.removeLayer(alertlayer) : null;
         alerts.features.forEach(function(d,i){
-            if (alerts.features[i].properties.routeid === siteID){
+            if (alerts.features[i].properties.routeid === currentSite){
                 alertlayer = L.geoJson(alerts.features[i], {
                     pointToLayer: function(feature, latlng){
                         return L.marker(latlng, {
@@ -81,17 +100,18 @@ function callback(data){
     }
     //highlight current route
     function highlightRoute() {
+        console.log(highlightLayer)
         if (highlightLayer){
             map.removeLayer(highlightLayer);
         }
-        if (siteID < 5){
-          highlightLayer = L.geoJson(routes.features[siteID], {style: highlightStyle}).addTo(map);
+        if (currentSite < 5){
+            highlightLayer = L.geoJson(routes.features[currentSite], {style: highlightStyle}).addTo(map);
         }
     };
     //update landmark markers
     function updateMarkers() {
-        addMarkers(map, siteID, "gray"); //add marker for old feature
-        addMarkers(map, siteID, "red"); //add red marker for the new feature
+        addMarkers(map, currentSite, "gray"); //add marker for old feature
+        addMarkers(map, currentSite, "red"); //add red marker for the new feature
     };
     //add marker
     function addMarkers(map, i, itype){
@@ -103,20 +123,21 @@ function callback(data){
                 return L.marker(latlng, {icon: L.icon(feature.properties[itype])}); //gray icon
             },
             onEachFeature: function (feature, layer){
-                var imageSet = feature.properties.imageSet;
+                //var imageSet = feature.properties.imageSet;
                  /*// imageSet from PointsofIntest.js
                     imageSets[feature.properties.id] = imageSet;
                 */
                 layer.on("click", function() {
                     highlightMarkers(feature);
                     //if first site visit, auto-open text modal; otherwise open slideshow
-                    if ($.inArray(siteID, visitedSites) == -1){
-                        triggerTextModal();
+                    if ($.inArray(currentSite, visitedSites) == -1){
+                        showText = true;
+                        textModal.show();
                     } 
                     else {
-                        openInfoScreen(feature, imageSet);
+                        landmarkModal.show();
                     };
-                    visitedSites.push(siteID);
+                    visitedSites.push(i);
                 }); 
             }
         }); 
@@ -135,29 +156,98 @@ function callback(data){
     }
     //highlight marker selected marker
     function highlightMarkers(feature){
-        if (currentFeature != feature.properties.id){
-            currentFeature = feature.properties.id;
+        if (currentSite != feature.properties.id){
+            currentSite = feature.properties.id;
             //updateText('#textModal', 0, PointsofInterest.features[currentFeature]);
             //hideAudio();
             //readAloud();
-            addMarkers(map, currentFeature, "red"); //add red highlighted marker
+            addMarkers(map, currentSite, "red"); //add red highlighted marker
         }
     }
-    function textSlideshow(){
-        var slide = 0;
+    function clearSlideshow(type){
+        $("#" + type +"-modal-label").html();
+        $("#" + type + "-script").html();
+        $("#" + type + "-image").attr("src","");
+        $(".next-button").off();
+        $(".back-button").off();
+    }
+    function startSlideshow(type){
+        clearSlideshow(type);
         //add title to slideshow
-        var title = pois.features[siteID].properties.title + " - Landmark " + (pois.features[siteID].properties.id+1) + " of 5";
-        $("#text-modal-label").html(title);
-        //add image
-        var image = $("<img src='" + pois.features[siteID].properties.textImage + "'>");
-        $("#text-image").append(image);
-        var script = $("<p>").html(pois.features[siteID].properties.Scripts[slide]);
-        $("#text-script").append(script);
-
+        var title = pois.features[currentSite].properties.title + " - Landmark " + (pois.features[currentSite].properties.id+1) + " of 5";
+        $("#" + type +"-modal-label").html(title);
+        if (type == "text"){
+            //add image
+            $("#" + type + "-image").attr("src", pois.features[currentSite].properties.textImage);
+            //add first page of script
+            $("#" + type + "-script").html(pois.features[currentSite].properties.Scripts[slide]);
+        }
+        if (type == "landmark"){
+            //create image set
+            var imageSet = pois.features[currentSite].properties.imageSet;
+            $("#" + type + "-image").attr("src", imageSet[slide].historic_small);
+            //create text
+            $("#" + type + "-script").html(imageSet[slide].image_texts);
+        }
+        $('#next-button-' + type).click(function(){
+            slide++;
+            inactiveButton();
+            if (type == "text"){
+                $("#" + type + "-script").html(pois.features[currentSite].properties.Scripts[slide]);
+                if (slide == (pois.features[currentSite].properties.Scripts.length)){
+                    textModal.hide();
+                    if (showText == true){
+                        landmarkModal.show();
+                        showText = false;
+                    }
+                }
+            }
+            if (type == "landmark"){
+                if (slide < imageSet.length){
+                    $("#" + type + "-script").html(imageSet[slide].image_texts);
+                    $("#" + type + "-image").attr("src",imageSet[slide].historic_small);
+                }
+                else if (slide == imageSet.length){
+                    $("#" + type + "-script").html("After closing this slide show window, you will be guided by the highted route to the next landmark. If you want to explore more on this landmark, take the chance to navigate through images using previous or next buttons.");
+                    $("#" + type + "-image").attr("src","");
+                }
+                else{
+                    landmarkModal.hide();
+                    currentSite++;
+                    changeLandmark();
+                }
+            }
+        });
+        //back button listener
+        $('#back-button-' + type).click(function(){
+            if (slide > 0){
+                slide--;
+                inactiveButton();
+                if (type == "text"){
+                    $("#" + type + "-script").html(pois.features[currentSite].properties.Scripts[slide]);
+                }
+                if (type == "landmark"){
+                    $("#" + type + "-script").html(imageSet[slide].image_texts);
+                    $("#" + type + "-image").attr("src",imageSet[slide].historic_small);
+                }
+            }
+        })
     }
-    function landmarkSlideshow(){
-
+    function inactiveButton(){
+        if (slide == 0){
+            $(".back-button").addClass("inactive");
+        }
+        else{
+            $(".inactive").removeClass("inactive");
+        }
     }
+
+    function changeLandmark(){
+        updateRoute();
+        highlightRoute();
+        updateMarkers();
+    }
+
 }
 
 //load the map
