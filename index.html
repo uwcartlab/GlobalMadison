@@ -7,6 +7,7 @@
 
         <link rel="stylesheet" href="lib/bootstrap.css">
         <link rel="stylesheet" href="lib/leaflet/leaflet.css">
+        <link rel="stylesheet" href="lib/juxtapose.css">
         <link rel="stylesheet" href="css/style.css">
  
     </head>
@@ -220,8 +221,8 @@
                 <div class="modal-content">
                     <div id="text-title" class="modal-header">
                         <div class="red-button-container">
-                            <div id="back-button-container" class="red-button inline">
-                              <a id="back-button-text" class="red-button-link back-button">
+                            <div id="previous-button-container" class="red-button inline">
+                              <a id="previous-button-text" class="red-button-link previous-button">
                                   Previous
                               </a>
                             </div>
@@ -257,11 +258,11 @@
     <!--LANDMARK SLIDESHOW CONTAINER-->
         <div class="modal fade" id="landmark-modal" tabindex="-1" aria-labelledby="landmark-modal" aria-hidden="true">
             <div class="modal-dialog modal-dialog-scrollable modal-fullscreen-md-down modal-xl">
-                <div class="modal-content">
+                <div class="modal-content" id="landmark-modal-content">
                     <div id="landmark-title" class="modal-header">
                         <div class="red-button-container">
-                            <div id="back-button-container" class="red-button inline">
-                              <a id="back-button-landmark" class="red-button-link back-button">
+                            <div id="previous-button-container" class="red-button inline">
+                              <a id="previous-button-landmark" class="red-button-link previous-button">
                                   Previous
                               </a>
                             </div>
@@ -275,7 +276,7 @@
                     </div>
                     <div id="landmark-content" class="modal-body">
                         <h3 class="modal-title" id="landmark-modal-label"></h3>
-                        <img id="landmark-image">
+                        <div id="img-comparison"></div>
                         <p id="landmark-script"></p>
                     </div>
                 </div>
@@ -319,6 +320,7 @@
         <script type="text/javascript" src="lib/bootstrap.js"></script>
         <script type="text/javascript" src="lib/leaflet/leaflet.js"></script>
         <script type="text/javascript" src="lib/d3.js"></script>
+        <script type="text/javascript" src="lib/juxtapose.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
     </body>
 </html>

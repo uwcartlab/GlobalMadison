@@ -656,7 +656,7 @@ function callback(error, routes, PointsofInterest, alerts, help){
       if (siteID === 4){
         $("#slideshow_texts").html("");
         $(".orbit-slide-number").css("opacity",0);
-      } else if (siteID < 4){ //if we're not on the final slideshow, show this message
+      } else if (siteID < 4){ //if we're not on the final slideshow, show this message 
         $("#slideshow_texts").html("After closing this slide show window, you will be guided by the highted route to the next landmark. If you want to explore more on this landmark, take the chance to navigate through images using previous or next buttons.");
       }
     }
