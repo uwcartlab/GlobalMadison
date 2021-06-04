@@ -411,7 +411,7 @@ function callback(error, routes, PointsofInterest, alerts, help){
         );
         var coords = [poi.geometry.coordinates[1],poi.geometry.coordinates[0]];
         $("#locationMenu li."+poi.properties.classname).click(function(){
-          map.setView(coords,18);
+          
         });
 
         siteCoords.push(coords);

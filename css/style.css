@@ -209,4 +209,7 @@ html, body {
         float:right;
         margin-right:10px;
     }
+    .leaflet-control-zoom{
+        display:none;
+    }
 }

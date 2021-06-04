@@ -3,6 +3,7 @@ var map,
     siteID = 0,
     currentSite = 0,
     visitedSites = [],
+    siteCoords = [],
     screenSize = "small",
     imageSet,
     slide = 0,
@@ -54,6 +55,7 @@ function callback(data){
     updateRoute();
     highlightRoute();
     updateMarkers();
+    moveMap();
     //slideshow variables
     var textModalEl = document.getElementById('text-modal'),
         textModal = new bootstrap.Modal(textModalEl),
@@ -123,13 +125,20 @@ function callback(data){
         //create marker
         POIlayer = L.geoJson(pois.features[i], {
             pointToLayer: function(feature, latlng){
+                //create landmark dropdown list from feature attributes 
+                if (!siteCoords[currentSite]){
+                    siteCoords[currentSite] = latlng;
+                    $("#landmark-dropdown").append("<li><a class='dropdown-item' id='landmark-menu-" + currentSite + "' value='" + currentSite + "'><img src='" + feature.properties.icon.iconUrl + "'> " + feature.properties.title + "</a></li>");
+                    //click listener to change landmark from menu directly
+                    $("#landmark-menu-" + currentSite).click(function(){
+                        currentSite = Number($(this).attr("value"));
+                        changeLandmark();
+                    })
+                }
+                //create marker
                 return L.marker(latlng, {icon: L.icon(feature.properties[itype])}); //gray icon
             },
             onEachFeature: function (feature, layer){
-                //var imageSet = feature.properties.imageSet;
-                 /*// imageSet from PointsofIntest.js
-                    imageSets[feature.properties.id] = imageSet;
-                */
                 layer.on("click", function() {
                     highlightMarkers(feature);
                     //if first site visit, auto-open text modal; otherwise open slideshow
@@ -144,7 +153,7 @@ function callback(data){
                 }); 
             }
         }); 
-        
+        //set icon size
         if (itype === "icon_larger"){
             POIlayers.push(POIlayer);
         } 
@@ -167,6 +176,7 @@ function callback(data){
             addMarkers(map, currentSite, "red"); //add red highlighted marker
         }
     }
+    //clear modal slideshow
     function clearSlideshow(type){
         $("#" + type +"-modal-label").html();
         $("#" + type + "-script").html();
@@ -174,11 +184,13 @@ function callback(data){
         $(".next-button").off();
         $(".previous-button").off();
     }
+    //start modal slideshow
     function startSlideshow(type){        
         clearSlideshow(type);
         //add title to slideshow
         var title = pois.features[currentSite].properties.title + " - Landmark " + (pois.features[currentSite].properties.id+1) + " of 5";
         $("#" + type +"-modal-label").html(title);
+        //text or landmark slideshow
         if (type == "text"){
             //add image
             $("#" + type + "-image").attr("src", pois.features[currentSite].properties.textImage);
@@ -188,13 +200,18 @@ function callback(data){
         if (type == "landmark"){
             //create image set
             imageSet = pois.features[currentSite].properties.imageSet;
+            //add landmark slides
             updateLandmark(type);
         }
+        //add listener to next button
         $('#next-button-' + type).click(function(){
             slide++;
             inactiveButton();
+            //activate text slideshow
             if (type == "text"){
+                //update slide text
                 $("#" + type + "-script").html(pois.features[currentSite].properties.Scripts[slide]);
+                //if last slide, show landmark slideshow
                 if (slide == (pois.features[currentSite].properties.Scripts.length)){
                     textModal.hide();
                     if (showText == true){
@@ -203,15 +220,20 @@ function callback(data){
                     }
                 }
             }
+            //activate landmark slideshow
             if (type == "landmark"){
+                //if slide isn't the last
                 if (slide < imageSet.length){
                     updateLandmark(type);
                 }
+                //last slide
                 else if (slide == imageSet.length){
+                    //hide slideshow and activate proceed button
                     $("#img-comparison").hide()
                     $("#" + type + "-script").html("After closing this slide show window, you will be guided by the highted route to the next landmark. If you want to explore more on this landmark, take the chance to navigate through images using previous or next buttons.");
                     $("#" + type + "-image").attr("src","");
                 }
+                //after last slide
                 else{
                     landmarkModal.hide();
                     currentSite++;
@@ -233,21 +255,7 @@ function callback(data){
             }
         })
     }
-    function inactiveButton(){
-        if (slide == 0){
-            $(".previous-button").addClass("inactive");
-        }
-        else{
-            $(".inactive").removeClass("inactive");
-        }
-    }
-
-    function changeLandmark(){
-        updateRoute();
-        highlightRoute();
-        updateMarkers();
-    }
-
+    //update landmark slideshow content
     function updateLandmark(type){
         $("#img-comparison").empty().show();
         //adjust width of image container
@@ -257,7 +265,7 @@ function callback(data){
 
         createSlider();
     }
-
+    //create image comparison slider
     function createSlider(){
         slider = new juxtapose.JXSlider('#img-comparison',
             [{
@@ -275,7 +283,33 @@ function callback(data){
             }
         );
     }
+    //check if first slide and deactivate previous button if so
+    function inactiveButton(){
+        if (slide == 0){
+            $(".previous-button").addClass("inactive");
+        }
+        else{
+            $(".inactive").removeClass("inactive");
+        }
+    }
+    //center map on current landmark
+    function moveMap(){
+        if (siteCoords.length > 1 && currentSite > 0){
+            var bounds = L.latLngBounds([siteCoords[currentSite - 1].lat, siteCoords[currentSite - 1].lng], [siteCoords[currentSite].lat, siteCoords[currentSite].lng]);
+        } 
+        else {
+            var bounds = L.latLngBounds([43.0749355058668,-89.39899991725407], [siteCoords[currentSite].lat, siteCoords[currentSite].lng]);
+        };
 
+        map.fitBounds(bounds, {padding: [10, 10]});
+    }
+    //go to next landmark
+    function changeLandmark(){
+        updateRoute();
+        highlightRoute();
+        updateMarkers();
+        moveMap();
+    }
 }
 
 
@@ -314,7 +348,7 @@ function showSplash(){
 //responsive design functions
 function setLayout(){
     var w = $(window).width();
-    //add listeners for mobile
+
     if (w < 768){
         if (screenSize == "large"){
             screenSize = "small";
@@ -322,14 +356,24 @@ function setLayout(){
         }
         //hide full nav menu when landmarks button is selected
         $("#landmark-dropdown-link").click(function(){
-            $(".nav-link").css("display","none");
+            if ($(".non-landmark").css("display") == "none"){
+                $(".non-landmark").css("display","block");
+                $("#landmark-menu-text").text("Landmarks");
+                $("#landmark-list, #arrow").show();
+            }
+            else{
+                $(".non-landmark").css("display","none");
+                $("#landmark-menu-text").text("Back");
+                $("#landmark-list, #arrow").hide();
+            }
         })
         //show full nav menu and hide dropdown when back button is selected or menu is closed
-        $(".back-button, .menu-toggler").click(function(){
-            $(".nav-link").css("display","block");
-            $(".dropdown-menu").removeClass("show");
+        $(".menu-toggler").click(function(){
+            $(".landmark").dropdown("hide");
+            $(".non-landmark").css("display","block");
+            $("#landmark-menu-text").text("Landmarks");
+            $("#landmark-list, #arrow").show();
         })
-
     }
     //remove listeners for fullscreen
     else{
@@ -340,7 +384,7 @@ function setLayout(){
         $(".back-button, .menu-toggler, #landmark-dropdown-link").off();
     }
     $('#img-comparison').css("width", $('#landmark-content').width());
-
+    //if screen size jumps between desktop and mobile while slideshow is open, load appropariate image size
     function imageResize(){
         if (imageSet){
             $('#img-comparison').empty();
