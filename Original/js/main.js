@@ -200,7 +200,7 @@ function callback(error, routes, PointsofInterest, alerts, help){
       } 
     });
   };
-
+  
   function decodeAudio(sound, isdesktop, landmark){
     $("audio").prop('autoplay', true);
     $("audio").attr('src', "data:audio/mp3;base64,"+sound);
@@ -246,8 +246,8 @@ function callback(error, routes, PointsofInterest, alerts, help){
         for (var t in timeouts){
           clearTimeout(timeouts[t]);
         };
-        for (var i=0; i<scripts.length-1; i++){                      
-          delay = delay + (scripts[i].length*68.2);
+        for (var i = 0; i < scripts.length-1; i++){                      
+          delay = delay + (scripts[i].length * 68.2);
           timeouts[i] = window.setTimeout(function(){
             forwardText('#textModal', PointsofInterest.features[currentFeature]);
           }, delay);
@@ -862,6 +862,7 @@ function getLocation(map){
   };
 
   map.on('locationfound', onLocationFound);
+
 };
 
 function removeFoundMarker(circle, marker){

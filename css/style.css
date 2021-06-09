@@ -36,6 +36,9 @@ html, body {
     color:gray;
     cursor:auto;
 }
+audio{
+    display:none;
+}
 /*******SPLASH********/
 #splash .red-button{
     margin: 0 18px 20px 18px;
@@ -131,6 +134,12 @@ html, body {
 #previous-button-container{
     float:left;
 }
+#proceed-container{
+    width:150px;
+    text-align:center;
+    margin:auto;
+}
+
 /******RESPONSIVE DESIGN******/
 @media only screen and (min-width:768px){
     /******MAP/CONTAINER*****/

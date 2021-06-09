@@ -13,6 +13,9 @@
     </head>
 
     <body>
+        <audio controls src="audio/intro_site1.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
     <!--SPLASH SCREEN-->
         <div class="modal" id="splash" tabindex="-1" aria-labelledby="splash" aria-hidden="true">
             <div class="modal-dialog modal-dialog-scrollable modal-fullscreen modal-xl">
@@ -227,7 +230,7 @@
                               </a>
                             </div>
                             <div id="read-button-container" class="red-button inline">
-                                <a id="read-button-text" class="red-button-link">
+                                <a id="read-button" class="red-button-link">
                                     Read Text Aloud
                                 </a>
                             </div>
@@ -278,6 +281,9 @@
                         <h3 class="modal-title" id="landmark-modal-label"></h3>
                         <div id="img-comparison"></div>
                         <p id="landmark-script"></p>
+                        <div id="proceed-container" class="red-button">
+                            <a id="proceed-button" class="red-button-link" style="display:none;">Proceed to Next Landmark</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -321,6 +327,7 @@
         <script type="text/javascript" src="lib/leaflet/leaflet.js"></script>
         <script type="text/javascript" src="lib/d3.js"></script>
         <script type="text/javascript" src="lib/juxtapose.js"></script>
+        <script type="text/javascript" src="js/findMeButton.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
     </body>
 </html>

@@ -4,11 +4,14 @@ var map,
     currentSite = 0,
     visitedSites = [],
     siteCoords = [],
+    shownRoutes = [],
     screenSize = "small",
     imageSet,
     slide = 0,
     modalWidth,
-    slider;
+    slider,
+    timeouts = [],
+    firstLocate = true;
 
 window.onload = initialize();
 $(window).resize(setLayout);
@@ -56,6 +59,8 @@ function callback(data){
     highlightRoute();
     updateMarkers();
     moveMap();
+    hideAudio();
+    readAloud();
     //slideshow variables
     var textModalEl = document.getElementById('text-modal'),
         textModal = new bootstrap.Modal(textModalEl),
@@ -65,22 +70,276 @@ function callback(data){
 
     textModalEl.addEventListener('show.bs.modal', function(){
         resetSlide();
-        startSlideshow("text");
+        startTextModal();
     });
     landmarkModalEl.addEventListener('shown.bs.modal', function(){
         resetSlide();
-        startSlideshow("landmark");
+        startLandmarkModal();
     });
+    //audio variables
+    var audioIndex = 0;
+/*UNIVERSAL MODAL FUNCTIONS*/
     //reset slides and gray back button
     resetSlide();
     function resetSlide(){
         slide = 0;
         inactiveButton();
+    }    
+    //clear text slideshow
+    function clearModal(type){
+        $("#" + type +"-modal-label").html();
+        $("#" + type + "-script").html();
+        $("#" + type + "-image").attr("src","");
+        $(".next-button").off();
+        $(".previous-button").off();
     }
+    //add modal title
+    function addModalTitle(type){
+        var title = pois.features[currentSite].properties.title + " - Landmark " + (pois.features[currentSite].properties.id+1) + " of 5";
+        $("#" + type +"-modal-label").html(title);
+    }
+    //check if first slide and deactivate previous button if so
+    function inactiveButton(){
+        if (slide == 0){
+            $(".previous-button").addClass("inactive");
+        }
+        else{
+            $(".inactive").removeClass("inactive");
+        }
+    }
+/*AUDIO*/
+    function decodeAudio(sound, size, landmark){
+        $("audio").prop('autoplay', true);
+        $("audio").attr('src', "data:audio/mp3;base64," + sound);
+        if (size == 'large'){
+            showAudio();
+        }
+        $("audio").get(0).play();
+    }
+
+    function playAudio(size, landmark){
+        $.ajax(pois.features[landmark].properties.audio[audioIndex], {
+            dataType: "text",
+            success: function(data){ decodeAudio(data, size, landmark) }
+        })
+    }
+
+    function showAudio(){
+        $("audio").show();
+        /*if (iOS){
+          $("audio").css({"width":"60px", "height":"10px", "margin-right": "20px", "margin-top": "10px"})
+        };*/
+    }
+
+    function hideAudio(){
+        $("audio").get(0).pause();
+        $("audio").prop('autoplay', false);
+        $("audio").hide();
+        /*if (iOS){
+          $("audio").css({"width":0, "height":0, "margin-right": 0})
+        };*/
+    }
+
+    function readAloud(){
+        var firstClick = true;
+        $("#read-button").html("Read Text Aloud");
+        $("#read-button").off();
+        $("#read-button").click(function(){
+            if (firstClick){
+                var scripts =  pois.features[currentSite].properties.Scripts;
+                var delay = 0;
+
+                for (var t in timeouts){
+                    clearTimeout(timeouts[t]);
+                }
+
+                for (var i = 0; i < scripts.length - 1; i++){                      
+                    delay = delay + (scripts[i].length * 68.2);
+                    timeouts[i] = window.setTimeout(function(){
+                        slide++;
+                        nextTextModal(pois.features[currentSite]);
+                    }, delay);
+                }
+                
+                audioIndex = 0;
+                var audioListLength = pois.features[currentSite].properties.audio.length;
+                playAudio(screenSize, currentSite);
+                $("audio").on('ended', function(){
+                    audioIndex++;
+                    if (audioIndex < audioListLength){
+                        playAudio(screenSize, currentSite);
+                    }
+                })
+            }
+            playPause(firstClick);
+            firstClick = false;
+        })
+    }
+
+    function playPause(firstPlay){
+        if (!firstPlay && !$("audio").get(0).paused){
+            $("audio").get(0).pause();
+            clearTimeouts();
+        } 
+        else {
+            if (!firstPlay){ 
+                $("audio").get(0).play(); 
+            }
+        }
+    }
+
+    function clearTimeouts(){
+        for (var i in timeouts){
+          window.clearTimeout(timeouts[i]);
+        }
+    }
+
+    //match play audio button to audio state
+    $("audio").on("pause", function(){
+        $("#read-button").html("Play Reading");
+    });
+    $("audio").on("play", function(){
+        $("#read-button").html("Pause Reading");
+    });
+/*TEXT MODAL*/
+    //start text modal
+    function startTextModal(){
+        clearModal("text");
+        addModalTitle("text");
+        //add image
+        $("#text-image").attr("src", pois.features[currentSite].properties.textImage);
+        //add first page of script
+        $("#text-script").html(pois.features[currentSite].properties.Scripts[slide]);
+        //next button listener
+        $('#next-button-text').click(function(){
+            slide++;
+            inactiveButton();
+            nextTextModal(pois.features[currentSite]);
+        })
+        $('#previous-button-text').click(function(){
+            if (slide > 0){
+                slide--;
+                inactiveButton();
+                updateTextModal(pois.features[currentSite]);
+            }
+        })
+    }
+    //next text modal slide
+    function nextTextModal(feature){
+        //update slide text
+        updateTextModal(feature);
+        //if last slide, show landmark slideshow
+        if (slide == (feature.properties.Scripts.length)){
+            textModal.hide();
+            if (showText == true){
+                landmarkModal.show();
+                showText = false;
+            }
+        }
+    }
+    //previous text modal slide
+    function updateTextModal(feature){
+        $("#text-script").html(feature.properties.Scripts[slide]);
+    }
+/*LANDMARK MODAL*/
+    //start landmark modal
+    function startLandmarkModal(){
+        clearModal("landmark");
+        addModalTitle("landmark");
+        //create image set
+        imageSet = pois.features[currentSite].properties.imageSet;
+        //add landmark slides
+        updateLandmarkModal();
+
+        $('#next-button-landmark').click(function(){
+            slide++;
+            inactiveButton();
+            nextLandmarkModal();
+        })
+        $('#previous-button-landmark').click(function(){
+            if (slide > 0){
+                slide--;
+                inactiveButton();
+                updateLandmarkModal();
+            }
+        })
+    }
+    //next landmark modal slide
+    function nextLandmarkModal(){
+        if (slide < imageSet.length){
+            updateLandmarkModal();
+        }
+        //last slide
+        else if (slide == imageSet.length){
+            //hide slideshow and activate proceed button
+            $("#img-comparison").hide()
+            $("#proceed-button").show();
+            $("#landmark-script").html("After closing this slide show window, you will be guided by the highted route to the next landmark. If you want to explore more on this landmark, take the chance to navigate through images using previous or next buttons.");
+            $("#landmark-image").attr("src","");
+
+            $("#proceed-button").click(function(){
+                endSlideShow();
+            });
+        }
+        //after last slide
+        else{
+            endSlideShow();
+        }
+
+        function endSlideShow(){
+            landmarkModal.hide();
+            currentSite++;
+            changeLandmark();
+            $("#proceed-button").hide();
+            $("#proceed-button").off();
+        }
+    }
+    //update landmark slideshow content
+    function updateLandmarkModal(){
+        $("#img-comparison").empty().show();
+        //adjust width of image container
+        $('#img-comparison').css("width", $('#landmark-content').width());
+        //update text description
+        $("#landmark-script").html(imageSet[slide].image_texts);
+
+        createSlider();
+    }
+    //create image comparison slider
+    function createSlider(){
+        slider = new juxtapose.JXSlider('#img-comparison',
+            [{
+                    src: imageSet[slide]["historic_" + screenSize]
+                },
+                {
+                    src: imageSet[slide]["current_" + screenSize]
+            }],
+            {
+                animate: true,
+                showLabels: false,
+                showCredits: false,
+                startingPosition: "50%",
+                makeResponsive: true
+            }
+        );
+    }
+/*MOVE MAP*/
+    //center map on current landmark
+    function moveMap(){
+        if (siteCoords.length > 1 && currentSite > 0){
+            var bounds = L.latLngBounds([siteCoords[currentSite - 1].lat, siteCoords[currentSite - 1].lng], [siteCoords[currentSite].lat, siteCoords[currentSite].lng]);
+        } 
+        else {
+            var bounds = L.latLngBounds([43.0749355058668,-89.39899991725407], [siteCoords[currentSite].lat, siteCoords[currentSite].lng]);
+        };
+
+        map.fitBounds(bounds, {padding: [10, 10]});
+    }
+/*ROUTES*/
     //add routes
     function updateRoute(){
         //add current route
-        if (currentSite < 5 && $.inArray(currentSite, visitedSites) == -1){
+        if (currentSite < 5 && $.inArray(currentSite, shownRoutes) == -1){
+            shownRoutes.push(currentSite)
             var newroute = L.geoJson(routes.features[currentSite], routeStyle).addTo(map);
         }
         //add current alert layer
@@ -113,6 +372,7 @@ function callback(data){
             highlightLayer = L.geoJson(routes.features[currentSite], {style: highlightStyle}).addTo(map);
         }
     };
+/*MARKERS*/
     //update landmark markers
     function updateMarkers() {
         addMarkers(map, currentSite, "gray"); //add marker for old feature
@@ -171,144 +431,18 @@ function callback(data){
         if (currentSite != feature.properties.id){
             currentSite = feature.properties.id;
             //updateText('#textModal', 0, PointsofInterest.features[currentFeature]);
-            //hideAudio();
-            //readAloud();
             addMarkers(map, currentSite, "red"); //add red highlighted marker
         }
     }
-    //clear modal slideshow
-    function clearSlideshow(type){
-        $("#" + type +"-modal-label").html();
-        $("#" + type + "-script").html();
-        $("#" + type + "-image").attr("src","");
-        $(".next-button").off();
-        $(".previous-button").off();
-    }
-    //start modal slideshow
-    function startSlideshow(type){        
-        clearSlideshow(type);
-        //add title to slideshow
-        var title = pois.features[currentSite].properties.title + " - Landmark " + (pois.features[currentSite].properties.id+1) + " of 5";
-        $("#" + type +"-modal-label").html(title);
-        //text or landmark slideshow
-        if (type == "text"){
-            //add image
-            $("#" + type + "-image").attr("src", pois.features[currentSite].properties.textImage);
-            //add first page of script
-            $("#" + type + "-script").html(pois.features[currentSite].properties.Scripts[slide]);
-        }
-        if (type == "landmark"){
-            //create image set
-            imageSet = pois.features[currentSite].properties.imageSet;
-            //add landmark slides
-            updateLandmark(type);
-        }
-        //add listener to next button
-        $('#next-button-' + type).click(function(){
-            slide++;
-            inactiveButton();
-            //activate text slideshow
-            if (type == "text"){
-                //update slide text
-                $("#" + type + "-script").html(pois.features[currentSite].properties.Scripts[slide]);
-                //if last slide, show landmark slideshow
-                if (slide == (pois.features[currentSite].properties.Scripts.length)){
-                    textModal.hide();
-                    if (showText == true){
-                        landmarkModal.show();
-                        showText = false;
-                    }
-                }
-            }
-            //activate landmark slideshow
-            if (type == "landmark"){
-                //if slide isn't the last
-                if (slide < imageSet.length){
-                    updateLandmark(type);
-                }
-                //last slide
-                else if (slide == imageSet.length){
-                    //hide slideshow and activate proceed button
-                    $("#img-comparison").hide()
-                    $("#" + type + "-script").html("After closing this slide show window, you will be guided by the highted route to the next landmark. If you want to explore more on this landmark, take the chance to navigate through images using previous or next buttons.");
-                    $("#" + type + "-image").attr("src","");
-                }
-                //after last slide
-                else{
-                    landmarkModal.hide();
-                    currentSite++;
-                    changeLandmark();
-                }
-            }
-        });
-        //back button listener
-        $('#previous-button-' + type).click(function(){
-            if (slide > 0){
-                slide--;
-                inactiveButton();
-                if (type == "text"){
-                    $("#" + type + "-script").html(pois.features[currentSite].properties.Scripts[slide]);
-                }
-                if (type == "landmark"){
-                    updateLandmark(type);
-                }
-            }
-        })
-    }
-    //update landmark slideshow content
-    function updateLandmark(type){
-        $("#img-comparison").empty().show();
-        //adjust width of image container
-        $('#img-comparison').css("width", $('#landmark-content').width());
-        //update text description
-        $("#" + type + "-script").html(imageSet[slide].image_texts);
-
-        createSlider();
-    }
-    //create image comparison slider
-    function createSlider(){
-        slider = new juxtapose.JXSlider('#img-comparison',
-            [{
-                    src: imageSet[slide]["historic_" + screenSize]
-                },
-                {
-                    src: imageSet[slide]["current_" + screenSize]
-            }],
-            {
-                animate: true,
-                showLabels: false,
-                showCredits: false,
-                startingPosition: "50%",
-                makeResponsive: true
-            }
-        );
-    }
-    //check if first slide and deactivate previous button if so
-    function inactiveButton(){
-        if (slide == 0){
-            $(".previous-button").addClass("inactive");
-        }
-        else{
-            $(".inactive").removeClass("inactive");
-        }
-    }
-    //center map on current landmark
-    function moveMap(){
-        if (siteCoords.length > 1 && currentSite > 0){
-            var bounds = L.latLngBounds([siteCoords[currentSite - 1].lat, siteCoords[currentSite - 1].lng], [siteCoords[currentSite].lat, siteCoords[currentSite].lng]);
-        } 
-        else {
-            var bounds = L.latLngBounds([43.0749355058668,-89.39899991725407], [siteCoords[currentSite].lat, siteCoords[currentSite].lng]);
-        };
-
-        map.fitBounds(bounds, {padding: [10, 10]});
-    }
+/*CHANGE LANDMARK*/
     //go to next landmark
     function changeLandmark(){
         updateRoute();
         highlightRoute();
         updateMarkers();
         moveMap();
+        hideAudio();
+        readAloud();
     }
 }
 
@@ -335,6 +469,57 @@ function loadMap(){
     mapTileLayer = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png', {
         attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
     }).addTo(map);
+
+    //find me
+    var findMeOptions = {
+        'iconUrl': 'img/icons/findme.png',  // string
+        'onClick': findme_button_onClick,  // callback function
+        'maxWidth': 30,  // number
+        'doToggle': false,  // bool
+        'toggleStatus': false  // bool
+    }
+  
+    var findMeButton = new L.Control.Button(findMeOptions).addTo(map);
+
+    function findme_button_onClick() { //where is this accessed?
+        getLocation(map);
+    }
+}
+//get location function
+function getLocation(map){
+    map.locate({setView:false, watch:true, enableHighAccuracy: true} );
+  
+    function onLocationFound(e){
+        var radius = e.accuracy / 2;
+  
+        //removes marker and circle before adding a new one
+        if (firstLocate===false){
+            map.removeLayer(circle);
+            map.removeLayer(locationMarker);
+        }
+      //adds location and accuracy information to the map
+        if (e.accuracy < 90){
+            circle = L.circle(e.latlng, radius).addTo(map);
+            locationMarker = L.marker(e.latlng).addTo(map).bindPopup("You are within " + Math.round(radius) + " meters of this point");
+            firstLocate = false;
+        }
+  
+      //if accuracy is less than 60m then stop calling locate function
+        if (e.accuracy < 40){
+            var count = 0;
+            map.stopLocate();
+            count++;
+        }
+  
+        var cZoom = map.getZoom();
+        map.setView(e.latlng, cZoom);
+        removeFoundMarker(circle, locationMarker);
+    }
+  
+    map.on('locationfound', onLocationFound);
+    map.on('locationerror', function(){
+        console.log("sup")
+    });
 }
 
 //activate splash screen
