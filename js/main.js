@@ -17,6 +17,8 @@ window.onload = initialize();
 $(window).resize(setLayout);
 
 function initialize(){
+    cacheLoading();
+    
     setLayout();
     showSplash();
     
@@ -190,7 +192,7 @@ function callback(data){
 
     function clearTimeouts(){
         for (var i in timeouts){
-          window.clearTimeout(timeouts[i]);
+            window.clearTimeout(timeouts[i]);
         }
     }
 
@@ -445,9 +447,7 @@ function callback(data){
         readAloud();
     }
 }
-
-
-//load the map
+/*CREATE MAP*/
 function loadMap(){
     //map object
     map = L.map('map', { 
@@ -485,6 +485,7 @@ function loadMap(){
         getLocation(map);
     }
 }
+/*LOCATION FUNCTIONS*/ 
 //get location function
 function getLocation(map){
     map.locate({setView:false, watch:true, enableHighAccuracy: true} );
@@ -497,14 +498,13 @@ function getLocation(map){
             map.removeLayer(circle);
             map.removeLayer(locationMarker);
         }
-      //adds location and accuracy information to the map
+        //adds location and accuracy information to the map
         if (e.accuracy < 90){
-            circle = L.circle(e.latlng, radius).addTo(map);
-            locationMarker = L.marker(e.latlng).addTo(map).bindPopup("You are within " + Math.round(radius) + " meters of this point");
+            var circle = L.circle(e.latlng, radius).addTo(map);
+            var locationMarker = L.marker(e.latlng).addTo(map).bindPopup("You are within " + Math.round(radius) + " meters of this point");
             firstLocate = false;
         }
-  
-      //if accuracy is less than 60m then stop calling locate function
+        //if accuracy is less than 60m then stop calling locate function
         if (e.accuracy < 40){
             var count = 0;
             map.stopLocate();
@@ -517,12 +517,16 @@ function getLocation(map){
     }
   
     map.on('locationfound', onLocationFound);
-    map.on('locationerror', function(){
-        console.log("sup")
-    });
 }
-
-//activate splash screen
+//remove location circle marker
+function removeFoundMarker(circle, marker){
+    setTimeout(function() {
+        map.removeLayer(circle);
+        map.removeLayer(marker);
+    }, 10000);
+}
+  
+/*ACTIVATE SPLASH SCREEN*/
 function showSplash(){
     var splash = new bootstrap.Modal(document.getElementById('splash'), {
         keyboard: false
@@ -530,7 +534,46 @@ function showSplash(){
     splash.show();
 }
 
-//responsive design functions
+/*CACHE*/
+function cacheLoading(){
+    var loadingTimeout = setTimeout(cacheLoaded, 30000);
+    
+    var i = 0;
+    $(window.applicationCache).on("progress", function(){
+        clearTimeout(loadingTimeout);
+        if (i === 450){ 
+            cacheLoaded(); 
+        }
+        i++;
+        loadingTimeout = setTimeout(cacheLoaded, 30000 - (i * 66));
+    })
+    
+    $(window.applicationCache).on("cached", function(){
+        cacheLoaded();
+    })
+    
+    $(window.applicationCache).on("noupdate", function(){
+        cacheLoaded();
+    })
+    
+    $(window.applicationCache).on("error", function(){
+        cacheError();
+    })
+}
+
+function cacheLoaded(){
+    $("#loading img").attr("src","img/icons/globe.png")
+    $("#loading span").attr("id","loaded")
+    $("#loading span").text('You may now use this application offline. Without an internet connection, your map range will be more limited, but adequate for module use.')
+}
+  
+function cacheError(){
+    $("#loading img").attr("src","img/icons/globeerror.png")
+    $("#loading span").attr("id","error")
+    $("#loading span").text('There was a problem loading the offline cache. If you might lose internet connection while using this application, please hit your browser\'s "reload" button now.')
+};
+
+/*RESPONSIVE DESIGN FUNCTIONS*/
 function setLayout(){
     var w = $(window).width();
 

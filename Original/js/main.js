@@ -744,21 +744,25 @@ function cacheloading(){
   
   var i = 0;
   $(window.applicationCache).on("progress", function(){
-	  clearTimeout(loadingTimeout);
+	  console.log("progress");
+    clearTimeout(loadingTimeout);
     if (i === 450){ cacheloaded() }; //i must equal number of files to be cached in manifest
     i++;
     loadingTimeout = setTimeout(cacheloaded, 30000 - (i * 66)); //reduce timespan on each progress event
   });
   
   $(window.applicationCache).on("cached", function(){
+    console.log("cached");
     cacheloaded();
   });
   
   $(window.applicationCache).on("noupdate", function(){
+    console.log("noupdate");
     cacheloaded();
   });
   
   $(window.applicationCache).on("error", function(){
+    console.log("error");
     cacheerror();
   });
 };
