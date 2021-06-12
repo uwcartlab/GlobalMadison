@@ -1,29 +1,37 @@
 /***CLASS-LEVEL VARIABLES***/
-var map,
-    siteID = 0,
-    currentSite = 0,
+//screen
+var screenSize = "small";
+//map
+var map;
+//location services
+var firstLocate = true;
+//site
+var currentSite = 0,
     visitedSites = [],
-    siteCoords = [],
-    shownRoutes = [],
-    screenSize = "small",
-    imageSet,
-    slide = 0,
-    modalWidth,
+    siteCoords = [];
+//route
+var shownRoutes = [];
+//modal
+var slide = 0,
+    modalWidth;
+//slideshow
+var imageSet,
     slider,
-    timeouts = [],
-    firstLocate = true;
+    timeouts = [];
 
 window.onload = initialize();
 $(window).resize(setLayout);
 
 function initialize(){
+    //load cache
     cacheLoading();
-    
+    //set correct layout
     setLayout();
+    //show splash screen
     showSplash();
-    
+    //load the map
     loadMap();
-
+    //data loading
     Promise.all([
         d3.json("data/routes.geojson"),
         d3.json("data/PointsofInterest.geojson"),
@@ -61,13 +69,13 @@ function callback(data){
     moveMap();
     hideAudio();
     readAloud();
-    //slideshow variables
+    //modal variables
     var textModalEl = document.getElementById('text-modal'),
         textModal = new bootstrap.Modal(textModalEl),
         landmarkModalEl = document.getElementById('landmark-modal'),
         landmarkModal = new bootstrap.Modal(landmarkModalEl),
         showText = false;
-
+    //modal listeners
     textModalEl.addEventListener('show.bs.modal', function(){
         resetSlide();
         startTextModal();
@@ -108,6 +116,7 @@ function callback(data){
         }
     }
 /*AUDIO*/
+    //decode base64 audio files
     function decodeAudio(sound, size, landmark){
         $("audio").prop('autoplay', true);
         $("audio").attr('src', "data:audio/mp3;base64," + sound);
@@ -116,21 +125,21 @@ function callback(data){
         }
         $("audio").get(0).play();
     }
-
+    //retrieve audio file and play audio
     function playAudio(size, landmark){
         $.ajax(pois.features[landmark].properties.audio[audioIndex], {
             dataType: "text",
             success: function(data){ decodeAudio(data, size, landmark) }
         })
     }
-
+    //show audio player
     function showAudio(){
         $("audio").show();
         /*if (iOS){
           $("audio").css({"width":"60px", "height":"10px", "margin-right": "20px", "margin-top": "10px"})
         };*/
     }
-
+    //hide audio player
     function hideAudio(){
         $("audio").get(0).pause();
         $("audio").prop('autoplay', false);
@@ -139,20 +148,21 @@ function callback(data){
           $("audio").css({"width":0, "height":0, "margin-right": 0})
         };*/
     }
-
+    //read text 
     function readAloud(){
         var firstClick = true;
         $("#read-button").html("Read Text Aloud");
         $("#read-button").off();
         $("#read-button").click(function(){
+            //if first click (intro), activate a timer that automatically advances slides as they're read
             if (firstClick){
                 var scripts =  pois.features[currentSite].properties.Scripts;
                 var delay = 0;
-
+                //clear existing timeouts
                 for (var t in timeouts){
                     clearTimeout(timeouts[t]);
                 }
-
+                //go to next slide automatically as audio is read
                 for (var i = 0; i < scripts.length - 1; i++){                      
                     delay = delay + (scripts[i].length * 68.2);
                     timeouts[i] = window.setTimeout(function(){
@@ -164,6 +174,7 @@ function callback(data){
                 audioIndex = 0;
                 var audioListLength = pois.features[currentSite].properties.audio.length;
                 playAudio(screenSize, currentSite);
+                //if there are multiple audio files for a site, advance to next audio file
                 $("audio").on('ended', function(){
                     audioIndex++;
                     if (audioIndex < audioListLength){
@@ -175,7 +186,7 @@ function callback(data){
             firstClick = false;
         })
     }
-
+    //play/pause function
     function playPause(firstPlay){
         if (!firstPlay && !$("audio").get(0).paused){
             $("audio").get(0).pause();
@@ -187,13 +198,12 @@ function callback(data){
             }
         }
     }
-
+    //empty timeouts object
     function clearTimeouts(){
         for (var i in timeouts){
             window.clearTimeout(timeouts[i]);
         }
     }
-
     //match play audio button to audio state
     $("audio").on("pause", function(){
         $("#read-button").html("Play Reading");
@@ -216,6 +226,7 @@ function callback(data){
             inactiveButton();
             nextTextModal(pois.features[currentSite]);
         })
+        //previous button listener
         $('#previous-button-text').click(function(){
             if (slide > 0){
                 slide--;
@@ -250,12 +261,13 @@ function callback(data){
         imageSet = pois.features[currentSite].properties.imageSet;
         //add landmark slides
         updateLandmarkModal();
-
+        //next button listener
         $('#next-button-landmark').click(function(){
             slide++;
             inactiveButton();
             nextLandmarkModal();
         })
+        //previous button listener
         $('#previous-button-landmark').click(function(){
             if (slide > 0){
                 slide--;
@@ -276,7 +288,6 @@ function callback(data){
             $("#proceed-button").show();
             $("#landmark-script").html("After closing this slide show window, you will be guided by the highted route to the next landmark. If you want to explore more on this landmark, take the chance to navigate through images using previous or next buttons.");
             $("#landmark-image").attr("src","");
-
             $("#proceed-button").click(function(){
                 endSlideShow();
             });
@@ -543,36 +554,15 @@ function cacheLoading(){
                 console.log('Service worker installed');
             } else if(reg.active) {
                 console.log('Service worker active');
+                cacheLoaded()
             } 
         }).catch(function(error) {
             // registration failed
             console.log('Registration failed with ' + error);
+            cacheError();
         });
 
     }
-    /*var loadingTimeout = setTimeout(cacheLoaded, 30000);
-    
-    var i = 0;
-    $(window.applicationCache).on("progress", function(){
-        clearTimeout(loadingTimeout);
-        if (i === 450){ 
-            cacheLoaded(); 
-        }
-        i++;
-        loadingTimeout = setTimeout(cacheLoaded, 30000 - (i * 66));
-    })
-    
-    $(window.applicationCache).on("cached", function(){
-        cacheLoaded();
-    })
-    
-    $(window.applicationCache).on("noupdate", function(){
-        cacheLoaded();
-    })
-    
-    $(window.applicationCache).on("error", function(){
-        cacheError();
-    })*/
 }
 
 function cacheLoaded(){

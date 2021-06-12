@@ -171,10 +171,10 @@
         "textImage": "img/site3_3_hs.png",
 		"imageSet": [
 			{
-				"historic_small": "img/site3_1_hs.png",
-				"historic_large": "img/site3_1_hl.png",
-				"current_small": "img/site3_1_cs.png",
-				"current_large": "img/site3_1_cl.png",
+				"historic_small": "img/site3_1_hs.jpg",
+				"historic_large": "img/site3_1_hl.jpg",
+				"current_small": "img/site3_1_cs.jpg",
+				"current_large": "img/site3_1_cl.jpg",
 				"image_texts": "<b>Interdependencies</b>: Economic development has created interdependencies with other places that supply fossil fuels. Sometimes geopolitical factors can affect the price and access to these fuel sources, leading to protests such as the one shown in this poster. What are some of the factors that can contribute to rising energy prices?"
 			},
 			{

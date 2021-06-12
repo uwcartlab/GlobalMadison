@@ -159,6 +159,11 @@ audio{
     .back-button{
         display:none;
     }
+    /*LANDMARK DROPDOWN MENU*/
+    #landmark-dropdown{
+        z-index:2000;
+    }
+
 }
 @media only screen and (max-width:768px){
     /******MAP/CONTAINER*****/
