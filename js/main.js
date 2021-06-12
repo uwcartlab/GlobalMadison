@@ -27,8 +27,7 @@ function initialize(){
     Promise.all([
         d3.json("data/routes.geojson"),
         d3.json("data/PointsofInterest.geojson"),
-        d3.json("data/alerts.geojson"),
-        d3.json("data/help.json")
+        d3.json("data/alerts.geojson")
     ]).then(callback);
 }
 
@@ -37,8 +36,7 @@ function callback(data){
     //data variables
     var routes = data[0],
         pois = data[1],
-        alerts = data[2],
-        help = data[3];
+        alerts = data[2];
     //style variables
     var routeStyle = {
         "color": "#CE3234",
@@ -466,8 +464,8 @@ function loadMap(){
     var zoom = L.control.zoom({position: "topleft"}).addTo(map);
     
     //basemap
-    mapTileLayer = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png', {
-        attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
+    mapTileLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
 
     //find me
@@ -536,7 +534,23 @@ function showSplash(){
 
 /*CACHE*/
 function cacheLoading(){
-    var loadingTimeout = setTimeout(cacheLoaded, 30000);
+    if (navigator.serviceWorker) {
+        // Start registration process on every page load
+        navigator.serviceWorker.register('./service_worker.js').then(function(reg) {
+            if(reg.installing) {
+                console.log('Service worker installing');
+            } else if(reg.waiting) {
+                console.log('Service worker installed');
+            } else if(reg.active) {
+                console.log('Service worker active');
+            } 
+        }).catch(function(error) {
+            // registration failed
+            console.log('Registration failed with ' + error);
+        });
+
+    }
+    /*var loadingTimeout = setTimeout(cacheLoaded, 30000);
     
     var i = 0;
     $(window.applicationCache).on("progress", function(){
@@ -558,7 +572,7 @@ function cacheLoading(){
     
     $(window.applicationCache).on("error", function(){
         cacheError();
-    })
+    })*/
 }
 
 function cacheLoaded(){
