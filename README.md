@@ -11,5 +11,8 @@
     Hydric Soil Data: [Dane County](https://dcimapapps.countyofdane.com/arcgissrv/rest/services/HydricSoils_cache/MapServer/0)
 - **Site 5: Madison Gas and Electric Company/Energy**  
 - **Site 6: Chicago and Northwestern Railroad Station/Transportation**  
+    Historical Railroads (1845-1870): [Historical Railroads of the Making of Modern America](https://railroads.unl.edu/resources/)
+    Historical City Points: [IPUMS](ipums.org)
+    Historical City Populations: [Spatial History Project, Stanford University](https://github.com/cestastanford/historical-us-city-populations)
 - **Site 7: First Settlement/Labor**  
 - **Site 8: Capitol Steps-State Street/BLM Protests**  
