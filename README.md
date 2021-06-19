@@ -20,12 +20,18 @@
     Yahara Lake Levels: [Dane County Land & Water Resources](https://lwrd.countyofdane.com/chartlakelevels/Tabular)  
     National Flood Hazard Layer: [FEMA](https://www.floodmaps.fema.gov/NFHL/status.shtml)  
     Aftermath of Dane County Flooding 2018: [Wisconsin State Journal](https://madison.com/wsj/weather/photos-see-the-aftermath-of-severe-flooding-in-dane-county/collection_64f03fe1-62f8-5673-9705-7c3b7cb0bd09.html#1)  
+    2018 Flooding Article: [Isthmus Magazine](https://isthmus.com/news/cover-story/swamped/)
+    City of Madison Flash Flooding Story Map: [City of Madison](https://cityofmadison.maps.arcgis.com/apps/Cascade/index.html?appid=410417d0691a4166977b9fa6223536e9)
+    City of Madison Lake Level Flooding Story Map: [City of Madison](https://storymaps.arcgis.com/stories/b0be9f1c87674acaa6951fd9271ad606)
+    1890 USGS Madison Quadrangle: [Wisconsin GeoData](https://geodata.wisc.edu/)
+    Wisconsin Watersheds: [Wisconsin GeoData](https://geodata.wisc.edu/catalog/BF659CA4-EA59-4C40-9ED2-A8A858A727F4)
+    Precipitation Anomaly: [PRISM Climate Group](https://prism.oregonstate.edu/recent/)
+    1950 Flood on University Avenue: [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Image/IM64350)
 - **Site 5: Madison Gas and Electric Company/Energy**  
 - **Site 6: Chicago and Northwestern Railroad Station/Transportation**  
     Historical Railroads (1845-1870): [Historical Railroads of the Making of Modern America](https://railroads.unl.edu/resources/)  
     Historical City Points: [IPUMS](ipums.org)  
     Historical City Populations: [Spatial History Project, Stanford University](https://github.com/cestastanford/historical-us-city-populations)  
-    1890 USGS Madison Quadrangle: [Wisconsin GeoData](https://geodata.wisc.edu/)
 - **Site 7: First Settlement/Labor**  
 - **Site 8: Capitol Steps-State Street/BLM Protests**  
     State Street Mural Project: [PBS Wisconsin](https://pbswisconsin.org/state-street-mural-project/)  
