@@ -18,6 +18,9 @@ var slide = 0,
 var imageSet,
     slider,
     timeouts = [];
+//callout
+var firstIcon,
+    adjustedBubble = false;
 
 window.onload = initialize();
 $(window).resize(setLayout);
@@ -39,7 +42,7 @@ function initialize(){
     ]).then(callback);
 }
 
-//data callback
+/***DATA CALLBACK****/
 function callback(data){
     //data variables
     var routes = data[0],
@@ -86,6 +89,8 @@ function callback(data){
     });
     //audio variables
     var audioIndex = 0;
+
+    
 /*UNIVERSAL MODAL FUNCTIONS*/
     //reset slides and gray back button
     resetSlide();
@@ -534,6 +539,63 @@ function removeFoundMarker(circle, marker){
         map.removeLayer(marker);
     }, 10000);
 }
+
+/*CALLOUT*/
+function triggerIconBubble(){
+    if ($('#iconClickBubble span').html().length < 1){
+        //if statement ensures all of this only happens once
+        $('#iconClickBubble span').html("When you arrive here, click icon<br/>for landmark information");
+      
+        //find the right icon
+        $(".leaflet-marker-icon").each(function(){
+            if ($(this).attr("src") == "img/icons/labor40_red.png"){ 
+                firstIcon = $(this);
+            }
+        })
+        //adjust callout position
+        var iconOffset = firstIcon.offset();
+        var bubbleWidth = $("#iconClickBubble").width();
+        var bubbleHeight = $("#iconClickBubble").height();
+        var topOffset = iconOffset.top-bubbleHeight-32;
+        var leftOffset = iconOffset.left-bubbleWidth+28;
+        $('#iconClickBubble').offset({top: 10, left: 10});
+        $("#iconClickBubble").animate({opacity: 1, top: topOffset, left: leftOffset}, 1000);
+        //events only get set once because of if statement
+        $(window).click(function(){
+        //next step direction bubble closed on next click after it is in place
+            if (Math.round($('#iconClickBubble').offset().top) === Math.round(topOffset)){
+                $('#iconClickBubble').fadeOut();
+            }
+        })
+        //fade callout if clicked
+        $(".leaflet-clickable").click(function(){ 
+            $('#iconClickBubble').fadeOut() 
+        })
+        //move callout as map is moved
+        map.on("move", function(){ 
+            adjustIconBubble(); 
+        })
+    }
+}
+
+function adjustIconBubble(){
+    if ($('#iconClickBubble span').html().length > 1){
+        //move callout with map
+        var iconOffset = firstIcon.offset();
+        var bubbleWidth = $("#iconClickBubble").width();
+        var bubbleHeight = $("#iconClickBubble").height();
+        var topOffset = iconOffset.top-bubbleHeight-32;
+        var leftOffset = iconOffset.left-bubbleWidth+28;
+        $('#iconClickBubble').offset({top: topOffset, left: leftOffset});
+        //only set event listener once
+        if (adjustedBubble == false){
+            $(window).click(function(){
+                $('#iconClickBubble').fadeOut();
+            })
+        }
+        adjustedBubble = true;
+    }
+}
   
 /*ACTIVATE SPLASH SCREEN*/
 function showSplash(){
@@ -541,6 +603,11 @@ function showSplash(){
         keyboard: false
     })
     splash.show();
+
+    $('#go-to-map').click(function(){
+        splash.hide();
+        triggerIconBubble();
+    })
 }
 
 /*CACHE*/

@@ -130,9 +130,6 @@ function callback(error, routes, PointsofInterest, alerts, help){
       $(".leaflet-marker-icon").each(function(){
         if ($(this).attr("src") == "images/labor40_red.png"){ firstIcon = $(this); }
       });
-      if (!firstIcon){
-        firstIcon = $(".leaflet-marker-pane").find("img:last");
-      };
 
       var iconOffset = firstIcon.offset();
       var bubbleWidth = $("#iconClickBubble").width();

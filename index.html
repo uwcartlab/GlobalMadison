@@ -27,7 +27,7 @@
                         <p>The second button below will take you to the map to begin your journey, showing the route from the UW campus to the first landmark. If you are not starting from campus, you can click the first button to get Google Maps directions from your current location to the first landmark.</p>
                         <div class="red-button-container">
                             <div class="red-button inline">
-                              <a class="red-button-link" href="#" data-bs-dismiss="modal" aria-label="Close">
+                              <a id="go-to-map" class="red-button-link">
                                   <b>Go to the Map!</b>
                               </a>
                             </div>
@@ -314,6 +314,12 @@
         </div>
     <!--CONTENT CONTAINR-->
         <div id="container">
+            <div id="iconClickBubble" class="callout border-callout">
+                <span></span>
+                <b class="border-notch notch"></b>
+                <b class="notch"></b>
+            </div>
+            
             <div id="map"> 
         </div>
 
