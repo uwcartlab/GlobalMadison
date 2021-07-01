@@ -354,9 +354,12 @@ function callback(data){
     //add routes
     function updateRoute(){
         //add current route
-        if (currentSite < 5 && $.inArray(currentSite, shownRoutes) == -1){
+        if (currentSite < 7 && $.inArray(currentSite, shownRoutes) == -1){
             shownRoutes.push(currentSite)
-            var newroute = L.geoJson(routes.features[currentSite], routeStyle).addTo(map);
+            console.log(currentSite)
+            //if (currentSite > 0){
+                var newroute = L.geoJson(routes.features[currentSite], routeStyle).addTo(map);
+            //}
         }
         //add current alert layer
         alertlayer ? map.removeLayer(alertlayer) : null;
@@ -385,7 +388,9 @@ function callback(data){
             map.removeLayer(highlightLayer);
         }
         if (currentSite < 5){
-            highlightLayer = L.geoJson(routes.features[currentSite], {style: highlightStyle}).addTo(map);
+            //if (currentSite > 0){
+                highlightLayer = L.geoJson(routes.features[currentSite], routeStyle).addTo(map);
+            //}
         }
     };
 /*MARKERS*/
@@ -612,7 +617,7 @@ function showSplash(){
 
 /*CACHE*/
 function cacheLoading(){
-    if (navigator.serviceWorker) {
+    /*if (navigator.serviceWorker) {
         // Start registration process on every page load
         navigator.serviceWorker.register('./service_worker.js').then(function(reg) {
             if(reg.installing) {
@@ -629,7 +634,7 @@ function cacheLoading(){
             cacheError();
         });
 
-    }
+    }*/
 }
 
 function cacheLoaded(){

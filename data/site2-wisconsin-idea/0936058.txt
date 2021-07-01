@@ -1,0 +1,31 @@
+Author	Snyder, Van Vechten & Co.
+Date	1878
+Short Title	Map of Madison, Wisconsin.
+Publisher	Snyder, Van Vechten & Co.
+Publisher Location	Milwaukee
+Type	Atlas Map
+Obj Height cm	34
+Obj Width cm	42
+Scale 1	16,800
+Note	Hand col. lithographed map. Show wards, tracts, block numbers, etc. Includes small view of State Capitol.
+State/Province	Wisconsin
+City	Madison (Wis.)
+Full Title	Map of Madison, Wisconsin. Copyright 1877, by Snyder, Van Vechten & Co. (Compiled and published by Snyder, Van Vechten & Co., Milwaukee. 1878)
+List No	0936.058
+Page No	47
+Series No	64
+Publication Author	Snyder, Van Vechten & Co.
+Pub Date	1878
+Pub Title	Historical atlas of Wisconsin embracing complete state and county maps, city & village plats, together with separate state and county histories; also special articles on the geology, education, agriculture, and other important interests of the state. Illustrated. Compiled and published by Snyder, Van Vechten & Co., Milwaukee. 1878. (on verso of title page) Entered ... 1878, by Snyder, Van Vechten & Co. ... Washington.
+Pub Reference	Checklist of printed maps of the Middle West to 1900, 6-1904; Phillips, 2634; Ristow, American maps and mapmakers, p. 443; Phillips Maps of America, p. 1079; LeGear, Atlases of the United States, L3419.
+Pub Note	This was clearly inspired by the Andreas Atlases of Iowa and Minnesota - it has much the same format, and is equally well executed. Ristow describes the sad fate of this atlas - Walling and Tackabury published their Atlas of the State of Wisconsin in 1876 (P2633) which greatly reduced the market and thus fewer than 5000 copies of this 1878 atlas were sold, resulting in heavy financial loss and the exhaustion and ultimate demise of Mr. Snyder. H.R. Page acquired the plates and published another expanded edition in 1881 called the Illustrated Historical atlas of Wisconsin (P5079). Atlas is bound in half leather black cloth covered boards with "Illustrated historical atlas of Wisconsin" stamped in gold on the front cover and blind stamped on the back; the spine reads "Historical atlas of Wisconsin. Illustrated. 1878." With printed and hand painted color.
+Pub List No	0936.000
+Pub Type	State Atlas
+Pub Maps	108
+Pub Height cm	46
+Pub Width cm	39
+Image No	0936058
+Download 1	<a href=https://www.davidrumsey.com/rumsey/download.pl?image=/D0048/0936058.sid target=_blank>Full Image Download in MrSID Format</a>
+Download 2	<a href="https://www.extensis.com/support/geoviewer-9" target="_blank">GeoViewer for JP2 and SID files</a>
+Authors	Snyder, Van Vechten & Co.
+Collection	Rumsey Collection

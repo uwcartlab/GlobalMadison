@@ -1,0 +1,30 @@
+Author	Carver, Jonathan
+Date	1781
+Short Title	Plan of Captain Carvers Travels in the interior Parts of North America.
+Publisher	C. Dilly
+Publisher Location	London
+Type	Book Map
+Obj Height cm	27
+Obj Width cm	34
+Scale 1	2,851,200
+Note	Map in outline color covering the areas adjacent to Lakes Superior and Michigan.
+Reference	Howes C215.
+State/Province	Wisconsin
+Full Title	A Plan of Captain Carvers Travels in the interior Parts of North America in 1766 and 1767.
+List No	0131.002
+Series No	3
+Publication Author	Carver, Jonathan
+Pub Date	1781
+Pub Title	Travels Through The Interior Parts Of North America, In The Years 1766, 1767, And 1768. By J. Carver, Esq. Captain Of A Company Of Provincial Troops During The Late War With France. Illustrated With Copper Plates, Coloured. The Third Edition. To which is added, Some Account Of The Author, And A Copious Index. London: Printed for C. Dilly, in the Poultry; H. Payne, in Pall-mall; and J. Phillips, in George-Yard, Lombard-Street. MDCCLXXXI. (with 2 maps).
+Pub Reference	Howes C215.
+Pub Note	3rd and best edition. With two important maps: A New Map of North America, From the Latest Discoveries 1778 (shows the proposed eleven numbered territories west of Pennsylvania) and A Plan of Captain Carver's Travels in the interior Parts of North America in 1766 and 1767.
+Pub List No	0131.000
+Pub Type	Exploration Book
+Pub Maps	2
+Pub Height cm	21
+Pub Width cm	13
+Image No	0131002
+Download 1	<a href=https://www.davidrumsey.com/rumsey/download.pl?image=/D0005/0131002.sid target=_blank>Full Image Download in MrSID Format</a>
+Download 2	<a href="https://www.extensis.com/support/geoviewer-9" target="_blank">GeoViewer for JP2 and SID files</a>
+Authors	Carver, Jonathan
+Collection	Rumsey Collection

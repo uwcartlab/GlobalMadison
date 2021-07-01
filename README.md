@@ -3,20 +3,29 @@
 ## Data Sources
 - **Site 1: Library Mall/Land Grab Universities**  
     Land Grab Data: [High Country News](https://github.com/HCN-Digital-Projects/landgrabu-data)  
-    Indigenous Homelands Map: [Native-Lands.ca](https://native-land.ca/) 
+    Indigenous Homelands Map: [Native-Lands.ca](https://native-land.ca/)  
+    Indigenous Land Seizure: [U.S Forest Service](https://data.fs.usda.gov/geodata/edw/edw_resources/meta/S_USA.TRIBALCEDEDLANDS.xml)  
+    1781 Map of Great Lakes Region: [David Rumsey Map Collection](https://www.davidrumsey.com/luna/servlet/detail/RUMSEY~8~1~913~50005:Plan-of-Captain-Carvers-Travels-in-?sort=Pub_List_No_InitialSort%2CPub_Date%2CPub_List_No%2CSeries_No&qvq=q:%3DWisconsin%20AND%20date%3D1700...1850%20;sort:Pub_List_No_InitialSort%2CPub_Date%2CPub_List_No%2CSeries_No;lc:RUMSEY~8~1&mi=2&trs=522)
 - **Site 2: State Capitol/Wisconsin Idea**  
+    Madison-State-University: [Image from Wisconsin Blue Book, retrieved from Wikimedia Commons](https://en.wikipedia.org/wiki/Wisconsin_Idea#/media/File:Madison_State_University.jpeg)  
     Historical Map of Madison, 1878: [David Rumsey Collection](https://www.davidrumsey.com/luna/servlet/detail/RUMSEY~8~1~4101~480015:Map-of-Madison,-Wisconsin-?sort=Pub_List_No_InitialSort%2CPub_Date%2CPub_List_No%2CSeries_No)  
+    Wisconsin-Idea: Title Page from *The Wisconsin Idea* by Charles McCarthy  
+    Yearbook-Dedication-1915: [University of Wisconsin Digital Collection](https://search.library.wisc.edu/digital/A2DFSHS5W7UVOL9C/pages/A5UBVVZC72JCWK8H)  
+    University of Wisconsin System: [UW Campuses](https://www.wisconsin.edu/campuses/)  
+    University of Wisconsin System Enrollment: [Education Report](https://www.wisconsin.edu/education-reports-statistics/enrollments/)  
 - **Site 3: Badger State Shoe Company/Fordism**  
     Nike Factories: [Nike](http://manufacturingmap.nikeinc.com/#), November 2020  
     Minimum Wage data: [ILO](https://ilostat.ilo.org/resources/concepts-and-definitions/description-earnings-and-labour-cost/), 2019  
     Newspaper Records: [20 % Raise for Workers](https://access.newspaperarchive.com/us/wisconsin/madison/madison-wisconsin-state-journal/1919/06-12/), [Refuses to void suit against city](https://access.newspaperarchive.com/us/wisconsin/madison/madison-wisconsin-state-journal/1930/01-16/page-5/), [Historical Preservation Article](https://access.newspaperarchive.com/us/wisconsin/madison/madison-wisconsin-state-journal/1990/05-14/page-17/), [Shoe Company Files Suit Against City](https://access.newspaperarchive.com/us/wisconsin/madison/madison-wisconsin-state-journal/1929/11-07/page-29/), [Assault Case Heard](https://access.newspaperarchive.com/us/wisconsin/madison/madison-wisconsin-state-journal/1907/08-24/page-6/), [Factory Now Employs 290 people](https://access.newspaperarchive.com/us/wisconsin/madison/madison-wisconsin-state-journal/1923/12-31/page-54/), [City Prepares Brief for Shoe Firm Shut](https://access.newspaperarchive.com/us/wisconsin/madison/madison-wisconsin-state-journal/1931/01-10/page-4/), [May Sell Badger State Shoe Firm](https://access.newspaperarchive.com/us/wisconsin/madison/madison-wisconsin-state-journal/1929/05-28/), [Owner of Madison Shoe Factory Dies](https://access.newspaperarchive.com/us/wisconsin/madison/madison-wisconsin-state-journal/1927/10-24/), [City Gets Judgement on Shoe Suit Verdict](https://access.newspaperarchive.com/us/wisconsin/madison/madison-wisconsin-state-journal/1931/01-31/page-4/), [Fire in Milwaukee Shoe Company](https://access.newspaperarchive.com/us/wisconsin/milwaukee/milwaukee-weekly-wisconsin/1898/01-22/page-4/), [Refuse statement of plant's closing](https://access.newspaperarchive.com/us/wisconsin/madison/madison-wisconsin-state-journal/1929/05-12/page-20/), [The shoddy Shoe Bill](https://newscomwc.newspapers.com/image/520393988/?terms=%22badger%20state%20shoe%20company%22&pqsid=UupIm5pPJX0JSYFTx3YOyQ%3A39000%3A1774567544&match=1), [Henry Atkins Dead](https://newscomwc.newspapers.com/image/517928745/?terms=%22badger%20state%20shoe%20company%22&pqsid=UupIm5pPJX0JSYFTx3YOyQ%3A330000%3A626251297&match=1), [Badger State Shoe Company Will Remain in Madison](https://access.newspaperarchive.com/us/wisconsin/eau-claire/eau-claire-leader/1909/10-06/page-3/), [Woman from Shoe Company attends course for Woman Workers](https://access.newspaperarchive.com/us/wisconsin/madison/madison-wisconsin-state-journal/1925/04-26/page-16/), [Shoe Plant Here has Big Output](https://newscomwc.newspapers.com/image/404941568/?terms=badger%20state%20shoe%20company&pqsid=TpBEUgOojCSo8QyUUEOxyQ%3A430000%3A311698270&match=1)  
-    Badger State Shoe Company Photo, 1899 (Milwaukee): [Wisconsin Hisotircal Society](https://www.wisconsinhistory.org/Records/Image/IM97306)   
+    Badger State Shoe Company Photo, 1899 (Milwaukee): [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Image/IM97306)   
     U.S Historical Leather Production (1899-1970): [US Census, Historical Statistics of the United States](https://www.census.gov/library/publications/1975/compendia/hist_stats_colonial-1970.html)   
     US Manufacturers 1914: [Statistical Abstract of the United States](https://www.census.gov/library/publications/1921/compendia/statab/43ed.html)  
     Global Tanning Industry 1918: [Tanners Council of the United States of America (retrieved from archive.org)](https://archive.org/details/cu31924013811413/mode/2up)  
     Wages and Hours of Labor in Boot and Shoe Industry, 1907-1920: [Bureau of Labor Statistics](https://fraser.stlouisfed.org/title/wages-hours-labor-boot-shoe-hosiery-underwear-industries-3916/wages-hours-labor-boot-shoe-industry-1907-1920-476881)  
-    Location of the United States Shoe Industry, 1933: [Quarterly Journal of Economics](https://www.jstor.org/stable/1883688)
-    1929 Madison Manufacturers: [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Image/IM35718)
+    Location of the United States Shoe Industry, 1933: [Quarterly Journal of Economics](https://www.jstor.org/stable/1883688)  
+    1929 Madison Manufacturers: [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Image/IM35718) 
+    Badger State Shoe Company (Woodlawn Location): [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Property/HI101634)
+    Natural and Synthetic Rubber Production 2018: [Atlas of Economic Complexity](https://atlas.cid.harvard.edu/)
 - **Site 4: Livingston and Mifflin/Climate Change**  
     Hydric Soil Data: [Dane County](https://dcimapapps.countyofdane.com/arcgissrv/rest/services/HydricSoils_cache/MapServer/0)  
     Blog Post About 2018 Flood: [UW-Limnology](https://blog.limnology.wisc.edu/2018/08/29/how-a-30-year-rain-event-became-a-100-year-flood/)  
@@ -31,6 +40,7 @@
     Precipitation Anomaly: [PRISM Climate Group](https://prism.oregonstate.edu/recent/)  
     1950 Flood on University Avenue: [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Image/IM64350)  
     1839 Map of the Four Lakes: [Wisconsin Historical Society](https://content.wisconsinhistory.org/digital/collection/maps/id/78)  
+    Mifflin-Livingston 2018 (Photo by Michelle Stocker): [The Cap Times](https://madison.com/ct/news/local/govt-and-politics/madison-officials-encourage-households-in-flood-risk-area-to-prepare/article_75ba9426-961a-5e8e-8f27-d77fa657d3d5.html)
 - **Site 5: Madison Gas and Electric Company/Energy**  
     U.S Power Plants: [U.S Energy Atlas](https://atlas.eia.gov/search)  
     U.S Natural Gas Pipelines: [U.S Energy Atlas](https://atlas.eia.gov/datasets/natural-gas-interstate-and-intrastate-pipelines/explore?location=35.184008%2C-94.389308%2C4.58)  
@@ -38,6 +48,12 @@
     U.S Coal Fields: [Energy Information Administration](https://www.eia.gov/maps/layer_info-m.php)  
     Crude Oil Pipines: [Energy Information Administration](https://www.eia.gov/maps/layer_info-m.php)  
     Crude Oil Production by Country: [UN Data](http://data.un.org/Data.aspx?d=EDATA&f=cmID%3aCR)  
+    Madison Gas and Electric Steam Plant (1924): [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Image/IM31268)  
+    Madison Gas and Electric Blount Street Generating Station (1961): [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Image/IM33873)  
+    Madison Gas and Electric Company Power Plant (1953): [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Image/IM28643)  
+    Madison Industrial District (1931): [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Image/IM18191)  
+    Madison Gas and Electric (1977): [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Image/IM132233)  
+    Trade Adjusted CO2 Emissions: [Our World in Data](https://ourworldindata.org/consumption-based-co2)  
 - **Site 6: Chicago and Northwestern Railroad Station/Transportation**  
     Historical Railroads (1845-1870): [Historical Railroads of the Making of Modern America](https://railroads.unl.edu/resources/)  
     Historical City Points: [IPUMS](ipums.org)  
@@ -48,6 +64,9 @@
     1914 Map of Madison (showing streetcar routes): [Wisconsin Historical Society](https://content.wisconsinhistory.org/digital/collection/maps/id/13271)  
     1959 Map of East Madison (showing hand annotated streetcar routes): [Wisconsin Historical Society](https://content.wisconsinhistory.org/digital/collection/maps/id/2595)  
     1959 Map of West Madison (showing hand annotated streetcar routes): [Wisconsin Historical Society](https://content.wisconsinhistory.org/digital/collection/maps/id/2596)  
+    1914 Railyard: [Wisconsin Historical Soceity](https://www.wisconsinhistory.org/Records/Image/IM35792)
+    1909 Station: [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Image/IM2258)
+    1936 Rail Construction Crew: [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Image/IM3684)
 - **Site 7: First Settlement/Labor**  
     1995 Article about First Settlement TIF District: [The Captial Times, retrieved from NewspaperArchive](https://access.newspaperarchive.com/us/wisconsin/madison/madison-capital-times/1995/09-16/page-4/)  
     1904 Photo of King Street with Streetcar: [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Image/IM28395)  
@@ -63,4 +82,4 @@
     1967 Migrant Worker's Strike: [Wautoma: New Season, Same Woes](https://newscomwc.newspapers.com/image/519510908/?terms=migrant%20farm%20worker%20strike&pqsid=4ruW4iKHKMlr0FulKfqmYg%3A48000%3A823550856&match=1), [AFL-CIO Vows Migrant Aid](https://newscomwc.newspapers.com/image/518725967/?terms=migrant%20farm%20worker%20strike&pqsid=4ruW4iKHKMlr0FulKfqmYg%3A889000%3A237902167&match=1), [Salas Asks Enforcement of Rule on Migrant Records](https://newscomwc.newspapers.com/image/518726655/?terms=migrant%20farm%20worker%20strike&pqsid=4ruW4iKHKMlr0FulKfqmYg%3A889000%3A237902167&match=1), [Migrants Ask Recognition](https://newscomwc.newspapers.com/image/518727853/?terms=migrant%20farm%20worker%20strike&pqsid=4ruW4iKHKMlr0FulKfqmYg%3A889000%3A237902167&match=1), [Migrants Ask for Bargain Election](https://newscomwc.newspapers.com/image/518728424/?terms=migrant%20farm%20worker%20strike&pqsid=4ruW4iKHKMlr0FulKfqmYg%3A889000%3A237902167&match=1), [Migrants vote for Union, 405 to 8](https://newscomwc.newspapers.com/image/7959257/?terms=migrant%20worker%20hearing&pqsid=4ruW4iKHKMlr0FulKfqmYg%3A1349000%3A2098531288&match=1), [ThreatenCrop to Switch to Bar Union Labor](https://newscomwc.newspapers.com/image/521637668/?terms=migrant%20worker%20hearing&pqsid=4ruW4iKHKMlr0FulKfqmYg%3A1349000%3A2098531288&match=1)  
     1968 Grape Boycott: [Picket Line on Park St](https://newscomwc.newspapers.com/image/521628150/?terms=migrant%20worker%20hearing&pqsid=4ruW4iKHKMlr0FulKfqmYg%3A1778000%3A587452833&match=1), [Reap Grapes of Wrath](https://newscomwc.newspapers.com/image/87153964/?terms=migrant%20worker%20hearing&pqsid=4ruW4iKHKMlr0FulKfqmYg%3A1778000%3A587452833&match=1), [Salas Seeks Festge's Aid in Table Grape Boycott](https://newscomwc.newspapers.com/image/521629886/?terms=migrant%20worker%20hearing&pqsid=4ruW4iKHKMlr0FulKfqmYg%3A1778000%3A587452833&match=1), [Migrant Workers Backed by Mayor](https://newscomwc.newspapers.com/image/19005836/?terms=migrant%20worker%20hearing&pqsid=4ruW4iKHKMlr0FulKfqmYg%3A1778000%3A587452833&match=1), [LaFollete Calls on State to Fill Migrant Service Gap](https://newscomwc.newspapers.com/image/521631110/?terms=migrant%20worker%20hearing&pqsid=4ruW4iKHKMlr0FulKfqmYg%3A1778000%3A587452833&match=1)  
 - **Site 8: Capitol Steps-State Street/BLM Protests**  
-    State Street Mural Project: [PBS Wisconsin](https://pbswisconsin.org/state-street-mural-project/)  
+    State Street Mural Project: [PBS Wisconsin](https://pbswisconsin.org/state-street-mural-project/)   

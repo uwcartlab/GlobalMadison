@@ -1,4 +1,4 @@
-self.addEventListener('install', (event) => {
+/*self.addEventListener('install', (event) => {
     event.waitUntil(
         caches.open('v1').then((cache) => {
             return cache.addAll([
@@ -157,4 +157,4 @@ self.addEventListener('fetch', (event) => {
             return response || fetch(event.request);
         })
     );
-});
+});*/
