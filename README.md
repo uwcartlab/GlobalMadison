@@ -88,7 +88,7 @@
 - **Site 8: Capitol Steps-State Street/BLM Protests**  
     State Street Mural Project: [PBS Wisconsin](https://pbswisconsin.org/state-street-mural-project/)   
     Programs to bring black migrants from the south to work in factories in Milwaukee (1970s)  
-- **Point of Interest Photos**
+- **Point Field Photos**
     Science Hall: [UWDC](https://digital.library.wisc.edu/1711.dl/P5BNCDY5MOHM68J)  
     Wisconsin Historical Society: [UWDC](https://digital.library.wisc.edu/1711.dl/2OAZZOZ7R6ASG8Q), [Wisconsin Historical Society](https://www.wisconsinhistory.org/WHPD-Images/web/1022116.jpg)  
     Humanities Building (1970-1979): [UWDC](https://digital.library.wisc.edu/1711.dl/UQS7JKDTHIPEC8C)  
@@ -114,3 +114,45 @@
     Fess Hotel (1977): [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Image/IM35599)  
     Dick Eddy Building: [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Image/IM133061)  
     Majestic Theater (1954): [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Image/IM3257)  
+- **Point Field Descriptions**
+    #1: Lincoln Statue: [UW News Service](https://news.wisc.edu/uw-madisons-lincoln-statue-turns-100/)  
+    #2: Vietnam Plaque: [Historical Marker Database](https://www.hmdb.org/m.asp?m=31761)  
+    #3: North Hall: [Wikipedia](https://en.wikipedia.org/wiki/North_Hall_(University_of_Wisconsin))   
+    #4: State Street/Capitol Vista from Bascom Hill  
+    #5: Science Hall: [UW Geography](https://geography.wisc.edu/history-of-science-hall/)  
+    #6: Humanities Building: [On Wisconsin](https://onwisconsin.uwalumni.com/features/how-the-humanities-building-went-wrong/)  
+    #7: Wisconsin Historical Society: [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Property/HI16108)  
+    #8: Memorial Library: [UW Libraries](https://www.library.wisc.edu/memorial/about-memorial/general-information/)  
+    #9: Armory/Red Gym: [Wikipedia](https://en.wikipedia.org/wiki/University_of_Wisconsin_Armory_and_Gymnasium)  
+    #10: The Hub: [Wisconsin State Journal](https://madison.com/wsj/news/local/govt-and-politics/mullins-proposes-major-redevelopment-for-500-block-of-state-street/article_53420d4e-531b-52a1-a427-8cd0a5e57b19.html)  
+    #11: Historical Streetcar Tracks  
+    #12: Peace Park: [City of Madison](https://www.cityofmadison.com/parks/find-a-park/park.cfm?id=1290)  
+    #13: State Street in 1939  
+    #14: Orpheum Theater: [Wikipedia](https://en.wikipedia.org/wiki/Orpheum_Theatre_(Madison,_Wisconsin))  
+    #15: Civic Center/Capitol Theater: [Overture Center](https://www.overture.org/about/history)   
+    #16: Overture: [Overture Center](https://www.overture.org/about/history)   
+    #17: Castle and Doyle Coal Building: [Wisconsin Historical Society](https://www.cityofmadison.com/parks/find-a-park/history.cfm?id=1290)  
+    #18: East Washington Map Fountains  
+    #19: Madison Horse Market: [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Image/IM4648),
+    #20: East Washington Vista  
+    #21: Robert Lamp House: [Wikipedia](https://en.wikipedia.org/wiki/Robert_M._Lamp_House)  
+    #22: Bike Boulevard  
+    #23: Madison City Market: [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Property/HI16069)   
+    #24: Hill's Grocery: [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Property/HI95553)
+    #25: Madison Horse Barn: [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Property/HI95158)  
+    #26: Mifflin and Livingston Flooding  
+    #27: The Sylvee Theater  
+    #28: Madison Gas and Electric Light Bulb Art  
+    #29: Madison Gas and Electric Plant  
+    #30: Railroad Door #1  
+    #31: McCormick-International Harvester Company: [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Image/IM9707)  
+    #32: Madison Chicago & Northwestern Railroad Station: [Wikipedia](https://en.wikipedia.org/wiki/Madison_station_(Chicago_and_North_Western_Railway))  
+    #33: Machinery Row Building: [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Property/HI16097)  
+    #34: King Street Streetcar
+    #35: Peck Cabin: [Historical Marker Database](https://www.hmdb.org/m.asp?m=31701)  
+    #36: G.E.F Buildings: [Department of Administration](https://doa.wi.gov/Pages/AboutDOA/State-Education-Building-(GEF-3).aspx)  
+    #37: Fess Hotel: [Wisconsin State Journal](https://madison.com/lifestyles/memories-of-dining-at-the-fess-hotel/article_4fc46af0-c5d8-5077-bb7b-d31ce7e4a1d0.html)  
+    #38: Dick Eddy Building: [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Image/IM133061)  
+    #39: Majestic Theater
+
+
