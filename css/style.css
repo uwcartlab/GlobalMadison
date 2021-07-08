@@ -73,6 +73,10 @@ audio{
     width: 0;
     height: 0;
 }
+/*******POINT FIELD POPUPS******/
+.point-field-img{
+    max-width:100%;
+}
 /*******SPLASH********/
 #splash .red-button{
     margin: 0 18px 20px 18px;

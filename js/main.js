@@ -36,8 +36,9 @@ function initialize(){
     loadMap();
     //data loading
     Promise.all([
-        d3.json("data/routes.geojson"),
-        d3.json("data/PointsofInterest.geojson"),
+        d3.json("data/routesv2.geojson"),
+        d3.json("data/PointsofInterestv2.geojson"),
+        d3.json("data/pointField.geojson"),
         d3.json("data/alerts.geojson")
     ]).then(callback);
 }
@@ -47,7 +48,8 @@ function callback(data){
     //data variables
     var routes = data[0],
         pois = data[1],
-        alerts = data[2];
+        pointField = data[2],
+        alerts = data[3];
     //style variables
     var routeStyle = {
         "color": "#CE3234",
@@ -62,6 +64,7 @@ function callback(data){
     //vector variables
     var highlightLayer, 
         alertlayer,
+        pointFieldLayer,
         POIlayer,
         POIlayers = [],
         POIlayerCurrent;
@@ -77,6 +80,8 @@ function callback(data){
         textModal = new bootstrap.Modal(textModalEl),
         landmarkModalEl = document.getElementById('landmark-modal'),
         landmarkModal = new bootstrap.Modal(landmarkModalEl),
+        pointModalEl = document.getElementById('point-modal'),
+        pointModal = new bootstrap.Modal(pointModalEl),
         showText = false;
     //modal listeners
     textModalEl.addEventListener('show.bs.modal', function(){
@@ -108,7 +113,7 @@ function callback(data){
     }
     //add modal title
     function addModalTitle(type){
-        var title = pois.features[currentSite].properties.title + " - Landmark " + (pois.features[currentSite].properties.id+1) + " of 5";
+        var title = pois.features[currentSite].properties.title + " - Landmark " + (pois.features[currentSite].properties.id+1) + " of 8";
         $("#" + type +"-modal-label").html(title);
     }
     //check if first slide and deactivate previous button if so
@@ -304,10 +309,12 @@ function callback(data){
 
         function endSlideShow(){
             landmarkModal.hide();
-            currentSite++;
-            changeLandmark();
-            $("#proceed-button").hide();
-            $("#proceed-button").off();
+            if (currentSite < 7){
+                currentSite++;
+                changeLandmark();
+                $("#proceed-button").hide();
+                $("#proceed-button").off();
+            }
         }
     }
     //update landmark slideshow content
@@ -354,12 +361,11 @@ function callback(data){
     //add routes
     function updateRoute(){
         //add current route
-        if (currentSite < 7 && $.inArray(currentSite, shownRoutes) == -1){
+        if (currentSite < 8 && $.inArray(currentSite, shownRoutes) == -1){
             shownRoutes.push(currentSite)
-            console.log(currentSite)
-            //if (currentSite > 0){
-                var newroute = L.geoJson(routes.features[currentSite], routeStyle).addTo(map);
-            //}
+            if (currentSite > 0){
+                var newroute = L.geoJson(routes.features[currentSite - 1], routeStyle).addTo(map);
+            }
         }
         //add current alert layer
         alertlayer ? map.removeLayer(alertlayer) : null;
@@ -381,16 +387,46 @@ function callback(data){
                 }).addTo(map);
             }
         })
+        //add point field
+        pointFieldContainer = [];
+        //remove point field from last route
+        pointFieldLayer ? map.removeLayer(pointFieldLayer) : null;
+        //add points 
+        pointField.features.forEach(function(d,i){
+            if (pointField.features[i].properties.route == (currentSite - 1)){
+                pointFieldContainer.push(pointField.features[i]);
+            }
+        })
+        pointFieldLayer = L.geoJson(pointFieldContainer, {
+            pointToLayer: function(feature, latlng){
+                return L.circleMarker(latlng, {
+                    color:"red",
+                    radius:10
+                });
+            },
+            onEachFeature: function (feature, layer){
+                layer.on("click", function() {
+                    pointModal.show();
+                    $('#point-field-body').empty();
+                    $("#point-modal-label").html(feature.properties.name)
+                    feature.properties.images.forEach(function(d,i){
+                        var img = $("<img class='point-field-img' src='img/points/" + d + "'>");
+                        var caption = $("<p></p>").html(feature.properties.captions[i]);
+                        $('#point-field-body').append(img,caption);
+                    })
+                }); 
+            }
+        }).addTo(map);
     }
     //highlight current route
     function highlightRoute() {
         if (highlightLayer){
             map.removeLayer(highlightLayer);
         }
-        if (currentSite < 5){
-            //if (currentSite > 0){
-                highlightLayer = L.geoJson(routes.features[currentSite], routeStyle).addTo(map);
-            //}
+        if (currentSite < 8){
+            if (currentSite > 0){
+                highlightLayer = L.geoJson(routes.features[currentSite - 1], routeStyle).addTo(map);
+            }
         }
     };
 /*MARKERS*/
