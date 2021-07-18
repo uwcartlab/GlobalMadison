@@ -10,7 +10,7 @@
         "name": "North Hall",
         "images": [ "point3_1.jpg", "point3_2.jpg" ], 
         "route": 0, 
-        "captions": ["Side of North Hall, 2021","North Hall Plaque, 2021"],
+        "captions": ["Side of North Hall, 2021","North Hall, Circa 1885"],
         "desc":"Constructed in 1851 for $19,000, North Hall began its life as a dormitory, before being converted to a classroom building following a 1884 fire in Science Hall. Today, North Hall holds the distinction of being the oldest building on campus."
     }, 
     "geometry": { 
@@ -22,11 +22,11 @@
     "type": "Feature", 
     "properties": { 
         "id": 2, 
-        "name": "Vietnam Plaque", 
+        "name": "Reform and Revolt Plaque", 
         "images": [ "point2_1.jpg" ], 
         "route": 0, 
         "captions": ["Reform and Revolt Plaque, 2021"],
-        "desc":"This plaque commemorates protests on campus during the Vietnam War in the late 1960s, and was erected in 2001 by the UW Foundation. Sterling Hall, the target of the 1967 bombing, can be seen to the left of Van Vleck Hall befind the plaque."   
+        "desc":"This plaque commemorates protests on campus during the Vietnam War in the late 1960s, and was erected in 2001 by the UW Foundation. Sterling Hall, the target of the 1967 bombing, can be seen to the left of Van Vleck Hall befind the plaque. </br>Plaque text: <i>University of Wisconsin students traditionally have been active in political and social causes, and that was never more apparent than during the turbulent 1960s. During that time, students frequently led rallies and demonstrations, many of which protested U.S. involvement in the Vietnam War. Those activities succeeded in mobilizing thousands for and against the war. The tensions and divisions on campus eventually devolved into violence, culminating with the bombing of Sterling Hall, which housed the Army Math Research Center. On August 24, 1970, the explosion killed a Physics researcher, putting a tragic conclusion on a period of protest.</i>"   
     }, 
     "geometry": { 
         "type": "Point", 
@@ -41,7 +41,7 @@
         "images": [ "point1_1.jpg" ], 
         "route": 0, 
         "captions": ["Bascom Hill Lincoln Statue, 2021"],
-        "desc": "UW's statue of Abraham Lincoln is a replica of a statue created by Adolph A. Weinman in the 1800s, and was unveiled on Bascom Hill in 1909. Abraham Lincoln was the architect of the Morril Act, which saw indigenous land stolen and sold to universities to build their endowments."
+        "desc": "UW's statue of Abraham Lincoln is a replica of a statue created by Adolph A. Weinman in the 1800s, and was unveiled on Bascom Hill in 1909. Creation of the statue was primarily funded by Richard Lloyd Jones, a noted racist whose newspaper in Tulsa published the article commonly attributed with citing the Tulsa Race Massacre in 1921."
     }, 
     "geometry": { 
         "type": "Point", 
@@ -86,7 +86,7 @@
         "images": [ "point7_1.jpg", "point7_2.jpg" ], 
         "route": 0, 
         "captions": ["Wisconsin Historical Society, 2021", "Wisconsin Historical Society, Circa 1900"],
-        "desc":"The Wisconsin Historical Society building was copmleted in 1914, and is built primarily of limestone in a Beaux-Arts Classical design. The building used to house the university library."
+        "desc":"The Wisconsin Historical Society building was completed in 1914, and is built primarily of limestone in a Beaux-Arts Classical design. The building used to house the university library."
     }, 
     "geometry": { 
         "type": "Point", 
@@ -280,7 +280,7 @@
         "images": [ "point19_1.jpg", "point19_2.jpg" ], 
         "route": 2, 
         "captions": ["Madison Outdoor Market Plaque, 2021","Horse Market on East Washington, circa 1895"],
-        "desc":"Before the invention of the automobile, the monthly Madison Horse Market took place on East Washington between Pinckney and Webster streets."
+        "desc":"Before the invention of the automobile, the monthly Madison Horse Market took place on East Washington between Pinckney and Webster streets. <br/>The outdoor market plaque reads: <i>Located in one of the richest agricultural counties in the country, Madison has always been a market town. But the farming community was out of luck in 1872 when state officials banned the hitching of horses on the interior side of Capitol Square. Farmers had to find a new place to tie their horses when shopping downtown.<br/>They chose the first block of East Washington Avenue, and a popular farmers' market soon developed there. The Madison Budinessmen's Club used the same site from 1890 to 1906 for the Water Tower Horse Market. The city's 1889 water tower, razed in 1920-21, served as a centerpierce.<br/>City leaders relocated the farmers' market to an indoor in 1910, where it was largely unsuccessful. The building still stands as a Madison landmark at the corner of Mifflin and Blount streets. In 1972, public officials and private vendors reinvigorated this agricultural tradition with the debut of the Dane County Farmers' Market.</i>"
     }, 
     "geometry": { 
         "type": "Point", 
@@ -310,7 +310,7 @@
         "images": [ "point21_1.jpg", "point21_2.jpg" ], 
         "route": 2, 
         "captions": ["Lamp House, circa 1912", "Robert Lamp House Plaque, 2021"],
-        "desc":"The Robert Lamp House (which can be seen from the sidewalk, behind the street-facing houses), was designed by noted architect Frank Lloyd Wright in 1905, and at the time of its construction had views of both lakes Monona and Mendota."
+        "desc":"The Robert Lamp House (which can be seen from the sidewalk, behind the street-facing houses), was designed by noted architect Frank Lloyd Wright in 1905, and at the time of its construction had views of both lakes Monona and Mendota.<br/>The Robert M. Lamp house plaque reads: <i>Designed by Frank Lloyd Wright in 1902 for his boyhood friend 'Robie' Lamp. The Lamp house design was considered modern for its time and marks a transitional period in Wright's career from the Chicago School to the Prairie School of Architecture. The house was originally sited in its current location to maximize views of both lakes.</i>"
 
     }, 
     "geometry": { 
@@ -356,7 +356,7 @@
         "images": [ "point25_1.jpg", "point25_2.jpg" ], 
         "route": 2, 
         "captions": ["City Horse Barn Plaque, 2021","City Horse Barn, Circa 1980"],
-        "desc":"Built in 1914, the building was a part of the City Yards, and housed nine municipal draft horses before its conversion to offices in the 1930s."
+        "desc":"Built in 1914, the building was a part of the City Yards, and housed nine municipal draft horses before its conversion to offices in the 1930s.<br/>City Horse Barn plaque reads: <i>The simple brick structure is a rare survivor of the horse-and-wagon era. Built as part of the old city yards. The barn housed up to none draft horses whose job it was to pull maintenance and service vehicles. Each of the nine windows on the Dayton Street side provided light and air to a seperate horse stall. Doors under the arches at each end led to the Haymow. In the 1930s the barn was converted into offices. The Madison mutual housing association renovated it into offices and two apartments in 1987.</i>"
     }, 
     "geometry": { 
         "type": "Point", 
@@ -371,7 +371,7 @@
         "images": [ "point24_1.jpg", "point24_2.jpg" ], 
         "route": 2, 
         "captions": ["Plaque about Hill's Grocery and Madison's first black neighborhood, 2021.","Hill's Grocery, 1984"],
-        "desc":"For over 60 years, Hill's Grocery was a cornerstone of Madison's first African-American neighborhood. Originally, the building housed the Douglass Beneficial Society meeting hall, offered services for local African-American families. John and Amanda Hill bought the building and turned it into a grocery store in 1917, which they operated into the 1980s."
+        "desc":"For over 60 years, Hill's Grocery was a cornerstone of Madison's first African-American neighborhood. Originally, the building housed the Douglass Beneficial Society meeting hall, offered services for local African-American families. John and Amanda Hill bought the building and turned it into a grocery store in 1917, which they operated into the 1980s.<br/>Hill's Grocery sign reads: <i>John Hill first set eyes on Madison while visiting a relative who was attending the University of Wisconsin. He moved his family here from Atlanta in 1910 to join a modest community of about 140 African Americans. <br/> In 1917, Hill bought a house and attached grocery store at Dayton and Blount streets from Reverend Charles Thomas, pastor of St. Paul's African Methodist Episcopal Church. Thomas had purchased the building, formerly used as a boarding house and meeting hall, from civic leader John Turner.<br/> John and Amanda Hill operated Hill's Grocery for more than 50 years. Their daughter, Freddie Mae, was the UW's first African-American graduate. Their neighbors inlcuded the Miller family, who worked to improve the lives of African-American in the city, and Benjamin Butts, a former slave liberated by Wisconsin troops during the Civil War. The Hill building has been designated a Madison landmark for its rich cultural history.</i>"
     }, 
     "geometry": { 
         "type": "Point", 
@@ -475,7 +475,7 @@
         "name": "Railroad Station", 
         "images": [ "point32_1.jpg" ], 
         "route": 4, 
-        "captions": ["Madison Chicago & Northwestern Railroad Station, 1956"],
+        "captions": ["Madison Chicago & Northwestern Railroad Station, ca.1920"],
         "desc":"Built in 1910 as an upgrade to the previous Chicago & Northwestern Station, the station served passengers trains with destinations across Wisconsin and the rest of the Midwest. After the postwar decline of passenger trains, the station was purchased by Madison Gas and Electric Company, which moved its offices into the building."
     }, 
     "geometry": { 
@@ -491,7 +491,7 @@
         "images": [ "point29_1.jpg" ], 
         "route": 4, 
         "captions": ["Madison Gas and Electric Powerhouse Plaque, 2021"],
-        "desc":"" 
+        "desc":"Plaque reads: <i>The Madison Gas & Electric Powerhouse has been in continuous operation providing electrical power since its construction in 1902. The building is significant for its association with the development of Madison's utility industry and as the location of the city's largest gas and electrical utility company, which was principally responsible for the development of the city's electrical distribution framework. The Classical Revival style facade is of brick and displays classical ornament including pilasters with Ionic capitals, and projecting cornice with dentils.</i>" 
     }, "geometry": { 
         "type": "Point", 
         "coordinates": [ -89.375123592906988, 43.078542512190168 ] 
@@ -505,7 +505,7 @@
         "images": [ "point35_1.jpg", "point35_2.jpg" ], 
         "route": 5, 
         "captions": ["Peck Cabin Sign, 2021", "Lithograph of a Painting of Peck Cabin, 1837"],
-        "desc":"Peck cabin was the residence of Madison's first white settlers: Ebenezer and Rosaline Peck. Their building served as a public house." 
+        "desc":"Peck cabin was the residence of Madison's first white settlers: Ebenezer and Rosaline Peck. Their building served as a public house.<br/> Peck Cabin plaque reads: <i>Once located here, Peck Cabin-- Madison's first residence, business and post office-- was built by entrepreneurs Ebenezer and Roseline Peck in 1837. Constructing their cabin with adjoining additions near the new territorial capitol site, the Pecks opened their building as a public house and provided food, drink and lodging to visitors and new arrivals. On July 4th, 1837, the Pecks hosted the capitol cornerstone-laying celebrations. Robert Ream assumed the business in 1838, and the cabin remained important to Madison's early development but was demolished in 1857.</i>" 
     }, 
     "geometry": { 
         "type": "Point", 
@@ -535,7 +535,7 @@
         "images": [ "point37_1.jpg", "point37_2.jpg" ], 
         "route": 6, 
         "captions": ["Fess Hotel Plaque, 2021", "View of the Fess Hotel, 1977"],
-        "desc":"George and Anna Fess opened a grocery store and eatery in 1856, before opening a hotel next door. The hotel operated into the 70s, and remained in the Fess family until recently."
+        "desc":"George and Anna Fess opened a grocery store and eatery in 1856, before opening a hotel next door. The hotel operated into the 70s, and remained in the Fess family until recently. Fess Hotel plauqe reads: <i>A hotel for the common man throughout its history, the nineteenth century facade of the Fess remains a reminder of the commercial character of the King Street and Doty Street area. George Fess, the original proprietor of the hotel, catered to travelers on the nearby railroad lines and to weekly boarders. After a remodeling in 1901 by architects J.O. Gordon and F. W. Paunack, the lodging was known for a decade as the Central Hotel, though it remained in the Fess family until recently.</i>"
     },
     "geometry": { 
         "type": "Point", 
@@ -565,7 +565,7 @@
         "images": ["point38_1.jpg", "point38_2.jpg", "point38_3.jpg"], 
         "route": 6, 
         "captions": ["Dick Eddy Building Plaque, 2021","Dick Eddy Building, 2021","Christian Dick Block, Circa 1890"],
-        "desc": "Originally built in 1889 by Christian W. Dick. Originally, it served as a wholesale liquor business, but later housed a Schlitz Brewery Storefront, a hotel, and a dance studio."
+        "desc": "Originally built in 1889 by Christian W. Dick. Originally, it served as a wholesale liquor business, but later housed a Schlitz Brewery Storefront, a hotel, and a dance studio. Dick Eddy building reads: <i>The imposing Dick Building is a flat-iron building in the Richardsonian Romanesque style, a style in which the local architects, Conover and Porter, were particularly adept. The Dick block was built in part to house Christian Dick's wine and liquor wholesale business. It also housed the Schlitz saloon, Prof. Kehl's Dance Academy and offices. The Eddy building next door was built by E. W. Eddy to house his 'One Minute Lunch Room,' a popular inexpensive eatery.</i>"
     }, 
     "geometry": { 
         "type": "Point", 

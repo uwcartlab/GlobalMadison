@@ -39,30 +39,30 @@ function initialize(){
         d3.json("data/routesv2.geojson"),
         d3.json("data/PointsofInterestv2.geojson"),
         d3.json("data/pointField.geojson"),
-        d3.json("data/alerts.geojson")
+        d3.json("data/alertsv2.geojson")
     ]).then(callback);
 }
 
 /***DATA CALLBACK****/
 function callback(data){
     //data variables
-    var routes = data[0],
+    let routes = data[0],
         pois = data[1],
         pointField = data[2],
         alerts = data[3];
     //style variables
-    var routeStyle = {
+    let routeStyle = {
         "color": "#CE3234",
         "weight": 5,
         "opacity": 0.6
       };
-    var highlightStyle = {
+    let highlightStyle = {
         "color": "#CE3234",
         "weight": 5,
         "opacity": 1
     };
     //vector variables
-    var highlightLayer, 
+    let highlightLayer, 
         alertlayer,
         pointFieldLayer,
         POIlayer,
@@ -76,7 +76,7 @@ function callback(data){
     hideAudio();
     readAloud();
     //modal variables
-    var textModalEl = document.getElementById('text-modal'),
+    let textModalEl = document.getElementById('text-modal'),
         textModal = new bootstrap.Modal(textModalEl),
         landmarkModalEl = document.getElementById('landmark-modal'),
         landmarkModal = new bootstrap.Modal(landmarkModalEl),
@@ -113,7 +113,7 @@ function callback(data){
     }
     //add modal title
     function addModalTitle(type){
-        var title = pois.features[currentSite].properties.title + " - Landmark " + (pois.features[currentSite].properties.id+1) + " of 8";
+        let title = pois.features[currentSite].properties.title + " - Landmark " + (pois.features[currentSite].properties.id+1) + " of 8";
         $("#" + type +"-modal-label").html(title);
     }
     //check if first slide and deactivate previous button if so
@@ -166,8 +166,8 @@ function callback(data){
         $("#read-button").click(function(){
             //if first click (intro), activate a timer that automatically advances slides as they're read
             if (firstClick){
-                var scripts =  pois.features[currentSite].properties.Scripts;
-                var delay = 0;
+                let scripts =  pois.features[currentSite].properties.Scripts;
+                let delay = 0;
                 //clear existing timeouts
                 for (var t in timeouts){
                     clearTimeout(timeouts[t]);
@@ -182,7 +182,7 @@ function callback(data){
                 }
                 
                 audioIndex = 0;
-                var audioListLength = pois.features[currentSite].properties.audio.length;
+                let audioListLength = pois.features[currentSite].properties.audio.length;
                 playAudio(screenSize, currentSite);
                 //if there are multiple audio files for a site, advance to next audio file
                 $("audio").on('ended', function(){
@@ -324,8 +324,12 @@ function callback(data){
         $('#img-comparison').css("width", $('#landmark-content').width());
         //update text description
         $("#landmark-script").html(imageSet[slide].image_texts);
-
-        createSlider();
+        if (imageSet[slide]["historic_" + screenSize]){
+            createSlider();
+        }
+        else{
+            createImage();
+        }
     }
     //create image comparison slider
     function createSlider(){
@@ -345,6 +349,12 @@ function callback(data){
             }
         );
     }
+    function createImage(){
+        let src = imageSet[slide]["current_" + screenSize],
+            img = $('<img class="landmark-single-image" src="' + src + '">');
+        
+        $('#img-comparison').append(img);
+    }
 /*MOVE MAP*/
     //center map on current landmark
     function moveMap(){
@@ -357,17 +367,34 @@ function callback(data){
 
         map.fitBounds(bounds, {padding: [10, 10]});
     }
-/*ROUTES*/
+/*ROUTES, ALERTS, POINT FIELD*/
     //add routes
     function updateRoute(){
         //add current route
         if (currentSite < 8 && $.inArray(currentSite, shownRoutes) == -1){
             shownRoutes.push(currentSite)
             if (currentSite > 0){
-                var newroute = L.geoJson(routes.features[currentSite - 1], routeStyle).addTo(map);
+                let newroute = L.geoJson(routes.features[currentSite - 1], routeStyle).addTo(map);
             }
         }
         //add current alert layer
+        addAlertLayer();
+        //add point field
+        addPointField();
+    }
+    //highlight current route
+    function highlightRoute() {
+        if (highlightLayer){
+            map.removeLayer(highlightLayer);
+        }
+        if (currentSite < 8){
+            if (currentSite > 0){
+                highlightLayer = L.geoJson(routes.features[currentSite - 1], routeStyle).addTo(map);
+            }
+        }
+    };
+    //update alert layer
+    function addAlertLayer(){
         alertlayer ? map.removeLayer(alertlayer) : null;
         alerts.features.forEach(function(d,i){
             if (alerts.features[i].properties.routeid === currentSite){
@@ -387,7 +414,9 @@ function callback(data){
                 }).addTo(map);
             }
         })
-        //add point field
+    }
+    //update point fields
+    function addPointField(){
         pointFieldContainer = [];
         //remove point field from last route
         pointFieldLayer ? map.removeLayer(pointFieldLayer) : null;
@@ -400,35 +429,28 @@ function callback(data){
         pointFieldLayer = L.geoJson(pointFieldContainer, {
             pointToLayer: function(feature, latlng){
                 return L.circleMarker(latlng, {
-                    color:"red",
-                    radius:10
+                    color:"#CE3234",
+                    fillColor:"#CE3234",
+                    radius:10,
+                    fillOpacity:0.7
                 });
             },
             onEachFeature: function (feature, layer){
                 layer.on("click", function() {
                     pointModal.show();
-                    $('#point-field-body').empty();
-                    $("#point-modal-label").html(feature.properties.name)
+                    $('#point-img-0, #point-img-1, #point-desc').empty();
+                    $('#point-modal-label').html(feature.properties.name);
+                    $('#point-desc').html(feature.properties.desc);
                     feature.properties.images.forEach(function(d,i){
-                        var img = $("<img class='point-field-img' src='img/points/" + d + "'>");
-                        var caption = $("<p></p>").html(feature.properties.captions[i]);
-                        $('#point-field-body').append(img,caption);
+                        var img = $("<img class='point-field-img' src='img/points/" + d + "'>"),
+                            caption = $("<p></p>").html(feature.properties.captions[i]),
+                            div = "#point-img-" + i;
+                        $(div).append(img,caption);
                     })
                 }); 
             }
         }).addTo(map);
     }
-    //highlight current route
-    function highlightRoute() {
-        if (highlightLayer){
-            map.removeLayer(highlightLayer);
-        }
-        if (currentSite < 8){
-            if (currentSite > 0){
-                highlightLayer = L.geoJson(routes.features[currentSite - 1], routeStyle).addTo(map);
-            }
-        }
-    };
 /*MARKERS*/
     //update landmark markers
     function updateMarkers() {
@@ -437,8 +459,11 @@ function callback(data){
     };
     //add marker
     function addMarkers(map, i, itype){
+        //screen size
+        //var screen = screenSize == 'small' ? "" : "_larger";
+        let screen = "_larger";
         //select whether regular or highlighted marker
-        itype = itype == "red" ? "icon_red_larger" : "icon_larger";
+        itype = itype == "red" ? "icon_red" + screen : "icon" + screen;
         //create marker
         POIlayer = L.geoJson(pois.features[i], {
             pointToLayer: function(feature, latlng){
@@ -453,7 +478,7 @@ function callback(data){
                     })
                 }
                 //create marker
-                return L.marker(latlng, {icon: L.icon(feature.properties[itype])}); //gray icon
+                return L.marker(latlng, {icon: L.icon(feature.properties[itype])}); 
             },
             onEachFeature: function (feature, layer){
                 layer.on("click", function() {
@@ -471,7 +496,7 @@ function callback(data){
             }
         }); 
         //set icon size
-        if (itype === "icon_larger"){
+        if (itype === "icon_larger" || itype === "icon"){
             POIlayers.push(POIlayer);
         } 
         else {   
@@ -518,15 +543,15 @@ function loadMap(){
         zoom: 14
     });
     //detach zoom control to move later
-    var zoom = L.control.zoom({position: "topleft"}).addTo(map);
+    let zoom = L.control.zoom({position: "topleft"}).addTo(map);
     
     //basemap
-    mapTileLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    mapTileLayer = L.tileLayer('https://api.mapbox.com/styles/v1/gbaldrica/ckkof59m725j917ml0coaxkl4/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoicG53YXRsYXMiLCJhIjoiY2pnM3puY3hwMXVldTJxcXBjZnZseG1jbCJ9.AXk0tP-pS2HjpgLJahLcdw', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
 
     //find me
-    var findMeOptions = {
+    let findMeOptions = {
         'iconUrl': 'img/icons/findme.png',  // string
         'onClick': findme_button_onClick,  // callback function
         'maxWidth': 30,  // number
@@ -534,7 +559,7 @@ function loadMap(){
         'toggleStatus': false  // bool
     }
   
-    var findMeButton = new L.Control.Button(findMeOptions).addTo(map);
+    let findMeButton = new L.Control.Button(findMeOptions).addTo(map);
 
     function findme_button_onClick() { //where is this accessed?
         getLocation(map);
@@ -546,7 +571,7 @@ function getLocation(map){
     map.locate({setView:false, watch:true, enableHighAccuracy: true} );
   
     function onLocationFound(e){
-        var radius = e.accuracy / 2;
+        let radius = e.accuracy / 2;
   
         //removes marker and circle before adding a new one
         if (firstLocate===false){
@@ -555,18 +580,18 @@ function getLocation(map){
         }
         //adds location and accuracy information to the map
         if (e.accuracy < 90){
-            var circle = L.circle(e.latlng, radius).addTo(map);
-            var locationMarker = L.marker(e.latlng).addTo(map).bindPopup("You are within " + Math.round(radius) + " meters of this point");
+            let circle = L.circle(e.latlng, radius).addTo(map);
+            let locationMarker = L.marker(e.latlng).addTo(map).bindPopup("You are within " + Math.round(radius) + " meters of this point");
             firstLocate = false;
         }
         //if accuracy is less than 60m then stop calling locate function
         if (e.accuracy < 40){
-            var count = 0;
+            let count = 0;
             map.stopLocate();
             count++;
         }
   
-        var cZoom = map.getZoom();
+        let cZoom = map.getZoom();
         map.setView(e.latlng, cZoom);
         removeFoundMarker(circle, locationMarker);
     }
@@ -589,16 +614,17 @@ function triggerIconBubble(){
       
         //find the right icon
         $(".leaflet-marker-icon").each(function(){
-            if ($(this).attr("src") == "img/icons/labor40_red.png"){ 
+            var icon = screenSize == 'small' ? "img/icons/scroll40_red.png" : "img/icons/scroll40_red.png";
+            if ($(this).attr("src") == icon){ 
                 firstIcon = $(this);
             }
         })
         //adjust callout position
-        var iconOffset = firstIcon.offset();
-        var bubbleWidth = $("#iconClickBubble").width();
-        var bubbleHeight = $("#iconClickBubble").height();
-        var topOffset = iconOffset.top-bubbleHeight-32;
-        var leftOffset = iconOffset.left-bubbleWidth+28;
+        let iconOffset = firstIcon.offset();
+        let bubbleWidth = $("#iconClickBubble").width();
+        let bubbleHeight = $("#iconClickBubble").height();
+        let topOffset = iconOffset.top-bubbleHeight - 32;
+        let leftOffset = iconOffset.left-bubbleWidth + 180;
         $('#iconClickBubble').offset({top: 10, left: 10});
         $("#iconClickBubble").animate({opacity: 1, top: topOffset, left: leftOffset}, 1000);
         //events only get set once because of if statement
@@ -622,11 +648,12 @@ function triggerIconBubble(){
 function adjustIconBubble(){
     if ($('#iconClickBubble span').html().length > 1){
         //move callout with map
-        var iconOffset = firstIcon.offset();
-        var bubbleWidth = $("#iconClickBubble").width();
-        var bubbleHeight = $("#iconClickBubble").height();
-        var topOffset = iconOffset.top-bubbleHeight-32;
-        var leftOffset = iconOffset.left-bubbleWidth+28;
+        let iconOffset = firstIcon.offset();
+        let bubbleWidth = $("#iconClickBubble").width();
+        let bubbleHeight = $("#iconClickBubble").height();
+        let topOffset = iconOffset.top - bubbleHeight - 32;
+        let leftOffset = iconOffset.left - bubbleWidth + 180;
+
         $('#iconClickBubble').offset({top: topOffset, left: leftOffset});
         //only set event listener once
         if (adjustedBubble == false){
@@ -640,7 +667,7 @@ function adjustIconBubble(){
   
 /*ACTIVATE SPLASH SCREEN*/
 function showSplash(){
-    var splash = new bootstrap.Modal(document.getElementById('splash'), {
+    let splash = new bootstrap.Modal(document.getElementById('splash'), {
         keyboard: false
     })
     splash.show();
@@ -687,7 +714,7 @@ function cacheError(){
 
 /*RESPONSIVE DESIGN FUNCTIONS*/
 function setLayout(){
-    var w = $(window).width();
+    let w = $(window).width();
 
     if (w < 768){
         if (screenSize == "large"){

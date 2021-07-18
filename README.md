@@ -45,7 +45,7 @@
     1839 Map of the Four Lakes: [Wisconsin Historical Society](https://content.wisconsinhistory.org/digital/collection/maps/id/78)  
     Mifflin-Livingston 2018 (Photo by Michelle Stocker): [The Cap Times](https://madison.com/ct/news/local/govt-and-politics/madison-officials-encourage-households-in-flood-risk-area-to-prepare/article_75ba9426-961a-5e8e-8f27-d77fa657d3d5.html)
 - **Site 5: Madison Gas and Electric Company/Energy**  
-    U.S Power Plants: [U.S Energy Atlas](https://atlas.eia.gov/search)  
+    U.S Power Plants: [U.S Energy Atlas](https://atlas.eia.gov/maps/power-plants-1/about)  
     U.S Natural Gas Pipelines: [U.S Energy Atlas](https://atlas.eia.gov/datasets/natural-gas-interstate-and-intrastate-pipelines/explore?location=35.184008%2C-94.389308%2C4.58)  
     Canada Oil/Gas Fields: [Open Canada](https://open.canada.ca/data/en/dataset/000183ed-8864-42f0-ae43-c4313a860720)  
     U.S Coal Fields: [Energy Information Administration](https://www.eia.gov/maps/layer_info-m.php)  
@@ -88,71 +88,137 @@
 - **Site 8: Capitol Steps-State Street/BLM Protests**  
     State Street Mural Project: [PBS Wisconsin](https://pbswisconsin.org/state-street-mural-project/)   
     Programs to bring black migrants from the south to work in factories in Milwaukee (1970s)  
-- **Point Field Photos**
-    Science Hall: [UWDC](https://digital.library.wisc.edu/1711.dl/P5BNCDY5MOHM68J)  
-    Wisconsin Historical Society: [UWDC](https://digital.library.wisc.edu/1711.dl/2OAZZOZ7R6ASG8Q), [Wisconsin Historical Society](https://www.wisconsinhistory.org/WHPD-Images/web/1022116.jpg)  
-    Humanities Building (1970-1979): [UWDC](https://digital.library.wisc.edu/1711.dl/UQS7JKDTHIPEC8C)  
-    Memorial Library (1977): [UWDC](https://digital.library.wisc.edu/1711.dl/RYB3R7YSIVRUR8Y)  
-    Armory (1899): [UWDC](https://digital.library.wisc.edu/1711.dl/HHWIZ2OKQMN438H)  
-    State Street 1929: [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Image/IM25190)  
-    State Street 1939: [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Image/IM3151)  
-    Orpheum Theatre Under Construction: [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Image/IM22432)  
-    500 Block of State Street: [Wisconsin State Journal](https://madison.com/wsj/news/local/govt-and-politics/mullins-proposes-major-redevelopment-for-500-block-of-state-street/article_53420d4e-531b-52a1-a427-8cd0a5e57b19.html)  
-    Civic Center: [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Property/HI88359)  
-    Overture Center: [Wikipedia](https://en.wikipedia.org/wiki/Overture_Center_for_the_Arts#/media/File:Overturemainentrance.jpg)  
-    Castle and Doyle Building: [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Image/IM123155)  
-    Outdoor Market 1895: [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Image/IM4648)  
-    Robert Lamp House: [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Image/IM38826)  
-    City Market: [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Image/IM39836)  
-    City Horse Barn: [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Property/HI95158)  
-    Hill's Grocery: [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Property/HI95553)  
-    McCormick Harvesting Machine Company: [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Image/IM9707)  
-    Chicago and Northwestern Station: [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Image/IM25341)  
-    Machinery Row: [Wikipedia](https://en.wikipedia.org/wiki/Machinery_Row#/media/File:Machinery_Row_Madison.jpg)  
-    King Street Streetcar: [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Image/IM28395)  
-    Peck Cabin: [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Image/IM3804)  
-    Fess Hotel (1977): [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Image/IM35599)  
-    Dick Eddy Building: [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Image/IM133061)  
-    Majestic Theater (1954): [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Image/IM3257)  
-- **Point Field Descriptions**
+- **USABLE Site Data**
+- **Site 1: Bascom Hill/Land Grab Universities/Indigenous History**  
+    * Interdependencies
+        * 1839 Map of the Four Lakes (no indication of Indigenous prescence at all): [Wisconsin Historical Society](https://content.wisconsinhistory.org/digital/collection/maps/id/78)  
+    * Inequalites 
+        * Map of land plats seized and sold to build UW's endowment: [High Country News](https://github.com/HCN-Digital-Projects/landgrabu-data)  
+    * Alternatives
+        * 2016 Protest of the arrest of Denzel McDonald (at the Lincoln Statue): [Badger Herald, photos by Riley Steinbrenner](https://badgerherald.com/news/2016/04/21/in-photos-uw-students-march-throughout-campus-protest-denzel-mcdonalds-arrest/) 
+        * Article about the 2020 Petition to remove the Lincoln Statue: [Badger Herald](https://badgerherald.com/news/2020/06/26/uw-students-petition-to-remove-abraham-lincoln-statue-on-bascom-hill/)
+    * Other interesting data
+        * Effigy Mounds on the grounds of the Mendota Mental Health Institute: [Wisconsin First Nations](https://wisconsinfirstnations.org/native-american-mounds-madison-dane-county/)  
+        * "Native American Mounds" Booklet: [Wisconsin First Nations](https://wisconsinfirstnations.org/native-american-mounds-madison-dane-county/)  
+- **Site 2: State Street/Wisconsin Idea/Connection Between State and University**  
+    * Interdependencies
+        * 1851 Plat of Madison showing the connection between the university and the state: [Wisconsin Historical Society](https://content.wisconsinhistory.org/digital/collection/maps/id/7461/rec/5)  
+        * 1890-1920 Dairy Production (will be map): [USDA Census of Agriculture](http://agcensus.mannlib.cornell.edu/AgCensus/censusParts.do?year=1920)  
+    * Inequalites  
+        * 
+    * Alternatives
+        * Photo of Harry Steenbock (Vitamin D): [UWDC](https://search.library.wisc.edu/digital/AQ4T6P6PKPXZH683)  
+- **Site 3: East Washington Map Fountains/City Planning/Climate Change**  
+    * Interdependencies
+        * Madison Industrial Area: [Friends of the Third Ridge Historical District](http://www.thirdlakeridge.org/)  
+        * Arial Photo of the Madison Isthmus: [UW Geodata](https://geodata.wisc.edu/catalog/65fe67d3-75b6-41d2-a26c-27a898ec7bcc)  
+        * View down East Washington from the Wisconsin Capitol: [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Image/IM27132)
+    * Inequalites 
+        * Map of Hydric Soils in the Madison Isthmus: [Dane County](https://dcimapapps.countyofdane.com/arcgissrv/rest/services/HydricSoils_cache/MapServer/0)   
+        * Mifflin-Livingston 2018 (Photo by Michelle Stocker): [The Cap Times](https://madison.com/ct/news/local/govt-and-politics/madison-officials-encourage-households-in-flood-risk-area-to-prepare/article_75ba9426-961a-5e8e-8f27-d77fa657d3d5.html)
+    * Alternatives
+        * Dane County 1937 Aerial Photography: [UW Geodata](https://geodata.wisc.edu/catalog/65fe67d3-75b6-41d2-a26c-27a898ec7bcc)
+    * Other data
+        * U.S Precipitation Anomaly Map: [PRISM Climate Group](https://prism.oregonstate.edu/recent/)  
+        * 1950 Flood on University Avenue: [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Image/IM64350)  
+- **Site 4: Badger State Shoe Company**  
+    * Interdependencies
+        * Badger State Shoe Company Photo, 1899 (Milwaukee): [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Image/IM97306)   
+        * Badger State Shoe Company (Woodlawn Location): [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Property/HI101634)
+        * Location of the US Shoe industry (1933 Article): [Quarterly Journal of Economics](https://www.jstor.org/stable/1883688?seq=23#metadata_info_tab_contents)
+    * Inequalites 
+        * Crowded Market (circa 1910): [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Image/IM2259)
+    * Alternatives
+        * Nike Factories: [Nike](http://manufacturingmap.nikeinc.com/#), November 2020  
+    * Other 
+        * Collection of old news articles about the Badger State Shoe Company
+        * Wages and Hours of Labor in Boot and Shoe Industry, 1907-1920: [Bureau of Labor Statistics](https://fraser.stlouisfed.org/title/wages-hours-labor-boot-shoe-hosiery-underwear-industries-3916/wages-hours-labor-boot-shoe-industry-1907-1920-476881)  
+        * Natural and Synthetic Rubber Production 2018: [Atlas of Economic Complexity](https://atlas.cid.harvard.edu/)
+- **Site 5: Madison Gas and Electric Company/Energy**  
+    * Interdependencies
+        * Madison Industrial District (1931): [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Image/IM18191)
+        * Cool Map of the Enbridge Oil Pipeline as it goes through Wisconsin: [Milwaukee Journal Sentinel](https://projects.jsonline.com/news/2017/11/9/oil-pipelines-of-wisconsin.html)
+        * Pipeline on Rails (Trempealeau, Wisconsin): [CC to Roy Luck](https://en.wikipedia.org/wiki/File:Pipeline_on_rails,_Trempealeau_Wisconsin_(12859842853).jpg)
+        * Natural Gas Pipeline Sign: [CC to Raysonho](https://commons.wikimedia.org/wiki/File:NaturalGasPipelineSign2.jpg)
+    * Inequalites 
+        * Trade offset Carbon Map: [Our World in Data](https://ourworldindata.org/consumption-based-co2)    
+        * Crude Oil Production by Country Map: [UN Data](http://data.un.org/Data.aspx?d=EDATA&f=cmID%3aCR)  
+        * Enbridge Oil Spill (Michigan, 2010): [EPA](https://commons.wikimedia.org/wiki/File:EPA%27s_response_to_the_Enbridge_oil_spill_(4855267114).jpg)
+    * Alternatives
+        * Wind Farms: [Wikimedia Commons, CC To Dual Freq](https://en.wikipedia.org/wiki/Mendota_Hills_Wind_Farm#mediaviewer/File:Illinois_wind_farm_near_I-39_exit_82.jpg) 
+        * U.S Power Plant Data: [Energy Information Administration](https://www.arcgis.com/home/webmap/viewer.html?url=https://services7.arcgis.com/FGr1D95XCGALKXqM/ArcGIS/rest/services/ElectricPowerPlants/FeatureServer&source=sd)
+        * Madison Gas and Electric Transformers: Carl Sack, 2014
+        * Blount Generating station retaining wall
+- **Site 6: Chicago and Northwestern Railroad Station/Transportation**  
+    * Interdependencies
+        * Chicago and Northwestern Passenger Station (2 photos): [Friends of the Third Ridge Historical District](http://www.thirdlakeridge.org/)
+    * Inequalites 
+        * Leather strapped shoes, 1885: [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Image/IM84221)  
+        * Shoe: [CC to Jerónimo Roure Pérez](https://commons.wikimedia.org/wiki/File:Worn_shoe.jpg)
+    * Alternatives
+        * 1937 Aerial Photo of Madison: [UDSA, Retrieved from UW Library](https://search.library.wisc.edu/digital/A3FIT5K24P56VL8L)  
+        * 1929 King Street Streetcar Photo: [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Image/IM28395)  
+    * Other
+        * 1914 Railyard: [Wisconsin Historical Soceity](https://www.wisconsinhistory.org/Records/Image/IM35792)
+        * 1909 Station: [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Image/IM2258)
+        * 1904 Map of East Madison (showing streetcar routes): [Wisconsin Historical Society](https://content.wisconsinhistory.org/digital/collection/maps/id/8671)  
+        * 1904 Map of West Madison (showing streetcar routes): [Wisconsin Historical Society](https://content.wisconsinhistory.org/digital/collection/maps/id/8672)  
+- **Site 7: First Settlement/Labor**  
+    * Interdependencies
+        * 1929 Industrial Map of Madison: [Wisconsin Historical Society](https://content.wisconsinhistory.org/digital/collection/maps/id/8199)  
+        * 1936 Rail Construction Crew: [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Image/IM3684)
+    * Inequalites 
+        * 1968 Grape Boycott Photo: [Picket Line on Park St](https://newscomwc.newspapers.com/image/521628150/?terms=migrant%20worker%20hearing&pqsid=4ruW4iKHKMlr0FulKfqmYg%3A1778000%3A587452833&match=1)
+        * 1966 Migrant Worker March News Articles
+    * Alternatives
+        * Article about Migrant Labor in the Dairy Industry: [Urban Milwaukee](https://urbanmilwaukee.com/2017/03/20/state-dairy-farms-losing-immigrant-workers/)  
+        * 
+    * Other
+        * 1918 Labor Unions Directory: [Capital Times](https://newscomwc.newspapers.com/image/520367496/?terms=Barber%27s%20union%20strike&match=1)  
+- **Site 8: Capitol Steps-State Street/BLM Protests/Occupy Protests/Popular Movements**  
+    * Interdependencies
+    * Inequalites 
+    * Alternatives
+        * Scott Walker Protests: [CC to Joe Rowley](https://en.wikipedia.org/wiki/2011_Wisconsin_protests#/media/File:Gov_Walker_Protests1_JR.jpg)
+- **Point Field Descriptions/Images**  
     #1: Lincoln Statue: [UW News Service](https://news.wisc.edu/uw-madisons-lincoln-statue-turns-100/)  
     #2: Vietnam Plaque: [Historical Marker Database](https://www.hmdb.org/m.asp?m=31761)  
-    #3: North Hall: [Wikipedia](https://en.wikipedia.org/wiki/North_Hall_(University_of_Wisconsin))   
+    #3: North Hall: [Wikipedia](https://en.wikipedia.org/wiki/North_Hall_(University_of_Wisconsin)), [UWDC](https://digital.library.wisc.edu/1711.dl/IAA7TV55XWDT68Q)  
     #4: State Street/Capitol Vista from Bascom Hill  
-    #5: Science Hall: [UW Geography](https://geography.wisc.edu/history-of-science-hall/)  
-    #6: Humanities Building: [On Wisconsin](https://onwisconsin.uwalumni.com/features/how-the-humanities-building-went-wrong/)  
-    #7: Wisconsin Historical Society: [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Property/HI16108)  
-    #8: Memorial Library: [UW Libraries](https://www.library.wisc.edu/memorial/about-memorial/general-information/)  
-    #9: Armory/Red Gym: [Wikipedia](https://en.wikipedia.org/wiki/University_of_Wisconsin_Armory_and_Gymnasium)  
+    #5: Science Hall: [UW Geography](https://geography.wisc.edu/history-of-science-hall/), [UWDC](https://digital.library.wisc.edu/1711.dl/P5BNCDY5MOHM68J)  
+    #6: Humanities Building: [On Wisconsin](https://onwisconsin.uwalumni.com/features/how-the-humanities-building-went-wrong/), [UWDC](https://digital.library.wisc.edu/1711.dl/UQS7JKDTHIPEC8C)   
+    #7: Wisconsin Historical Society: [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Property/HI16108), [UWDC](https://digital.library.wisc.edu/1711.dl/2OAZZOZ7R6ASG8Q), [Wisconsin Historical Society](https://www.wisconsinhistory.org/WHPD-Images/web/1022116.jpg)    
+    #8: Memorial Library: [UW Libraries](https://www.library.wisc.edu/memorial/about-memorial/general-information/), [UWDC](https://digital.library.wisc.edu/1711.dl/RYB3R7YSIVRUR8Y)  
+    #9: Armory/Red Gym: [Wikipedia](https://en.wikipedia.org/wiki/University_of_Wisconsin_Armory_and_Gymnasium), [UWDC](https://digital.library.wisc.edu/1711.dl/HHWIZ2OKQMN438H)    
     #10: The Hub: [Wisconsin State Journal](https://madison.com/wsj/news/local/govt-and-politics/mullins-proposes-major-redevelopment-for-500-block-of-state-street/article_53420d4e-531b-52a1-a427-8cd0a5e57b19.html)  
-    #11: Historical Streetcar Tracks  
+    #11: Historical Streetcar Tracks on State Street 1929: [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Image/IM25190)    
     #12: Peace Park: [City of Madison](https://www.cityofmadison.com/parks/find-a-park/park.cfm?id=1290)  
-    #13: State Street in 1939  
-    #14: Orpheum Theater: [Wikipedia](https://en.wikipedia.org/wiki/Orpheum_Theatre_(Madison,_Wisconsin))  
-    #15: Civic Center/Capitol Theater: [Overture Center](https://www.overture.org/about/history)   
-    #16: Overture: [Overture Center](https://www.overture.org/about/history)   
-    #17: Castle and Doyle Coal Building: [Wisconsin Historical Society](https://www.cityofmadison.com/parks/find-a-park/history.cfm?id=1290)  
+    #13: State Street in 1939: [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Image/IM3151)    
+    #14: Orpheum Theater: [Wikipedia](https://en.wikipedia.org/wiki/Orpheum_Theatre_(Madison,_Wisconsin)), [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Image/IM22432)    
+    #15: Civic Center/Capitol Theater: [Overture Center](https://www.overture.org/about/history), [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Property/HI88359)     
+    #16: Overture: [Overture Center](https://www.overture.org/about/history), [Wikipedia](https://en.wikipedia.org/wiki/Overture_Center_for_the_Arts#/media/File:Overturemainentrance.jpg)     
+    #17: Castle and Doyle Coal Building: [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Image/IM123155)    
     #18: East Washington Map Fountains  
-    #19: Madison Horse Market: [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Image/IM4648),
+    #19: Madison Horse Market/Outdoor Market: [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Image/IM4648)
     #20: East Washington Vista  
-    #21: Robert Lamp House: [Wikipedia](https://en.wikipedia.org/wiki/Robert_M._Lamp_House)  
+    #21: Robert Lamp House: [Wikipedia](https://en.wikipedia.org/wiki/Robert_M._Lamp_House), [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Image/IM38826)    
     #22: Bike Boulevard  
-    #23: Madison City Market: [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Property/HI16069)   
-    #24: Hill's Grocery: [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Property/HI95553)
-    #25: Madison Horse Barn: [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Property/HI95158)  
+    #23: Madison City Market: [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Property/HI16069), [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Image/IM39836)     
+    #24: Hill's Grocery: [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Property/HI95553)  
+    #25: Madison Horse Barn: [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Property/HI95158)    
     #26: Mifflin and Livingston Flooding  
     #27: The Sylvee Theater  
     #28: Madison Gas and Electric Light Bulb Art  
     #29: Madison Gas and Electric Plant  
     #30: Railroad Door #1  
-    #31: McCormick-International Harvester Company: [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Image/IM9707)  
-    #32: Madison Chicago & Northwestern Railroad Station: [Wikipedia](https://en.wikipedia.org/wiki/Madison_station_(Chicago_and_North_Western_Railway))  
-    #33: Machinery Row Building: [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Property/HI16097)  
-    #34: King Street Streetcar
-    #35: Peck Cabin: [Historical Marker Database](https://www.hmdb.org/m.asp?m=31701)  
+    #31: McCormick-International Harvester Company: [Friends of the Third Ridge Historical District](http://www.thirdlakeridge.org/)  
+    #32: Madison Chicago & Northwestern Railroad Station: [Wikipedia](https://en.wikipedia.org/wiki/Madison_station_(Chicago_and_North_Western_Railway)), [Friends of Historic Third Lake Ridge](http://www.thirdlakeridge.org/)    
+    #33: Machinery Row Building: [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Property/HI16097), [Wikipedia](https://en.wikipedia.org/wiki/Machinery_Row#/media/File:Machinery_Row_Madison.jpg)    
+    #34: King Street Streetcar: [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Image/IM28395)  
+    #35: Peck Cabin: [Historical Marker Database](https://www.hmdb.org/m.asp?m=31701), [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Image/IM3804)    
     #36: G.E.F Buildings: [Department of Administration](https://doa.wi.gov/Pages/AboutDOA/State-Education-Building-(GEF-3).aspx)  
-    #37: Fess Hotel: [Wisconsin State Journal](https://madison.com/lifestyles/memories-of-dining-at-the-fess-hotel/article_4fc46af0-c5d8-5077-bb7b-d31ce7e4a1d0.html)  
+    #37: Fess Hotel: [Wisconsin State Journal](https://madison.com/lifestyles/memories-of-dining-at-the-fess-hotel/article_4fc46af0-c5d8-5077-bb7b-d31ce7e4a1d0.html), [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Image/IM35599)    
     #38: Dick Eddy Building: [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Image/IM133061)  
-    #39: Majestic Theater
+    #39: Majestic Theater: [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Image/IM3257)  
 
 

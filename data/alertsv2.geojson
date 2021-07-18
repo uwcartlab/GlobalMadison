@@ -1,0 +1,11 @@
+{
+"type": "FeatureCollection",
+"name": "alertsv2",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "id": "capitol", "routeid": 7, "alert": "If the Capitol Building is closed, go around to the building to the corner of State Street." }, "geometry": { "type": "Point", "coordinates": [ -89.383262241810414, 43.074679130629889 ] } },
+{ "type": "Feature", "properties": { "id": "e_johnson_at_blair", "routeid": 3, "alert": "Heavy traffic on Blair Street. Use caution when crossing." }, "geometry": { "type": "Point", "coordinates": [ -89.379895153477605, 43.079440377367469 ] } },
+{ "type": "Feature", "properties": { "id": "livingston_at_e_washington", "routeid": 4, "alert": "Heavy traffic on East Washington. Use caution when crossing." }, "geometry": { "type": "Point", "coordinates": [ -89.375176620231997, 43.081068697007581 ] } },
+{ "type": "Feature", "properties": { "id": "blair_at_bike_trail", "routeid": 5, "alert": "From the railroad station, cross Blair Street and enter the Capital City Bike Trail through the driveway alongside the railroad tracks. Do not cross Williamson Street." }, "geometry": { "type": "Point", "coordinates": [ -89.375905771905764, 43.076258601604934 ] } }
+]
+}

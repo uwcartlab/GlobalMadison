@@ -7,28 +7,28 @@
             "type": "Feature", 
             "properties": { 
                 "id": 0, 
-                "title": "Bascom Hill", 
+                "title": "Bascom Hill Boulder", 
                 "classname": "bascom_hill", 
                 "icon": { 
-                    "iconUrl": "img/icons/labor24.png", 
+                    "iconUrl": "img/icons/scroll24.png", 
                     "iconSize": [ 24, 24 ], 
                     "iconAnchor": [ 12, 12 ], 
                     "popupAnchor": [ 0, -12 ] 
                 }, 
                 "icon_red": { 
-                    "iconUrl": "img/icons/labor24_red.png", 
+                    "iconUrl": "img/icons/scroll24_red.png", 
                     "iconSize": [ 24, 24 ], 
                     "iconAnchor": [ 12, 12 ], 
                     "popupAnchor": [ 0, -12 ] 
                 }, 
                 "icon_larger": { 
-                    "iconUrl": "img/icons/labor36.png", 
+                    "iconUrl": "img/icons/scroll36.png", 
                     "iconSize": [ 36, 36 ], 
                     "iconAnchor": [ 12, 12 ], 
                     "popupAnchor": [ 0, -12 ] 
                 }, 
                 "icon_red_larger": { 
-                    "iconUrl": "img/icons/labor40_red.png", 
+                    "iconUrl": "img/icons/scroll40_red.png", 
                     "iconSize": [ 36, 36 ], 
                     "iconAnchor": [ 12, 12 ], 
                     "popupAnchor": [ 0, -12 ] 
@@ -36,7 +36,7 @@
                 "Description": "The building was constructed in 1910 after the company had originally expanded its production to Madison in 1900. It was designated a landmark by the Madison Landmarks Commission in 1989.", 
                 "Address": "584 Lincoln Drive", 
                 "Scripts": ["The emergence of new factories across the Isthmus created new challenges too. More and more raw materials had to be brought into the city and finished goods had to be transported to markets in southern Wisconsin and beyond. The Badger State Shoe Company, for example, sold some of its goods in bulk to a national distributor based in Chicago. Other companies produced agricultural tools and machines that needed to reach farms in rural areas of the Midwest. The primary means through which goods are transported from factory to market have changed significantly since the early twentieth century―as have the distances they travel. But, you can still see evidence of these earlier transportation networks imprinted in the landscape."],
-                "textImage": "img/site1_1_cs.png", 
+                "textImage": "img/site1_1_cs.jpg", 
                 "imageSet": [{ 
                     "historic_small": "img/site1_1_hs.jpg", 
                     "historic_large": "img/site1_1_hl.jpg", 
@@ -72,25 +72,25 @@
                 "title": "State Street", 
                 "classname": "state_street", 
                 "icon": { 
-                    "iconUrl": "img/icons/housing24.png", 
+                    "iconUrl": "img/icons/school24.png", 
                     "iconSize": [ 24, 24 ], 
                     "iconAnchor": [ 12, 12 ], 
                     "popupAnchor": [ 0, -12 ] 
                 }, 
                 "icon_red": { 
-                    "iconUrl": "img/icons/housing24_red.png", 
+                    "iconUrl": "img/icons/school24_red.png", 
                     "iconSize": [ 24, 24 ], 
                     "iconAnchor": [ 12, 12 ], 
                     "popupAnchor": [ 0, -12 ] 
                 }, 
                 "icon_larger": { 
-                    "iconUrl": "img/icons/housing36.png", 
+                    "iconUrl": "img/icons/school36.png", 
                     "iconSize": [ 36, 36 ], 
                     "iconAnchor": [ 12, 12 ], 
                     "popupAnchor": [ 0, -12 ] 
                 }, 
                 "icon_red_larger": { 
-                    "iconUrl": "img/icons/housing40_red.png", 
+                    "iconUrl": "img/icons/school40_red.png", 
                     "iconSize": [ 36, 36 ], 
                     "iconAnchor": [ 12, 12 ], 
                     "popupAnchor": [ 0, -12 ] 
@@ -134,23 +134,23 @@
                 "title": "Madison Fountain Map", 
                 "classname": "fountain", 
                 "icon": { 
-                    "iconUrl": "img/icons/labor24.png", 
+                    "iconUrl": "img/icons/street24.png", 
                     "iconSize": [ 24, 24 ], 
                     "iconAnchor": [ 12, 12 ], 
                     "popupAnchor": [ 0, -12 ] 
                 }, "icon_red": { 
-                    "iconUrl": "img/icons/labor24_red.png", 
+                    "iconUrl": "img/icons/street24_red.png", 
                     "iconSize": [ 24, 24 ], 
                     "iconAnchor": [ 12, 12 ], 
                     "popupAnchor": [ 0, -12 ] 
                 }, "icon_larger": { 
-                    "iconUrl": "img/icons/labor36.png", 
+                    "iconUrl": "img/icons/street36.png", 
                     "iconSize": [ 36, 36 ], 
                     "iconAnchor": [ 12, 12 ], 
                     "popupAnchor": [ 0, -12 ] 
                 }, 
                 "icon_red_larger": { 
-                    "iconUrl": "img/icons/labor40_red.png", 
+                    "iconUrl": "img/icons/street40_red.png", 
                     "iconSize": [ 36, 36 ], 
                     "iconAnchor": [ 12, 12 ], 
                     "popupAnchor": [ 0, -12 ] 
@@ -158,7 +158,7 @@
                 "Description": "The building was constructed in 1910 after the company had originally expanded its production to Madison in 1900. It was designated a landmark by the Madison Landmarks Commission in 1989.", 
                 "Address": "NE Corner of E Washington and N Pinckney", 
                 "Scripts": ["The emergence of new factories across the Isthmus created new challenges too. More and more raw materials had to be brought into the city and finished goods had to be transported to markets in southern Wisconsin and beyond. The Badger State Shoe Company, for example, sold some of its goods in bulk to a national distributor based in Chicago. Other companies produced agricultural tools and machines that needed to reach farms in rural areas of the Midwest. The primary means through which goods are transported from factory to market have changed significantly since the early twentieth century―as have the distances they travel. But, you can still see evidence of these earlier transportation networks imprinted in the landscape."],
-                "textImage": "img/site1_1_cs.png", 
+                "textImage": "img/site3_1_cs.jpg", 
                 "imageSet": [{ 
                     "historic_small": "img/site1_1_hs.jpg", 
                     "historic_large": "img/site1_1_hl.jpg", 
@@ -194,25 +194,25 @@
                 "title": "Badger State Shoe Company", 
                 "classname": "shoe_factory", 
                 "icon": { 
-                    "iconUrl": "img/icons/coffee24.png", 
+                    "iconUrl": "img/icons/shoe24.png", 
                     "iconSize": [ 24, 24 ], 
                     "iconAnchor": [ 12, 12 ], 
                     "popupAnchor": [ 0, -12 ] 
                 }, 
                 "icon_red": { 
-                    "iconUrl": "img/icons/coffee24_red.png", 
+                    "iconUrl": "img/icons/shoe24_red.png", 
                     "iconSize": [ 24, 24 ], 
                     "iconAnchor": [ 12, 12 ], 
                     "popupAnchor": [ 0, -12 ] 
                 }, 
                 "icon_larger": { 
-                    "iconUrl": "img/icons/coffee36.png", 
+                    "iconUrl": "img/icons/shoe36.png", 
                     "iconSize": [ 36, 36 ], 
                     "iconAnchor": [ 12, 12 ], 
                     "popupAnchor": [ 0, -12 ] 
                 }, 
                 "icon_red_larger": { 
-                    "iconUrl": "img/icons/coffee40_red.png", 
+                    "iconUrl": "img/icons/shoe40_red.png", 
                     "iconSize": [ 36, 36 ], 
                     "iconAnchor": [ 12, 12 ], 
                     "popupAnchor": [ 0, -12 ] 
@@ -220,7 +220,7 @@
                 "Description": "The c.1903 Madison Candy Company building is significant for its association with the development of local manufacturing. Originally a candy factory, it now houses two food service businesses, providing one example of how Madison's economy has changed.", 
                 "Address": "115 N Livingston St", 
                 "Scripts": [ "The tour is almost done and, don’t worry, it ends with some refreshment. As you approach Ground Zero café, think about the kinds of commodity networks within which the current businesses in this neighborhood are embedded. Contrast this with the Fordist manufacturing economy that originally shaped the formation of this neighborhood. What does this tell you about the dynamic relationship between different regimes of capital accumulation and the produc" ], 
-                "textImage": "img/site5_1_cs.png", 
+                "textImage": "img/site4_1_cs.png", 
                 "imageSet": [{ 
                     "historic_small": "img/site5_1_hs.jpg", 
                     "historic_large": "img/site5_1_hl.jpg", 
@@ -253,7 +253,7 @@
             "type": "Feature", 
             "properties": { 
                 "id": 4, 
-                "title": "Madison Gas and Electric Company", 
+                "title": "Madison Gas and Electric Company Railroad Door ", 
                 "classname": "power_plant", 
                 "icon": { 
                     "iconUrl": "img/icons/energy24.png", 
@@ -282,7 +282,7 @@
                 "Description": "Built in 1902 to replace a smaller plant on Williamson Street, the plant used generators fueled by gas from the nearby MGE manufactured gas plant. Subsequent upgrades added coal- and refuse-burning boilers until 2011, when the plant was once again converted to run exclusively on natural gas and downgraded from 190 to 100 Megawatt capacity.", 
                 "Address": "722 E Main St.", 
                 "Scripts": [ "The expansion of industry and transportation networks also depended on increasing the supply of energy in the city. The first gaslights appeared along these streets in 1855, and the first electrical lighting arrived in the 1880s. The Madison Gas & Electric Company was established on the Isthmus in 1902. Coal was transported to the plant along the old train tracks you just explored and then burned as fuel, with CO2 released through the signature four smokestacks. This helped fuel a significant expansion in Madison’s industrial base during the first half of the twentieth century. The plant is still in operation today, but in 2011 it was converted from a coal-burning facility to one that only utilizes natural gas." ],
-                "textImage": "img/site3_3_hs.png", 
+                "textImage": "img/site5_1_cs.jpg", 
                 "imageSet": [{ 
                     "historic_small": "img/site3_1_hs.jpg", 
                     "historic_large": "img/site3_1_hl.jpg", 
@@ -343,7 +343,7 @@
                 "Description": "Former Chicago and NorthWestern Railroad Station, one of six passenger stations built in Madison", 
                 "Address": "133 S Blair St.", 
                 "Scripts": [ "The emergence of new factories across the Isthmus created new challenges too. More and more raw materials had to be brought into the city and finished goods had to be transported to markets in southern Wisconsin and beyond. The Badger State Shoe Company, for example, sold some of its goods in bulk to a national distributor based in Chicago. Other companies produced agricultural tools and machines that needed to reach farms in rural areas of the Midwest. The primary means through which goods are transported from factory to market have changed significantly since the early twentieth century―as have the distances they travel. But, you can still see evidence of these earlier transportation networks imprinted in the landscape." ], 
-                "textImage": "img/site2_1_cs.png", 
+                "textImage": "img/site6_1_cs.png", 
                 "imageSet": [{ 
                     "historic_small": "img/site2_1_hs.jpg", 
                     "historic_large": "img/site2_1_hl.jpg", 
@@ -379,33 +379,31 @@
                 "title": "First Settlement", 
                 "classname": "first_settlement", 
                 "icon": { 
-                    "iconUrl": "img/icons/housing24.png", 
+                    "iconUrl": "img/icons/labor24.png", 
                     "iconSize": [ 24, 24 ], 
                     "iconAnchor": [ 12, 12 ], 
                     "popupAnchor": [ 0, -12 ] 
-                }, 
-                "icon_red": { 
-                    "iconUrl": "img/icons/housing24_red.png", 
+                }, "icon_red": { 
+                    "iconUrl": "img/icons/labor24_red.png", 
                     "iconSize": [ 24, 24 ], 
                     "iconAnchor": [ 12, 12 ], 
                     "popupAnchor": [ 0, -12 ] 
-                }, 
-                "icon_larger": { 
-                    "iconUrl": "img/icons/housing36.png", 
+                }, "icon_larger": { 
+                    "iconUrl": "img/icons/labor36.png", 
                     "iconSize": [ 36, 36 ], 
                     "iconAnchor": [ 12, 12 ], 
                     "popupAnchor": [ 0, -12 ] 
                 }, 
                 "icon_red_larger": { 
-                    "iconUrl": "img/icons/housing40_red.png", 
+                    "iconUrl": "img/icons/labor40_red.png", 
                     "iconSize": [ 36, 36 ], 
                     "iconAnchor": [ 12, 12 ], 
                     "popupAnchor": [ 0, -12 ] 
-                }, 
+                },  
                 "Description": "Built as Pilgrim Church in 1914, this building now houses a community center serving the Wil-Mar neighborhood. With its c.2003 mural that pays homage to community people and events, the building provides a good opportunity to reflect on how the neighborhood has changed.", 
                 "Address": "125 S Webster St", 
                 "Scripts": [ "Factories, transportation, and power are all essential to the production of commodities. But they would be useless without an additional input: labor. One of the main reasons why the Badger State Shoe Company relocated from the south of the city to the Isthmus in 1910 was to have better access to labor power. The next stop on this tour is Madison’s Wil-Mar neighborhood, positioned along the famous Williamson, or “Willy”, Street. The Wil-Mar neighborhood you are now entering was originally built as residences for middle classname people working in the manufacturing sector. As industry developed, Willy Street became a busy thoroughfare, prompting the development of a variety of businesses. In the 1960s, the neighborhood became a regional hub for the counterculture movement, promoting an end to the wars in southeast Asia and equality for women and people of color. The Wil-Mar Neighborhood Center, a community center originally built as a church, provides a good opportunity to reflect on how the demographics and values of the neighborhood residents have evolved during this time." ], 
-                "textImage": "img/site4_1_cs.png", 
+                "textImage": "img/site7_1_cs.jpg", 
                 "imageSet": [{ 
                     "historic_small": "img/site4_1_hs.jpg", 
                     "historic_large": "img/site4_1_hl.jpg", 
@@ -441,25 +439,25 @@
                 "title": "Wisconsin State Capitol", 
                 "classname": "state_capitol", 
                 "icon": { 
-                    "iconUrl": "img/icons/labor24.png", 
+                    "iconUrl": "img/icons/people24.png", 
                     "iconSize": [ 24, 24 ], 
                     "iconAnchor": [ 12, 12 ], 
                     "popupAnchor": [ 0, -12 ] 
                 }, 
                 "icon_red": { 
-                    "iconUrl": "img/icons/labor24_red.png", 
+                    "iconUrl": "img/icons/people24_red.png", 
                     "iconSize": [ 24, 24 ], 
                     "iconAnchor": [ 12, 12 ], 
                     "popupAnchor": [ 0, -12 ] 
                 }, 
                 "icon_larger": { 
-                    "iconUrl": "img/icons/labor36.png", 
+                    "iconUrl": "img/icons/people36.png", 
                     "iconSize": [ 36, 36 ], 
                     "iconAnchor": [ 12, 12 ], 
                     "popupAnchor": [ 0, -12 ] 
                 }, 
                 "icon_red_larger": {
-                    "iconUrl": "img/icons/labor40_red.png", 
+                    "iconUrl": "img/icons/people40_red.png", 
                     "iconSize": [ 36, 36 ], 
                     "iconAnchor": [ 12, 12 ], 
                     "popupAnchor": [ 0, -12 ] 
@@ -467,7 +465,7 @@
                 "Description": "The building was constructed in 1910 after the company had originally expanded its production to Madison in 1900. It was designated a landmark by the Madison Landmarks Commission in 1989.", 
                 "Address": "2E Main St", 
                 "Scripts": ["The emergence of new factories across the Isthmus created new challenges too. More and more raw materials had to be brought into the city and finished goods had to be transported to markets in southern Wisconsin and beyond. The Badger State Shoe Company, for example, sold some of its goods in bulk to a national distributor based in Chicago. Other companies produced agricultural tools and machines that needed to reach farms in rural areas of the Midwest. The primary means through which goods are transported from factory to market have changed significantly since the early twentieth century―as have the distances they travel. But, you can still see evidence of these earlier transportation networks imprinted in the landscape."],
-                "textImage": "img/site1_1_cs.png", 
+                "textImage": "img/site8_1_cs.jpg", 
                 "imageSet": [{ 
                     "historic_small": "img/site1_1_hs.jpg", 
                     "historic_large": "img/site1_1_hl.jpg", 
