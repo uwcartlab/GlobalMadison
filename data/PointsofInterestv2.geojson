@@ -63,8 +63,8 @@
             "type": "Feature", 
             "properties": { 
                 "id": 1, 
-                "title": "State Street", 
-                "classname": "state_street", 
+                "title": "Library Mall", 
+                "classname": "library_mall", 
                 "icon": { 
                     "iconUrl": "img/icons/school24.png", 
                     "iconSize": [ 24, 24 ], 
@@ -157,8 +157,8 @@
                     "image_texts": "<b>Interdependencies</b>: The Badger State Company was originally based in this factory in Milwaukee. The company relocated to south Madison in 1903 and then, in 1910, to the building in front of you. What factors do you think influenced its operations at this site, on the corner of East Dayton & Blount, between 1910-1930?" 
                 }, 
                 { 
-                    "current_small": "img/site3/site3_2_cs.jpg", 
-                    "current_large": "img/site3/site3_2_cl.jpg", 
+                    "current_small": "img/site3/site3_2_cs.png", 
+                    "current_large": "img/site3/site3_2_cl.png", 
                     "image_texts": "<b>Inequalities</b>: There used to be an open market located just across the street from where you’re standing. Who do you think would have been the main consumers of the goods produced by the Badger State Shoe Company and similar companies located on the Isthmus?" 
                 }, 
                 { 
@@ -167,8 +167,8 @@
                     "image_texts": "<b>Alternatives</b>: Most Nike shoes are made in factories like this in southeast Asia. Why do you think Nike chooses to have its shoes made in these locations, rather than in American cities like Madison? Who do you think the main consumers of shoes produced by Nike are?" 
                 },
                 { 
-                    "current_small": "img/site3/site3_3_cs.jpg", 
-                    "current_large": "img/site3/site3_3_cl.jpg", 
+                    "current_small": "img/site3/site3_4_cs.jpg", 
+                    "current_large": "img/site3/site3_4_cl.jpg", 
                     "image_texts": "<b>Alternatives</b>: Most Nike shoes are made in factories like this in southeast Asia. Why do you think Nike chooses to have its shoes made in these locations, rather than in American cities like Madison? Who do you think the main consumers of shoes produced by Nike are?" 
                 }],
                 "audio": null 
@@ -223,8 +223,8 @@
                     "image_texts": "Take some time to relax here and write down a longer response to the questions that were posed to you throughout the tour, to be submitted with the photos you took along the way." 
                 },
                 { 
-                    "current_small": "img/site4/site4_1_cs.jpg", 
-                    "current_large": "img/site4/site4_1_cl.jpg",
+                    "current_small": "img/site4/site4_3_cs.png", 
+                    "current_large": "img/site4/site4_3_cl.png",
                     "image_texts": "Take some time to relax here and write down a longer response to the questions that were posed to you throughout the tour, to be submitted with the photos you took along the way." 
                 }], 
                 "audio": [ "audio/site5.base64" ] 
@@ -276,13 +276,13 @@
                     "image_texts": "<b>Interdependencies</b>: Economic development has created interdependencies with other places that supply fossil fuels. Sometimes geopolitical factors can affect the price and access to these fuel sources, leading to protests such as the one shown in this poster. What are some of the factors that can contribute to rising energy prices?" 
                 }, 
                 { 
-                    "current_small": "img/site5/site5_1_cs.jpg", 
-                    "current_large": "img/site5/site5_1_cl.jpg", 
+                    "current_small": "img/site5/site5_2_cs.jpg", 
+                    "current_large": "img/site5/site5_2_cl.jpg", 
                     "image_texts": "<b>Inequalities</b>: This map depicts the millions of metric tonnes of CO2 that were released into the atmosphere in order to produce goods for the global economy in 2004. The color shading shows the net CO2 emissions from production and consumption in each country, while the flow arrows show the volume of these goods that then were consumed in the United States. Who do you think is responsible for these emissions?" 
                 }, 
                 { 
-                    "historic_small": "img/site5/site5_1_hs.jpg", 
-                    "historic_large": "img/site5/site5_1_hl.jpg", 
+                    "historic_small": "img/site5/site5_3_hs.png", 
+                    "historic_large": "img/site5/site5_3_hl.png", 
                     "current_small": "img/site5/site5_3_cs.jpg", 
                     "current_large": "img/site5/site5_3_cl.jpg", 
                     "image_texts": "<b>Alternatives</b>: Recently, there have been efforts to develop wind farms in rural areas of Wisconsin. What percentage of Wisconsin’s electricity do you think currently comes from renewable energy sources? Do you think development of rural wind farms is a viable alternative to urban coal plants?" 
@@ -333,13 +333,15 @@
                     "image_texts": "<b>Interdependencies</b>: The building you are currently standing in front of used to be a train station. What do you think were the main cities connected to Madison by railroad in the early twentieth century?" 
                 }, 
                 { 
-                    "current_small": "img/site6/site6_1_cs.jpg", 
-                    "current_large": "img/site6/site6_1_cl.jpg", 
+                    "current_small": "img/site6/site6_2_cs.jpg", 
+                    "current_large": "img/site6/site6_2_cl.jpg", 
+                    "historic_small": "img/site6/site6_2_hs.jpg", 
+                    "historic_large": "img/site6/site6_2_hl.jpg", 
                     "image_texts": "<b>Inequalities</b>: How do you think that Nike shoes are transported to retail stores in Wisconsin today? How much farther do you think shoes produced by Nike travel today compared to shoes the Badger State Shoe Company produced in the nineteenth century?" 
                 }, 
                 { 
-                    "current_small": "img/site6/site6_1_cs.jpg", 
-                    "current_large": "img/site6/site6_1_cl.jpg", 
+                    "current_small": "img/site6/site6_3_cs.jpg", 
+                    "current_large": "img/site6/site6_3_cl.jpg", 
                     "image_texts": "<b>Alternatives</b>: What kinds of transportation networks can you see in this area today, and what do these networks suggest about Madison’s changing position within the global economy?" 
                 },
                 {
@@ -358,64 +360,66 @@
             "type": "Feature", 
             "properties": { 
                 "id": 6, 
-                "title": "First Settlement", 
-                "classname": "first_settlement", 
+                "title": "Wisconsin State Capitol Steps", 
+                "classname": "state_capitol", 
                 "icon": { 
                     "iconUrl": "img/icons/labor24.png", 
                     "iconSize": [ 24, 24 ], 
                     "iconAnchor": [ 12, 12 ], 
                     "popupAnchor": [ 0, -12 ] 
-                }, "icon_red": { 
+                }, 
+                "icon_red": { 
                     "iconUrl": "img/icons/labor24_red.png", 
                     "iconSize": [ 24, 24 ], 
                     "iconAnchor": [ 12, 12 ], 
                     "popupAnchor": [ 0, -12 ] 
-                }, "icon_larger": { 
+                }, 
+                "icon_larger": { 
                     "iconUrl": "img/icons/labor36.png", 
                     "iconSize": [ 36, 36 ], 
                     "iconAnchor": [ 12, 12 ], 
                     "popupAnchor": [ 0, -12 ] 
                 }, 
-                "icon_red_larger": { 
+                "icon_red_larger": {
                     "iconUrl": "img/icons/labor40_red.png", 
                     "iconSize": [ 36, 36 ], 
                     "iconAnchor": [ 12, 12 ], 
                     "popupAnchor": [ 0, -12 ] 
-                },  
-                "Description": "Built as Pilgrim Church in 1914, this building now houses a community center serving the Wil-Mar neighborhood. With its c.2003 mural that pays homage to community people and events, the building provides a good opportunity to reflect on how the neighborhood has changed.", 
-                "Address": "125 S Webster St", 
-                "Scripts": [ "Factories, transportation, and power are all essential to the production of commodities. But they would be useless without an additional input: labor. One of the main reasons why the Badger State Shoe Company relocated from the south of the city to the Isthmus in 1910 was to have better access to labor power. The next stop on this tour is Madison’s Wil-Mar neighborhood, positioned along the famous Williamson, or “Willy”, Street. The Wil-Mar neighborhood you are now entering was originally built as residences for middle classname people working in the manufacturing sector. As industry developed, Willy Street became a busy thoroughfare, prompting the development of a variety of businesses. In the 1960s, the neighborhood became a regional hub for the counterculture movement, promoting an end to the wars in southeast Asia and equality for women and people of color. The Wil-Mar Neighborhood Center, a community center originally built as a church, provides a good opportunity to reflect on how the demographics and values of the neighborhood residents have evolved during this time." ], 
+                }, 
+                "Description": "The building was constructed in 1910 after the company had originally expanded its production to Madison in 1900. It was designated a landmark by the Madison Landmarks Commission in 1989.", 
+                "Address": "2E Main St", 
+                "Scripts": ["The emergence of new factories across the Isthmus created new challenges too. More and more raw materials had to be brought into the city and finished goods had to be transported to markets in southern Wisconsin and beyond. The Badger State Shoe Company, for example, sold some of its goods in bulk to a national distributor based in Chicago. Other companies produced agricultural tools and machines that needed to reach farms in rural areas of the Midwest. The primary means through which goods are transported from factory to market have changed significantly since the early twentieth century―as have the distances they travel. But, you can still see evidence of these earlier transportation networks imprinted in the landscape."],
                 "textImage": "img/site7_1_cs.jpg", 
                 "imageSet": [{ 
-                    "historic_small": "img/site7/site7_1_hs.jpg", 
-                    "historic_large": "img/site7/site7_1_hl.jpg", 
+                    "historic_small": "img/site7/site7_1_hs.png", 
+                    "historic_large": "img/site7/site7_1_hl.png", 
                     "current_small": "img/site7/site7_1_cs.jpg", 
                     "current_large": "img/site7/site7_1_cl.jpg", 
-                    "image_texts": "<b>Interdependencies</b>: Looking across the Isthmus, how do you think zoning has changed over the past century? How do you think these changes have impacted the demographic composition of the Wil-Mar and adjacent neighborhoods?" 
+                    "image_texts": "<b>Interdependencies</b>: The Badger State Company was originally based in this factory in Milwaukee. The company relocated to south Madison in 1903 and then, in 1910, to the building in front of you. What factors do you think influenced its operations at this site, on the corner of East Dayton & Blount, between 1910-1930?" 
                 }, 
                 { 
                     "current_small": "img/site7/site7_2_cs.jpg", 
                     "current_large": "img/site7/site7_2_cl.jpg", 
-                    "image_texts": "<b>Inequalities</b>: Wil-Mar’s association with the counterculture movement in the 1960s remains present in the landscape, as evident by the large mural on the northeast side of the Wil-Mar Neighborhood Center. What does the mural represent to you? Where do you think the history of this neighborhood fits with the global justice movement today?" 
+                    "image_texts": "<b>Inequalities</b>: There used to be an open market located just across the street from where you’re standing. Who do you think would have been the main consumers of the goods produced by the Badger State Shoe Company and similar companies located on the Isthmus?" 
                 }, 
                 { 
                     "current_small": "img/site7/site7_3_cs.jpg", 
-                    "current_large": "img/site7/site7_3_cl.jpg",  
-                    "image_texts": "<b>Alternatives</b>: Some of the businesses in this neighborhood are local or community-owned, such as the Willy Street Co-Op, a grocery store founded in 1974. How do you think these businesses differ from retail outlets in other parts of Madison?" 
-                }],
-                "audio": [ "audio/site4.base64" ] 
-            }, 
+                    "current_large": "img/site7/site7_3_cl.jpg", 
+                    "image_texts": "<b>Alternatives</b>: Most Nike shoes are made in factories like this in southeast Asia. Why do you think Nike chooses to have its shoes made in these locations, rather than in American cities like Madison? Who do you think the main consumers of shoes produced by Nike are?" 
+                }], 
+                "audio": null 
+                }, 
             "geometry": { 
                 "type": "Point", 
-                "coordinates": [ -89.380161877769822, 43.074776235352246 ] 
-            } 
+                "coordinates": [ -89.385913470378512, 43.07471406778965 ] 
+            }
         },
         { 
             "type": "Feature", 
             "properties": { 
                 "id": 7, 
-                "title": "Wisconsin State Capitol", 
-                "classname": "state_capitol", 
+                "title": "State Street", 
+                "classname": "state_street", 
                 "icon": { 
                     "iconUrl": "img/icons/people24.png", 
                     "iconSize": [ 24, 24 ], 

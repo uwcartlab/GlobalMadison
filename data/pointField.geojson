@@ -533,7 +533,7 @@
         "id": 37, 
         "name": "Fess Hotel", 
         "images": [ "point37_1.jpg", "point37_2.jpg" ], 
-        "route": 6, 
+        "route": 5, 
         "captions": ["Fess Hotel Plaque, 2021", "View of the Fess Hotel, 1977"],
         "desc":"George and Anna Fess opened a grocery store and eatery in 1856, before opening a hotel next door. The hotel operated into the 70s, and remained in the Fess family until recently. Fess Hotel plauqe reads: <i>A hotel for the common man throughout its history, the nineteenth century facade of the Fess remains a reminder of the commercial character of the King Street and Doty Street area. George Fess, the original proprietor of the hotel, catered to travelers on the nearby railroad lines and to weekly boarders. After a remodeling in 1901 by architects J.O. Gordon and F. W. Paunack, the lodging was known for a decade as the Central Hotel, though it remained in the Fess family until recently.</i>"
     },
@@ -563,7 +563,7 @@
         "id": 38, 
         "name": "Dick Eddy Building", 
         "images": ["point38_1.jpg", "point38_2.jpg", "point38_3.jpg"], 
-        "route": 6, 
+        "route": 5, 
         "captions": ["Dick Eddy Building Plaque, 2021","Dick Eddy Building, 2021","Christian Dick Block, Circa 1890"],
         "desc": "Originally built in 1889 by Christian W. Dick. Originally, it served as a wholesale liquor business, but later housed a Schlitz Brewery Storefront, a hotel, and a dance studio. Dick Eddy building reads: <i>The imposing Dick Building is a flat-iron building in the Richardsonian Romanesque style, a style in which the local architects, Conover and Porter, were particularly adept. The Dick block was built in part to house Christian Dick's wine and liquor wholesale business. It also housed the Schlitz saloon, Prof. Kehl's Dance Academy and offices. The Eddy building next door was built by E. W. Eddy to house his 'One Minute Lunch Room,' a popular inexpensive eatery.</i>"
     }, 
@@ -578,7 +578,7 @@
         "id": 39, 
         "name": "Majestic Theater", 
         "images": [ "point39_1.jpg", "point39_2.jpg" ], 
-        "route": 6, 
+        "route": 5, 
         "captions": ["Majestic Theater, 2021", "Majestic Theater, 1954"],
         "desc":"Opened in 1906, the Majestic Theater is Madison's oldest theater. It began as a vaudeville theater, and later became a movie house and a live music venue. Over the course of its lifetime, it has changed ownership 10 times."
     }, 
