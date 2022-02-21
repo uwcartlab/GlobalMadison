@@ -320,6 +320,7 @@ function callback(data){
     //update landmark slideshow content
     function updateLandmarkModal(){
         $("#img-comparison").empty().show();
+        slider = null;
         //adjust width of image container
         $('#img-comparison').css("width", $('#landmark-content').width());
         //update text description
@@ -352,7 +353,13 @@ function callback(data){
     function createImage(){
         let src = imageSet[slide]["current_" + screenSize],
             img = $('<img class="landmark-single-image" src="' + src + '">');
-        
+
+        if ($('#img-comparison').hasClass('juxtapose')){
+            $('.juxtapose').removeClass();
+        }
+
+        $('#img-comparison').css("height", "auto");
+
         $('#img-comparison').append(img);
     }
 /*MOVE MAP*/
@@ -715,7 +722,7 @@ function cacheError(){
 /*RESPONSIVE DESIGN FUNCTIONS*/
 function setLayout(){
     let w = $(window).width();
-
+    
     if (w < 768){
         if (screenSize == "large"){
             screenSize = "small";
@@ -755,15 +762,28 @@ function setLayout(){
     function imageResize(){
         if (imageSet){
             $('#img-comparison').empty();
-            slider = new juxtapose.JXSlider('#img-comparison',
-                [{
-                        src: imageSet[slide]["historic_" + screenSize]
-                    },
-                    {
-                        src: imageSet[slide]["current_" + screenSize]
-                }],
-                {}
-            );
+            if (imageSet[slide]["historic_" + screenSize]){
+
+                slider = new juxtapose.JXSlider('#img-comparison',
+                    [{
+                            src: imageSet[slide]["historic_" + screenSize]
+                        },
+                        {
+                            src: imageSet[slide]["current_" + screenSize]
+                    }],
+                    {}
+                );
+            }
+            else{
+                $('#img-comparison').css("width", $('#landmark-content').width());
+
+                let src = imageSet[slide]["current_" + screenSize],
+                    img = $('<img class="landmark-single-image" src="' + src + '">');
+                
+                $('#img-comparison').append(img);
+                $('#img-comparison').css("height", "auto");
+
+            }
         }
     }
  

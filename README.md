@@ -28,7 +28,8 @@
     Location of the United States Shoe Industry, 1933: [Quarterly Journal of Economics](https://www.jstor.org/stable/1883688)  
     1929 Madison Manufacturers: [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Image/IM35718) 
     Badger State Shoe Company (Woodlawn Location): [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Property/HI101634)
-    Natural and Synthetic Rubber Production 2018: [Atlas of Economic Complexity](https://atlas.cid.harvard.edu/)
+    Natural and Synthetic Rubber Production 2018: [Atlas of Economic Complexity](https://atlas.cid.harvard.edu/),
+    John Fluevog Shoes Distillery Historic District, Toronto, ON : [Flickr - tsaiproject](https://commons.wikimedia.org/wiki/File:Shoe_Forms_(12492447473).jpg)
 - **Site 4: Livingston and Mifflin/Climate Change**  
     Hydric Soil Data: [Dane County](https://dcimapapps.countyofdane.com/arcgissrv/rest/services/HydricSoils_cache/MapServer/0)  
     Blog Post About 2018 Flood: [UW-Limnology](https://blog.limnology.wisc.edu/2018/08/29/how-a-30-year-rain-event-became-a-100-year-flood/)  
@@ -175,11 +176,13 @@
         * 
     * Other
         * 1918 Labor Unions Directory: [Capital Times](https://newscomwc.newspapers.com/image/520367496/?terms=Barber%27s%20union%20strike&match=1)  
-- **Site 8: Capitol Steps-State Street/BLM Protests/Occupy Protests/Popular Movements**  
+- **Site 7: Capitol Steps-State Street/BLM Protests/Occupy Protests/Popular Movements**  
     * Interdependencies
-    * Inequalites 
-    * Alternatives
         * Scott Walker Protests: [CC to Joe Rowley](https://en.wikipedia.org/wiki/2011_Wisconsin_protests#/media/File:Gov_Walker_Protests1_JR.jpg)
+    * Inequalites 
+        * Women's March Photo: [CC to Sara DeHaan](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Women%27s_march_on_Madison%2C_Wisconsin.jpg/768px-Women%27s_march_on_Madison%2C_Wisconsin.jpg)
+    * Alternatives
+        * BLM State Street Murals [CC to Clarissa Peterson](https://www.flickr.com/photos/clarissa/50513906958/)
 - **Point Field Descriptions/Images**  
     #1: Lincoln Statue: [UW News Service](https://news.wisc.edu/uw-madisons-lincoln-statue-turns-100/)  
     #2: Vietnam Plaque: [Historical Marker Database](https://www.hmdb.org/m.asp?m=31761)  

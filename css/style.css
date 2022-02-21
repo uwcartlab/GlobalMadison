@@ -210,10 +210,21 @@ audio{
     text-align:center;
     margin:auto;
 }
-.landmark-single-image{
-    width:100%;
-}
+
 /******RESPONSIVE DESIGN******/
+@media only screen and (min-width:1000px){
+    .landmark-single-image{
+        width:50%;
+        margin:auto;
+        display:block;
+    }
+}
+@media only screen and (min-width:768px) and (max-width:1000px){
+    .landmark-single-image{
+        width:100%;
+    }
+}
+
 @media only screen and (min-width:768px){
     /******MAP/CONTAINER*****/
     #container, #map{
@@ -299,5 +310,8 @@ audio{
     }
     .leaflet-control-zoom{
         display:none;
+    }
+    .landmark-single-image{
+        width:100%;
     }
 }
