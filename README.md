@@ -122,6 +122,7 @@
     * Other data
         * U.S Precipitation Anomaly Map: [PRISM Climate Group](https://prism.oregonstate.edu/recent/)  
         * 1950 Flood on University Avenue: [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Image/IM64350)  
+        * Sustainable City: [Wikimedia Commons via Tommie Hansen](https://commons.wikimedia.org/wiki/File:Cityscape_-_Bilbao,_Spain_-_panoramio_(1).jpg)
 - **Site 4: Badger State Shoe Company**  
     * Interdependencies
         * Badger State Shoe Company Photo, 1899 (Milwaukee): [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Image/IM97306)   
@@ -183,6 +184,7 @@
         * Women's March Photo: [CC to Sara DeHaan](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Women%27s_march_on_Madison%2C_Wisconsin.jpg/768px-Women%27s_march_on_Madison%2C_Wisconsin.jpg)
     * Alternatives
         * BLM State Street Murals [CC to Clarissa Peterson](https://www.flickr.com/photos/clarissa/50513906958/)
+        * BLM Protests [Courtesy the Badger Herald](https://badgerherald.com/wp-content/uploads/2020/06/FEB4A51A-F61A-4B4F-9C50-7A6AFAA2AB9B.jpeg)
 - **Point Field Descriptions/Images**  
     #1: Lincoln Statue: [UW News Service](https://news.wisc.edu/uw-madisons-lincoln-statue-turns-100/)  
     #2: Vietnam Plaque: [Historical Marker Database](https://www.hmdb.org/m.asp?m=31761)  

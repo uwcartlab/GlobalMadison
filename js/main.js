@@ -166,21 +166,6 @@ function callback(data){
         $("#read-button").click(function(){
             //if first click (intro), activate a timer that automatically advances slides as they're read
             if (firstClick){
-                let scripts =  pois.features[currentSite].properties.Scripts;
-                let delay = 0;
-                //clear existing timeouts
-                for (var t in timeouts){
-                    clearTimeout(timeouts[t]);
-                }
-                //go to next slide automatically as audio is read
-                for (var i = 0; i < scripts.length - 1; i++){                      
-                    delay = delay + (scripts[i].length * 68.2);
-                    timeouts[i] = window.setTimeout(function(){
-                        slide++;
-                        nextTextModal(pois.features[currentSite]);
-                    }, delay);
-                }
-                
                 audioIndex = 0;
                 let audioListLength = pois.features[currentSite].properties.audio.length;
                 playAudio(screenSize, currentSite);
@@ -188,7 +173,16 @@ function callback(data){
                 $("audio").on('ended', function(){
                     audioIndex++;
                     if (audioIndex < audioListLength){
+                        slide++;
+                        nextTextModal(pois.features[currentSite]);
                         playAudio(screenSize, currentSite);
+                    }
+                    else{
+                        textModal.hide();
+                        if (showText == true){
+                            landmarkModal.show();
+                            showText = false;
+                        }
                     }
                 })
             }
@@ -271,6 +265,7 @@ function callback(data){
         imageSet = pois.features[currentSite].properties.imageSet;
         //add landmark slides
         updateLandmarkModal();
+
         //next button listener
         $('#next-button-landmark').click(function(){
             slide++;
@@ -283,9 +278,11 @@ function callback(data){
                 slide--;
                 inactiveButton();
                 updateLandmarkModal();
+                $("#proceed-button").hide();
             }
         })
     }
+
     //next landmark modal slide
     function nextLandmarkModal(){
         if (slide < imageSet.length){
@@ -293,43 +290,51 @@ function callback(data){
         }
         //last slide
         else if (slide == imageSet.length){
-            //hide slideshow and activate proceed button
-            $("#img-comparison").hide()
-            $("#proceed-button").show();
-            $("#landmark-script").html("After closing this slide show window, you will be guided by the highted route to the next landmark. If you want to explore more on this landmark, take the chance to navigate through images using previous or next buttons.");
-            $("#landmark-image").attr("src","");
-            $("#proceed-button").click(function(){
-                endSlideShow();
-            });
+            lastSlide();
         }
         //after last slide
         else{
             endSlideShow();
         }
-
-        function endSlideShow(){
-            landmarkModal.hide();
-            if (currentSite < 7){
-                currentSite++;
-                changeLandmark();
-                $("#proceed-button").hide();
-                $("#proceed-button").off();
-            }
-        }
     }
     //update landmark slideshow content
     function updateLandmarkModal(){
-        $("#img-comparison").empty().show();
-        slider = null;
-        //adjust width of image container
-        $('#img-comparison').css("width", $('#landmark-content').width());
-        //update text description
-        $("#landmark-script").html(imageSet[slide].image_texts);
-        if (imageSet[slide]["historic_" + screenSize]){
-            createSlider();
+        if (imageSet.length > 0){
+            $("#img-comparison").empty().show();
+            slider = null;
+            //adjust width of image container
+            $('#img-comparison').css("width", $('#landmark-content').width());
+            //update text description
+            $("#landmark-script").html(imageSet[slide].image_texts);
+            if (imageSet[slide]["historic_" + screenSize]){
+                createSlider();
+            }
+            else{
+                createImage();
+            }
         }
         else{
-            createImage();
+            lastSlide();
+        }
+    }
+    function lastSlide(){
+        //hide slideshow and activate proceed button
+        $("#img-comparison").hide()
+        $("#proceed-button").show();
+        $("#landmark-script").html("After closing this slide show window, you will be guided by the highted route to the next landmark. If you want to explore more on this landmark, take the chance to navigate through images using previous or next buttons.");
+        $("#landmark-image").attr("src","");
+        $("#proceed-button").click(function(){
+            endSlideShow();
+        });
+    }
+    //end slideshow
+    function endSlideShow(){
+        landmarkModal.hide();
+        if (currentSite < 7){
+            currentSite++;
+            changeLandmark();
+            $("#proceed-button").hide();
+            $("#proceed-button").off();
         }
     }
     //create image comparison slider
