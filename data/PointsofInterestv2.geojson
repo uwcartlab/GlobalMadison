@@ -84,16 +84,19 @@
                     "historic_large": "img/site2/site2_1_hl.jpg", 
                     "current_small": "img/site2/site2_1_cs.png", 
                     "current_large": "img/site2/site2_1_cl.jpg", 
+                    "audio":"audio/site2/site2_inter.txt",
                     "image_texts": "<b>Interdependencies</b>: Research undertaken at UW-Madison has long played a key role in transforming society across the State and beyond. In the 1920s, Dr. Harry Steenbock developed an inexpensive method of enriching foods with Vitamin D, an innovation that would ultimately help to eradicate rickets throughout most of the world. Royalties from the patent funded the construction of a library named in his honor. In what other ways do you think the work that happens at the university might have implications for other parts of the State or even the world?" 
                 }, 
                 { 
                     "current_small": "img/site2/site2_2_cs.png", 
                     "current_large": "img/site2/site2_2_cl.png", 
+                    "audio":"audio/site2/site2_ineq.txt",
                     "image_texts": "<b>Inequalities</b>: In addition to the university – and the city – being built on Ho Chunk land, the Land-Grant College Act (or Morrill Act), passed by Congress in 1862, gave universities land that had been expropriated from indigenous communities to States to help finance the establishment of colleges. This map shows where the land that helped develop this campus came from. To what extent do you think the university has been a vehicle for generating regional inequalities? " 
                 }, 
                 { 
                     "current_small": "img/site2/site2_3_cs.jpg", 
                     "current_large": "img/site2/site2_3_cl.jpg",
+                    "audio":"audio/site2/site2_alt.txt",
                     "image_texts": "<b>Alternatives</b>: In recent years, the reading of a Land Acknowledgement, recognizing that the University is founded on and financed by stolen land, has become increasingly common on campus. What responsibilities do you think this university (and others) bear for rectifying these deep-rooted injustices? " 
                 }], 
                 "audio": [ "audio/site2/site2_intro1.txt" ] 
@@ -140,6 +143,7 @@
                     "historic_large": "img/site3/site3_1_hl.png", 
                     "current_small": "img/site3/site3_1_cs.png", 
                     "current_large": "img/site3/site3_1_cl.png", 
+                    "audio":"audio/site3/site3_inter.txt",
                     "image_texts": "<b>Interdependencies</b>: The expansion of the city also created a critical interdependency between the physical topography of the city and the built environment. As this map shows, the isthmus neighborhood, which lies between Lake Monona and Lake Mendota, was built on top of marshland that was filled. In what ways do you think that interdependence has become more critical in recent decades?" 
                 }, 
                 { 
@@ -147,17 +151,14 @@
                     "historic_large": "img/site3/site3_2_hl.jpg", 
                     "current_small": "img/site3/site3_2_cs.jpg", 
                     "current_large": "img/site3/site3_2_cl.jpg", 
+                    "audio":"audio/site3/site3_ineq.txt",
                     "image_texts": "<b>Inequalities</b>: These images show how this precarious interdependency has led to flooding in this neighborhood, most recently in 2018. In Madison, and globally, some people are more vulnerable than others to the effects of flooding and other extreme climate events. What factors do you think are important in producing unequal degrees of vulnerability?" 
                 }, 
                 { 
                     "current_small": "img/site3/site3_3_cs.jpg", 
                     "current_large": "img/site3/site3_3_cl.jpg", 
+                    "audio":"audio/site3/site3_alt.txt",
                     "image_texts": "<b>Alternatives</b>: One of the challenges we face in the 21st century is how to build sustainable cities that can mitigate the threats posed by climate change for everyone, rather than individualizing those risks. How can we build cities in ways that are more sustainable and resilient for all? What kinds of considerations do you think would be important today for cities that were not an issue when the isthmus neighborhood was being constructed in the late-19th century?" 
-                },
-                { 
-                    "current_small": "img/site3/site3_4_cs.jpg", 
-                    "current_large": "img/site3/site3_4_cl.jpg", 
-                    "image_texts": "" 
                 }],
                 "audio": ["audio/site3/site3_intro1.txt","audio/site3/site3_intro2.txt"] 
                 }, 
@@ -205,11 +206,13 @@
                     "current_large": "img/site4/site4_1_cl.jpg", 
                     "historic_small": "img/site4/site4_1_hs.jpg", 
                     "historic_large": "img/site4/site4_1_hl.jpg", 
+                    "audio":"audio/site4/site4_inter.txt",
                     "image_texts": "<b>Interdependencies</b>: Within the Badger State Shoe factory there were important social divisions of labor, in terms of who did different tasks and how they were compensated for their labor. This graph shows that the gender pay gap was particularly pronounced. To what extent do you think gender inequalities in this shoe factory reflected wider social divisions of labor? To what extent have these dynamics persisted, even as the economy in cities like Madison has changed significantly? " 
                 }, 
                 { 
                     "current_small": "img/site4/site4_2_cs.png", 
                     "current_large": "img/site4/site4_2_cl.png",
+                    "audio":"audio/site4/site4_ineq.txt",
                     "image_texts": "<b>Inequalities</b>: As this map shows, the international division of labor in manufacturing has changed dramatically since the second half of the 20th century. Shoes that are sold in Madison today were more likely produced in factories in southeast Asia or South America. Why do you think major brands, such as Nike, choose to have their shoes made in these locations, rather than in cities like Madison?" 
                 },
                 { 
@@ -217,6 +220,7 @@
                     "current_large": "img/site4/site4_3_cl.jpg",
                     "historic_small": "img/site4/site4_3_hs.jpg", 
                     "historic_large": "img/site4/site4_3_hl.jpg", 
+                    "audio":"audio/site4/site4_alt.txt",
                     "image_texts": "<b>Alternatives</b>: In 2013, a factory located in Rana Plaza, in Bangladesh, collapsed, leading to 1,134 deaths and over 2,000 injuries. The factory was producing apparel for a range of major brands, including some that have a license to produce clothing carrying the label of universities such as UW-Madison. These photos show some of the protests that happened in Madison after the Rana Plaza disaster, demanding that the university cut ties with brands that refused to commit to improving working conditions in their supplier’s factories. How have labor politics had to adjust to the globalization of production networks? " 
                 }], 
                 "audio": ["audio/site4/site4_intro1.txt","audio/site4/site4_intro2.txt"] 
@@ -261,15 +265,15 @@
                 "Scripts": [ "The development of the isthmus also depended on increasing the supply of energy in the city. The first gaslights appeared along these streets in 1855, and the first electrical lighting arrived in the 1880s. The Madison Gas & Electric Company was established on the Isthmus in 1902. Over the years, the city’s energy needs have been shaped by wider political-ecological crises, most notably climate change. Our changing climate and changing energy needs have created new interdependencies between Madison and other economies and ecologies around the world. For much of the 20th century, the structure you are standing in front of generated power by the burning of coal, which was transported to the city via the railroads. When movements demanding cleaner energy emerged in the late-20th century, a wall was built to try to make this process less visible. Ultimately, however, the plant transitioned from coal to gas. " ],
                 "textImage": "img/site5_1.jpg", 
                 "imageSet": [{ 
-                    "historic_small": "img/site5/site5_1_hs.jpg", 
-                    "historic_large": "img/site5/site5_1_hl.jpg", 
                     "current_small": "img/site5/site5_1_cs.jpg", 
                     "current_large": "img/site5/site5_1_cl.jpg", 
+                    "audio":"audio/site5/site5_inter.txt",
                     "image_texts": "<b>Interdependencies</b>: Most of the gas that fuels this power plant is imported via underground pipelines from Canada to the North, as well as Oklahoma and the Gulf of Mexico to the South. Madison’s energy needs therefore have important implications for these sites, but also, as this map showing leakages and spillages related to those pipelines shows, people who live on land on which the entire energy infrastructure was constructed. What does this tell us about our responsibilities to people in other parts of the country who are protesting the construction of new pipelines?" 
                 }, 
                 { 
                     "current_small": "img/site5/site5_2_cs.png", 
                     "current_large": "img/site5/site5_2_cl.png", 
+                    "audio":"audio/site5/site5_ineq.txt",
                     "image_texts": "<b>Inequalities</b>: In recent years, countries such as China and India have come under more global scrutiny for their rising CO2 emissions. A significant portion of this increase in emissions is driven by the offshoring of manufacturing to low-wage areas of the world, as we saw at the last site. This map attributes emissions to the place where commodities are consumed rather than produced. What does it tell you about who is most responsible for reducing carbon emissions? " 
                 }, 
                 { 
@@ -277,6 +281,7 @@
                     "historic_large": "img/site5/site5_3_hl.png", 
                     "current_small": "img/site5/site5_3_cs.jpg", 
                     "current_large": "img/site5/site5_3_cl.jpg", 
+                    "audio":"audio/site5/site5_alt.txt",
                     "image_texts": "<b>Alternatives</b>: As climate change has become a more urgent political concern, there have been various efforts to support the expansion of clean energy. This map shows the proliferation of renewable energy sources in Wisconsin, most prominently through wind farms. What does this reveal about the interconnections between changing landscapes in urban and rural Wisconsin?  " 
                 }], 
                 "audio": ["audio/site5/site5_intro1.txt"] 
@@ -318,10 +323,11 @@
                 "Description": "Former Chicago and NorthWestern Railroad Station, one of six passenger stations built in Madison", 
                 "Address": "133 S Blair St.", 
                 "Scripts": [ "The development of the Isthmus in the early twentieth century created transportation challenges too. More and more raw materials had to be brought into the city and finished goods had to be moved to markets in southern Wisconsin and beyond, and more coal had to be brought in to supply factories and houses with power. The Badger State Shoe Company, for example, sold some of its goods in bulk to a national distributor based in Chicago. Other companies produced agricultural tools and machines that needed to reach farms in rural areas of the Midwest. The primary means through which goods are transported from factory to market have changed significantly since the early twentieth century―as have the distances they travel. But, you can still see evidence of these earlier transportation networks imprinted in the landscape." ], 
-                "textImage": "img/site6_1_cs.png", 
+                "textImage": "img/site6_1.png", 
                 "imageSet": [{ 
                     "current_small": "img/site6/site6_1_cs.jpg", 
                     "current_large": "img/site6/site6_1_cl.jpg", 
+                    "audio":"audio/site6/site6_inter.txt",
                     "image_texts": "<b>Interdependencies</b>: As this historical image illustrates, the building you are currently standing in front of used to be a major train station. What cities do you think were connected to Madison by railroad in the early twentieth century, and how has this changed over time?" 
                 }, 
                 { 
@@ -329,17 +335,14 @@
                     "current_large": "img/site6/site6_2_cl.jpg", 
                     "historic_small": "img/site6/site6_2_hs.jpg", 
                     "historic_large": "img/site6/site6_2_hl.jpg", 
+                    "audio":"audio/site6/site6_ineq.txt",
                     "image_texts": "<b>Inequalities</b>: How much farther do you think shoes produced by a transnational brand like Nike travel today compared to shoes the Badger State Shoe Company produced in the early twentieth century, and what are the implications for the city’s transportation needs? How do you think the globalization of commodity chains has transformed the built environment you are currently standing in?"
                 }, 
                 { 
                     "current_small": "img/site6/site6_3_cs.jpg", 
                     "current_large": "img/site6/site6_3_cl.jpg", 
+                    "audio":"audio/site6/site6_alt.txt",
                     "image_texts": "<b>Alternatives</b>: In recent decades, many former railroads, like the one seen in this image, have become obsolete. Madison and other cities across the world are grappling with the question of what to do with outmoded transportation infrastrures. What opportunities do you think this creates for the city to develop alternative ways for people to move around Madison? " 
-                },
-                {
-                    "current_small": "img/site6/site6_4_cs.jpg", 
-                    "current_large": "img/site6/site6_4_cl.jpg", 
-                    "image_texts": "" 
                 }], 
                 "audio": ["audio/site6/site6_intro1.txt"] 
             }, 
@@ -385,11 +388,13 @@
                 "imageSet": [{ 
                     "current_small": "img/site7/site7_1_cs.jpg", 
                     "current_large": "img/site7/site7_1_cl.jpg", 
+                    "audio":"audio/site7/site7_inter.txt",
                     "image_texts": "<b>Interdependencies</b>: The protests that have taken place in this building have both been inspired by and expressed solidarity with protests in other parts of the world. For example, during the Act 10 protests of 2011, some commentators and activists made connections with protests against austerity, inequality, and corruption in places as diverse as Zuccotti Park, New York and Tahrir Square, Egypt. What other global issues have catalyzed people to congregate and express their anger or desire for change? " 
                 }, 
                 { 
                     "current_small": "img/site7/site7_2_cs.jpg",
                     "current_large": "img/site7/site7_2_cl.jpg", 
+                    "audio":"audio/site7/site7_ineq.txt",
                     "image_texts": "<b>Inequalities</b>: More recently, people have gathered to protest systemic injustices based on gender and race. This includes the 2017 Women’s March and the Black Lives Matter protests in 2020. How do such protests draw attention to ongoing reproduction of internal differences and inequities within Madison? How have these inequalities been challenged or sustained by Madison’s shifting global interdependencies? " 
                 }, 
                 { 
@@ -397,7 +402,8 @@
                     "current_large": "img/site7/site7_3_cl.jpg",
                     "historic_small": "img/site7/site7_3_hs.jpg", 
                     "historic_large": "img/site7/site7_3_hl.jpg",  
-                    "image_texts": "<b>Alternatives</b>:Walking back down State Street, which was turned from a 4 lane street to a pedestrian mall in the mid 70s - you can observe many signs of change. During the Covid-19 pandemic, about 20% (31/150) of the businesses on State Street closed. Additionally, about half of the storefronts were damaged during Black Lives Matter Protests in 2020. Many of these storefronts became murals expressing solidarity with Madisonians who protested for social justice and equity. The protests and murals made visible histories and current experiences of racial exclusion in Madison that many residents are unaware of. What role do you think political protests can play in changing the social and physical landscapes that surround us? " 
+                    "audio":"audio/site7/site7_alt.txt",
+                    "image_texts": "<b>Alternatives</b>: Walking back down State Street, which was turned from a 4 lane street to a pedestrian mall in the mid 70s - you can observe many signs of change. During the Covid-19 pandemic, about 20% (31/150) of the businesses on State Street closed. Additionally, about half of the storefronts were damaged during Black Lives Matter Protests in 2020. Many of these storefronts became murals expressing solidarity with Madisonians who protested for social justice and equity. The protests and murals made visible histories and current experiences of racial exclusion in Madison that many residents are unaware of. What role do you think political protests can play in changing the social and physical landscapes that surround us? " 
                 }], 
                 "audio": ["audio/site7/site7_intro1.txt"] 
                 }, 
@@ -439,22 +445,25 @@
                 "Description": "The building was constructed in 1910 after the company had originally expanded its production to Madison in 1900. It was designated a landmark by the Madison Landmarks Commission in 1989.", 
                 "Address": "2E Main St", 
                 "Scripts": ["While some people in Madison blamed BLM protestors for destroying businesses on State Street, its store fronts and sense of place have been more drastically altered by ongoing processes of re-development, including an influx of global and national chains on several blocks, as well as the emergence of luxury student housing. This change in housing stock is referred to as ‘gentrification’ – in the case of student-centered luxury housing it is sometimes called ‘studentification’ – and can be seen especially at this block, known as the “Hub on Campus Madison”, which was completed in 2015. A national real estate development firm called Core Spaces built and runs The Hub, as well as other nearby luxury student housing developments, including The James and ōLiv. While this area is designated by the City as a “preferred area for affordable housing”, fewer than 16% of these buildings comprise middle or low-income apartments. Most rents at these properties are high, even by the Madison rental-market standards, which present challenges to many students. To fill the apartments, the Hub and other luxury student-based housing properties heavily recruit students from wealthy regions and areas of the world, including many cities across Asia. "],
-                "textImage": "img/site8_1_cs.jpg", 
+                "textImage": "img/site8_1.jpg", 
                 "imageSet": [{ 
                     "current_small": "img/site8/site8_1_cl.jpg", 
                     "current_large": "img/site8/site8_1_cs.jpg", 
+                    "historic_large": "img/site8/site8_1_hl.jpg", 
+                    "historic_small": "img/site8/site8_1_hs.jpg", 
+                    "audio":"audio/site8/site8_inter.txt",
                     "image_texts": "<b>Interdependencies</b>: State Street is a complex landscape that necessarily serves a wide range of Madisonians, including students, staff and faculty from UW as well as concert and museum goers and shoppers from other parts of the city and state. It is also a mixed-use area, with residential and commercial properties in close proximity. Do you think it can serve all of these populations and uses equally? How can/should it balance local/regional needs (local businesses, affordable housing, transportation thoroughfare) with the demands of the global economy? " 
                 }, 
                 { 
                     "current_small": "img/site8/site8_2_cl.jpg", 
                     "current_large": "img/site8/site8_2_cs.jpg",
-                    "image_texts": "<b>Inequalities</b>: Why might it be easier to blame BLM protestors for destroying State Street than to confront changes due to gentrification or studentification? " 
+                    "audio":"audio/site8/site8_ineq.txt",
+                    "image_texts": "<b>Inequalities</b>: Why might it be easier to blame BLM protestors for destroying State Street than to confront changes due to gentrification or studentification?" 
                 }, 
                 { 
-                    "historic_small": "img/site1_3_hs.jpg", 
-                    "historic_large": "img/site1_3_hl.jpg", 
-                    "current_small": "img/site1_3_cs.jpg", 
-                    "current_large": "img/site1_3_cl.jpg", 
+                    "current_small": "img/site8/site8_3_cl.jpg", 
+                    "current_large": "img/site8/site8_3_cs.jpg", 
+                    "audio":"audio/site8/site8_alt.txt",
                     "image_texts": "<b>Alternatives</b>: Looking forward, how do you think State Street–and Madison more broadly–might change in the coming years? Who do you think will be the primary drivers of those changes? " 
                 }], 
                 "audio": ["audio/site8/site8_intro1.txt"] 

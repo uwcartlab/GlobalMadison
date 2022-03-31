@@ -165,26 +165,28 @@
         * 1909 Station: [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Image/IM2258)
         * 1904 Map of East Madison (showing streetcar routes): [Wisconsin Historical Society](https://content.wisconsinhistory.org/digital/collection/maps/id/8671)  
         * 1904 Map of West Madison (showing streetcar routes): [Wisconsin Historical Society](https://content.wisconsinhistory.org/digital/collection/maps/id/8672)  
-- **Site 7: First Settlement/Labor**  
+- **Site 7: Capitol Steps-State Street/BLM Protests/Occupy Protests/Popular Movements**  
     * Interdependencies
         * 1929 Industrial Map of Madison: [Wisconsin Historical Society](https://content.wisconsinhistory.org/digital/collection/maps/id/8199)  
         * 1936 Rail Construction Crew: [Wisconsin Historical Society](https://www.wisconsinhistory.org/Records/Image/IM3684)
+        * Scott Walker Protests: [CC to Joe Rowley Retrieved from Flickr](https://en.wikipedia.org/wiki/2011_Wisconsin_protests#/media/File:Gov_Walker_Protests1_JR.jpg)
     * Inequalites 
         * 1968 Grape Boycott Photo: [Picket Line on Park St](https://newscomwc.newspapers.com/image/521628150/?terms=migrant%20worker%20hearing&pqsid=4ruW4iKHKMlr0FulKfqmYg%3A1778000%3A587452833&match=1)
         * 1966 Migrant Worker March News Articles
+        * Women's March Photo: [CC to Sara DeHaan Retrieved from Flickr](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Women%27s_march_on_Madison%2C_Wisconsin.jpg/768px-Women%27s_march_on_Madison%2C_Wisconsin.jpg)
     * Alternatives
         * Article about Migrant Labor in the Dairy Industry: [Urban Milwaukee](https://urbanmilwaukee.com/2017/03/20/state-dairy-farms-losing-immigrant-workers/)  
-        * 
+        * BLM State Street Murals [CC to Clarissa Peterson Retrieved from Flickr](https://www.flickr.com/photos/clarissa/50513906958/)
+        * BLM Protests [Courtesy the Badger Herald](https://badgerherald.com/wp-content/uploads/2020/06/FEB4A51A-F61A-4B4F-9C50-7A6AFAA2AB9B.jpeg)
     * Other
         * 1918 Labor Unions Directory: [Capital Times](https://newscomwc.newspapers.com/image/520367496/?terms=Barber%27s%20union%20strike&match=1)  
-- **Site 7: Capitol Steps-State Street/BLM Protests/Occupy Protests/Popular Movements**  
+- **Site 8: The Hub/Gentrification**  
     * Interdependencies
         * Scott Walker Protests: [CC to Joe Rowley](https://en.wikipedia.org/wiki/2011_Wisconsin_protests#/media/File:Gov_Walker_Protests1_JR.jpg)
     * Inequalites 
-        * Women's March Photo: [CC to Sara DeHaan](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Women%27s_march_on_Madison%2C_Wisconsin.jpg/768px-Women%27s_march_on_Madison%2C_Wisconsin.jpg)
+        * State Street Parcel Data: [Wisconsin Open Data via Wisconsin State Cartographer's Office](https://geodata.wisc.edu/catalog/countyofdane-parcels)
     * Alternatives
-        * BLM State Street Murals [CC to Clarissa Peterson](https://www.flickr.com/photos/clarissa/50513906958/)
-        * BLM Protests [Courtesy the Badger Herald](https://badgerherald.com/wp-content/uploads/2020/06/FEB4A51A-F61A-4B4F-9C50-7A6AFAA2AB9B.jpeg)
+        * Springtime Saturday on State Street [CC to Richard Hurd Retrieved from Flickr](https://www.flickr.com/photos/rahimageworks/13921220942)
 - **Point Field Descriptions/Images**  
     #1: Lincoln Statue: [UW News Service](https://news.wisc.edu/uw-madisons-lincoln-statue-turns-100/)  
     #2: Vietnam Plaque: [Historical Marker Database](https://www.hmdb.org/m.asp?m=31761)  

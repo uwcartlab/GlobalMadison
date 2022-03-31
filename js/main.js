@@ -165,26 +165,29 @@ function callback(data){
         $("#read-button").off();
         $("#read-button").click(function(){
             //if first click (intro), activate a timer that automatically advances slides as they're read
-            if (firstClick){
-                audioIndex = 0;
-                let audioListLength = pois.features[currentSite].properties.audio.length;
-                playAudio(screenSize, currentSite);
-                //if there are multiple audio files for a site, advance to next audio file
-                $("audio").on('ended', function(){
-                    audioIndex++;
-                    if (audioIndex < audioListLength){
-                        slide++;
-                        nextTextModal(pois.features[currentSite]);
-                        playAudio(screenSize, currentSite);
-                    }
-                    else{
-                        textModal.hide();
-                        if (showText == true){
-                            landmarkModal.show();
-                            showText = false;
+            if ($('#text-modal').is(":visible")){
+                console.log("sup")
+                if (firstClick){
+                    audioIndex = 0;
+                    let audioListLength = pois.features[currentSite].properties.audio.length;
+                    playAudio(screenSize, currentSite);
+                    //if there are multiple audio files for a site, advance to next audio file
+                    $("audio").on('ended', function(){
+                        audioIndex++;
+                        if (audioIndex < audioListLength){
+                            slide++;
+                            nextTextModal(pois.features[currentSite]);
+                            playAudio(screenSize, currentSite);
                         }
-                    }
-                })
+                        else{
+                            textModal.hide();
+                            if (showText == true){
+                                landmarkModal.show();
+                                showText = false;
+                            }
+                        }
+                    })
+                }
             }
             playPause(firstClick);
             firstClick = false;
@@ -220,6 +223,8 @@ function callback(data){
     function startTextModal(){
         clearModal("text");
         addModalTitle("text");
+        readAloud();
+
         //add image
         $("#text-image").attr("src", pois.features[currentSite].properties.textImage);
         //add first page of script
@@ -692,24 +697,29 @@ function showSplash(){
 
 /*CACHE*/
 function cacheLoading(){
-    /*if (navigator.serviceWorker) {
+    if (navigator.serviceWorker) {
         // Start registration process on every page load
-        navigator.serviceWorker.register('./service_worker.js').then(function(reg) {
+        navigator.serviceWorker.register('.//service_worker.js').then(function(reg) {
             if(reg.installing) {
+                reg.installing.onstatechange = function(){
+                    if(reg.waiting) {
+                        console.log('Service worker installed');
+                        cacheLoaded()
+                    } else if(reg.active) {
+                        console.log('Service worker active');
+                        cacheLoaded()
+                    } 
+                }
                 console.log('Service worker installing');
-            } else if(reg.waiting) {
-                console.log('Service worker installed');
-            } else if(reg.active) {
-                console.log('Service worker active');
-                cacheLoaded()
             } 
+
         }).catch(function(error) {
             // registration failed
             console.log('Registration failed with ' + error);
             cacheError();
         });
-
-    }*/
+        
+    }
 }
 
 function cacheLoaded(){

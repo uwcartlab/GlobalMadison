@@ -593,7 +593,7 @@
         "id": 40, 
         "name": "Capitol Rotunda", 
         "images": [ "point40_1.jpg", "point40_2.jpg" ], 
-        "route": 6, 
+        "route": 5, 
         "captions": ["Wisconsin Capitol Rotunda, 2021","Wisconsin Capitol Dome, 2021"],
         "desc":""
     },

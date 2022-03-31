@@ -1,6 +1,6 @@
-/*self.addEventListener('install', (event) => {
+self.addEventListener('install', (event) => {
     event.waitUntil(
-        caches.open('v1').then((cache) => {
+        caches.open('gm').then((cache) => {
             return cache.addAll([
                 './audio/',
                 './audio/site1/site1_intro1.txt',
@@ -15,9 +15,20 @@
                 './audio/site3/site3_intro2.txt',
                 './audio/site4/site4_intro1.txt',
                 './audio/site4/site4_intro2.txt',
+                './audio/site5/site5_intro1.txt',
+                './audio/site6/site6_intro1.txt',
+                './audio/site7/site7_intro1.txt',
+                './audio/site8/site8_intro1.txt',
+                './audio/site1/site1_intro1.mp3',
                 './img/',
                 './img/site1_1.jpg',
                 './img/site2_1.jpg',
+                './img/site3_1.jpg',
+                './img/site4_1.png',
+                './img/site5_1.jpg',
+                './img/site6_1.png',
+                './img/site7_1.jpg',
+                './img/site8_1.jpg',
                 './img/site2/site2_1_hs.jpg',
                 './img/site2/site2_1_hl.jpg',
                 './img/site2/site2_1_cs.png',
@@ -41,17 +52,15 @@
                 './img/site4/site4_1_cl.jpg',
                 './img/site4/site4_1_cs.jpg',
                 './img/site4/site4_1_hl.jpg',
-                './img/site4/site4_1_hl.jpg',
+                './img/site4/site4_1_hs.jpg',
                 './img/site4/site4_2_cl.png',
                 './img/site4/site4_2_cs.png',
                 './img/site4/site4_3_cl.jpg',
                 './img/site4/site4_3_cs.jpg',
                 './img/site4/site4_3_hl.jpg',
-                './img/site4/site4_3_hl.jpg',
+                './img/site4/site4_3_hs.jpg',
                 './img/site5/site5_1_cl.jpg',
                 './img/site5/site5_1_cs.jpg',
-                './img/site5/site5_1_hl.jpg',
-                './img/site5/site5_1_hl.jpg',
                 './img/site5/site5_2_cl.png',
                 './img/site5/site5_2_cs.png',
                 './img/site5/site5_3_cl.jpg',
@@ -66,20 +75,22 @@
                 './img/site6/site6_2_hs.jpg',
                 './img/site6/site6_3_cl.jpg',
                 './img/site6/site6_3_cs.jpg',
-                './img/site6/site6_4_cl.jpg',
-                './img/site6/site6_4_cs.jpg',
                 './img/site7/site7_1_cl.jpg',
                 './img/site7/site7_1_cs.jpg',
-                './img/site7/site7_1_hl.png',
-                './img/site7/site7_1_hs.png',
                 './img/site7/site7_2_cl.jpg',
                 './img/site7/site7_2_cs.jpg',
                 './img/site7/site7_3_cl.jpg',
                 './img/site7/site7_3_cs.jpg',
+                './img/site7/site7_3_hl.jpg',
+                './img/site7/site7_3_hs.jpg',
                 './img/site8/site8_1_cl.jpg',
                 './img/site8/site8_1_cs.jpg',
+                './img/site8/site8_1_hl.jpg',
+                './img/site8/site8_1_hs.jpg',
                 './img/site8/site8_2_cl.jpg',
                 './img/site8/site8_2_cs.jpg',
+                './img/site8/site8_3_cl.jpg',
+                './img/site8/site8_3_cs.jpg',
                 './img/splashbackground_desktop.jpg',
                 './img/splashbackground.jpg',
                 './img/loading.gif',
@@ -144,7 +155,6 @@
                 './img/points/point18_1.jpg',
                 './img/points/point18_2.jpg',
                 './img/points/point19_1.jpg',
-                './img/points/point19_1.jpg',
                 './img/points/point20_1.jpg',
                 './img/points/point21_1.jpg',
                 './img/points/point21_2.jpg',
@@ -179,9 +189,10 @@
                 './css/',
                 './css/style.css',
                 './data/',
-                './data/alerts.geojson',
-                './data/PointsofInterest.geojson',
-                './data/routes.geojson',
+                './data/alertsv2.geojson',
+                './data/PointsofInterestv2.geojson',
+                './data/routesv2.geojson',
+                './data/pointField.geojson',
                 './js/',
                 './js/findMeButton.js',
                 './js/main.js',
@@ -213,6 +224,6 @@ self.addEventListener('fetch', (event) => {
     event.respondWith(
         caches.match(event.request).then((response) => {
             return response || fetch(event.request);
-        })
+        })            
     );
-});*/
+});
