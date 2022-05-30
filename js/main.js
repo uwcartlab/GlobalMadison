@@ -446,10 +446,12 @@ function callback(data){
         pointFieldLayer = L.geoJson(pointFieldContainer, {
             pointToLayer: function(feature, latlng){
                 return L.circleMarker(latlng, {
-                    color:"#CE3234",
+                    color:"#ffffff",
                     fillColor:"#CE3234",
-                    radius:10,
-                    fillOpacity:0.7
+                    radius:6,
+                    fillOpacity:1,
+                    weight:2,
+                    pane:"tooltipPane"
                 });
             },
             onEachFeature: function (feature, layer){
@@ -477,8 +479,8 @@ function callback(data){
     //add marker
     function addMarkers(map, i, itype){
         //screen size
-        //var screen = screenSize == 'small' ? "" : "_larger";
-        let screen = "_larger";
+        var screen = screenSize == 'large' ? "" : "_larger";
+        //let screen = "_larger";
         //select whether regular or highlighted marker
         itype = itype == "red" ? "icon_red" + screen : "icon" + screen;
         //create marker
@@ -578,6 +580,13 @@ function loadMap(){
   
     let findMeButton = new L.Control.Button(findMeOptions).addTo(map);
 
+    if($(window).width() < 768){
+        $('.leaflet-buttons-control-img').css("display","block");
+    }
+    else{
+        $('.leaflet-buttons-control-img').css("display","none");
+    }
+
     function findme_button_onClick() { //where is this accessed?
         getLocation(map);
     }
@@ -631,7 +640,7 @@ function triggerIconBubble(){
       
         //find the right icon
         $(".leaflet-marker-icon").each(function(){
-            var icon = screenSize == 'small' ? "img/icons/scroll40_red.png" : "img/icons/scroll40_red.png";
+            var icon = screenSize == 'small' ? "img/icons/scroll40_red.png" : "img/icons/scroll24_red.png";
             if ($(this).attr("src") == icon){ 
                 firstIcon = $(this);
             }
@@ -763,6 +772,7 @@ function setLayout(){
             $("#landmark-menu-text").text("Landmarks");
             $("#landmark-list, #arrow").show();
         })
+        $('.leaflet-buttons-control-img').css("display","block");
     }
     //remove listeners for fullscreen
     else{
@@ -771,6 +781,7 @@ function setLayout(){
             imageResize();
         }
         $(".back-button, .menu-toggler, #landmark-dropdown-link").off();
+        $('.leaflet-buttons-control-img').css("display","none");
     }
     $('#img-comparison').css("width", $('#landmark-content').width());
     //if screen size jumps between desktop and mobile while slideshow is open, load appropariate image size
