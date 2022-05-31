@@ -565,10 +565,10 @@ function loadMap(){
     let zoom = L.control.zoom({position: "topleft"}).addTo(map);
     
     //basemap
-    mapTileLayer = L.tileLayer('https://api.mapbox.com/styles/v1/gbaldrica/ckkof59m725j917ml0coaxkl4/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoicG53YXRsYXMiLCJhIjoiY2pnM3puY3hwMXVldTJxcXBjZnZseG1jbCJ9.AXk0tP-pS2HjpgLJahLcdw', {
+    mapTileLayer = L.tileLayer('https://api.mapbox.com/styles/v1/gbaldrica/cl3svpq71000e14pn3cqqardr/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiZ2JhbGRyaWNhIiwiYSI6ImNqZnlkeGtkbTRsYTEycXBvYWhvNHl6dHQifQ.gbIkzk7MVT9R9kPcPenRsA', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
-
+    //https://api.mapbox.com/styles/v1/gbaldrica/cl3svpq71000e14pn3cqqardr/wmts?access_token=pk.eyJ1IjoiZ2JhbGRyaWNhIiwiYSI6ImNqZnlkeGtkbTRsYTEycXBvYWhvNHl6dHQifQ.gbIkzk7MVT9R9kPcPenRsA
     //find me
     let findMeOptions = {
         'iconUrl': 'img/icons/findme.png',  // string
