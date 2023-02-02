@@ -227,6 +227,8 @@ function callback(data){
 
         //add image
         $("#text-image").attr("src", pois.features[currentSite].properties.textImage);
+        //add alt text to image
+        $("#text-image").attr("alt", pois.features[currentSite].properties.textImageAlt);
         //add first page of script
         $("#text-script").html(pois.features[currentSite].properties.Scripts[slide]);
         //next button listener
@@ -346,10 +348,12 @@ function callback(data){
     function createSlider(){
         slider = new juxtapose.JXSlider('#img-comparison',
             [{
-                    src: imageSet[slide]["historic_" + screenSize]
+                    src: imageSet[slide]["historic_" + screenSize],
+                    alt: imageSet[slide]["historic_alt"]
                 },
                 {
-                    src: imageSet[slide]["current_" + screenSize]
+                    src: imageSet[slide]["current_" + screenSize],
+                    alt:imageSet[slide]["current_alt"]
             }],
             {
                 animate: true,
@@ -362,7 +366,8 @@ function callback(data){
     }
     function createImage(){
         let src = imageSet[slide]["current_" + screenSize],
-            img = $('<img class="landmark-single-image" src="' + src + '">');
+            alt = imageSet[slide]["current_alt"],
+            img = $('<img class="landmark-single-image" alt="' + alt + '" src="' + src + '">');
 
         if ($('#img-comparison').hasClass('juxtapose')){
             $('.juxtapose').removeClass();

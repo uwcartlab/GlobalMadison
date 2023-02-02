@@ -37,6 +37,7 @@
                 "Address": "584 Lincoln Drive", 
                 "Scripts": ["Hello, my name is Stephen Young and I am an Associate Professor of Geography and International Studies at the University of Wisconsin-Madison. Today, I am going to be your guide for an interactive walking tour in Madison. On this tour, we will explore the social and physical landscapes of the campus, the capitol, and the near east side of the city. In doing so, we will develop what the Geographer Doreen Massey called “a global sense of place”.", "By this, Massey meant that places are not bounded entities with singular, settled identities. Instead, she encouraged us to think about places as dynamic processes, always in a state of becoming, and full of internal difference. Places are certainly distinctive in their character and topography but these unique qualities are a product of the ever changing ways in which they have been connected to and disconnected from other places and regions.","The tour is designed to help you develop a global sense of the place where we live - Madison. First, you will see how Madison, like any city, has been shaped by its interdependencies with other economies and ecologies around the world. Most case studies of globalization focus on megacities such as New York or Tokyo. But the landscape in Madison also bears the marks of various rounds of regional and global economic restructuring.","Second, by mapping these interdependencies, you will identify the relationship between global economic integration and rising inequalities. Madison occupies a relatively privileged position within global networks of production and trade. But Madison’s prosperity always has been bound together with the impoverishment of other people and places. Moreover, global interdependencies have often exacerbated social-economic inequalities within Madison.","Third, by grounding the global issues in the landscape that surrounds you, I hope to dispel the idea that globalization is something that happens “out there”, beyond our control. Ultimately, the world economy works the way it does because of decisions people make about what to buy, where to invest their money, what political causes to support. If those actions are not promoting the wellbeing of the community and the planet, we can think about alternatives. I want you to reflect on how your own everyday actions impact the lives of others―including those who may otherwise seem distant.","Take a look at the granite boulder you are standing in front of. It commemorates a key aspect of the university’s identity: the Wisconsin Idea. Let’s begin by walking down Bascom Mall toward our second stop.", "In addition to our designated stops, some other landmarks in the city are marked with a red circle on the map. Throughout the tour today, if you see something that interests you, check the map to see if you can find out more information. "],
                 "textImage": "img/site1_1.jpg", 
+                "textImageAlt":"A large boulder sitting on a patch of grass atop Bascom Hill, University of Wisconsin—Madison. The boulder has a plaque, which reads: 'I shall never be content until the beneficient influence of the university reaches every home in the state. President Charles Van Hise, 1904. Celebrating over 100 years of the Wisconsin Idea and its impact on the state, nation, and the world. Dedicated by the class of 2012, May 2012.'",
                 "imageSet": [], 
                 "audio": [ "audio/site1/site1_intro1.txt", "audio/site1/site1_intro2.txt", "audio/site1/site1_intro3.txt", "audio/site1/site1_intro4.txt","audio/site1/site1_intro5.txt","audio/site1/site1_intro6.txt","audio/site1/site1_intro7.txt"] 
             }, 
@@ -79,23 +80,28 @@
                 "Address": "700 State Street", 
                 "Scripts": ["When Wisconsin achieved statehood in 1848, one of its first major political acts was to establish the University of Wisconsin, the Madison campus of which directly faces the Capitol. At our first stop you read about the Wisconsin Idea, which has become a key part of the university’s identity. At its core, that idea is that “the boundaries of the university are the boundaries of the state,” or that the teaching and research undertaken at the university should provide benefits beyond the campus. It is now generally acknowledged that this principle is national and global in scope. A more critical understanding of this idea, recognizes both how the campus has impacted the State and the wider world, and how the State and the world have continually reshaped the university. While some of these interconnections have generated mutual benefits, others have reflected and reinforced inequalities."], 
                 "textImage": "img/site2_1.jpg", 
+                "textImageAlt":"A cement courtyard in front of a large, beige building—the UW Memorial Library.",
                 "imageSet": [{ 
                     "historic_small": "img/site2/site2_1_hs.jpg", 
                     "historic_large": "img/site2/site2_1_hl.jpg", 
+                    "historic_alt":"A white man in a lab coat looks over a countertop in a science lab. The counter top is covered by a variety of glass instruments, and is being illuminated by a large, domed light.",
                     "current_small": "img/site2/site2_1_cs.png", 
                     "current_large": "img/site2/site2_1_cl.jpg", 
+                    "current_alt":"A map title 'Change in Dairy Production per capita, 1890-1920'. The map depicts the United States, with circles on top of each state that are sized based on the total dairy production (in millions of gallons) in 1920. The circles are colored to show the percent change in dairy production between 1890 and 1920, with darker colors representing greater change. Wisconsin has the largest circle and the darkest color, showing both large total production in 1920 and a large increse in production between 1890 and 1920.",
                     "audio":"audio/site2/site2_inter.txt",
                     "image_texts": "<b>Interdependencies</b>: Research undertaken at UW-Madison has long played a key role in transforming society across the State and beyond. In the 1920s, Dr. Harry Steenbock developed an inexpensive method of enriching foods with Vitamin D, an innovation that would ultimately help to eradicate rickets throughout most of the world. Royalties from the patent funded the construction of a library named in his honor. In what other ways do you think the work that happens at the university might have implications for other parts of the State or even the world?" 
                 }, 
                 { 
                     "current_small": "img/site2/site2_2_cs.png", 
                     "current_large": "img/site2/site2_2_cl.png", 
+                    "current_alt":"A map showing land grant parcels seized from Indigenous tribes through the Morrill Act of 1862. The map shows the outline of Wisconsin. Bright red clusters towards the northern part of the state show land specifically seized by the University of Wisconsin, which are connected to Madison on the map through arrows of varying sizes. A label on the lower half of the map reads: '383 Parcels. 297.8 sq. miles Claimed by UW Madison'. Towards the top of the map, there are large clusters of light red, which show land parcels seized by other universities. There is a label that reads: '7378 Parcels, 1773.1 sq. miles claimed by Other Universities.'",
                     "audio":"audio/site2/site2_ineq.txt",
                     "image_texts": "<b>Inequalities</b>: In addition to the university – and the city – being built on Ho Chunk land, the Land-Grant College Act (or Morrill Act), passed by Congress in 1862, gave universities land that had been expropriated from indigenous communities to States to help finance the establishment of colleges. This map shows where the land that helped develop this campus came from. To what extent do you think the university has been a vehicle for generating regional inequalities? " 
                 }, 
                 { 
                     "current_small": "img/site2/site2_3_cs.jpg", 
                     "current_large": "img/site2/site2_3_cl.jpg",
+                    "current_alt":"A metal sign atop Bascom Hill, UW-Madison, that reads: 'Our Shared Future. The University of Wisconsin–Madison occupies ancestral Ho-Chunk land, a place their nation has called Teejop (day-JOPE) since time immemorial. In an 1832 treaty, the Ho-Chunk were forced to cede this territory. Decades of ethnic cleansing followed when both the federal and state government repeatedly, but unsuccessfully, sought to forcibly remove the Ho-Chunk from Wisconsin. This history of colonization informs our shared future of collaboration and innovation. Today, UW–Madison respects the inherent sovereignty of the Ho-Chunk Nation, along with the eleven other First Nations of Wisconsin. 2018'",
                     "audio":"audio/site2/site2_alt.txt",
                     "image_texts": "<b>Alternatives</b>: In recent years, the reading of a Land Acknowledgement, recognizing that the University is founded on and financed by stolen land, has become increasingly common on campus. What responsibilities do you think this university (and others) bear for rectifying these deep-rooted injustices? " 
                 }], 
@@ -138,25 +144,31 @@
                 "Address": "NE Corner of E Washington and N Pinckney", 
                 "Scripts": ["Toward the end of the 19th century, ambitious plans were drawn up to develop the city according to a grid-like structure fanning out from the Capitol. As well as money, the development of the city required raw materials and labor power. The acquisition of these different inputs helps to underscore the idea that Madison always has been a product of broader regional and global flows. Buildings throughout the city were constructed with materials and labor from across the world. For example, the capitol building is made of rock from six different countries and seven different States. Some of the decorative architecture you can see on older buildings reflects the waves of migrants who arrived in the city from Germany and Scandinavia in the second half of the nineteenth century.", "Landscapes also are shaped in ways that reflect inequalities in power between different population groups. Processes of urbanization in the nineteenth century worked to marginalize the rich cultural histories of native populations who have lived in this area since the Isthmus first was formed ten thousand years ago. Racism and discriminatory regulations have continued to restrict racial diversity across the city to this day. Reading the landscape means paying careful attention to these erasures, and that includes the physical geography of the city."],
                 "textImage": "img/site3_1.jpg", 
+                "textImageAlt":"A dark, marble fountain in the shape of a semi-circle. The far point of the semi-circle has a stone column, while the close end has a simplified map of the city of the Madison. The fountain is located at one corner of the Wisconsin Capitol Square.",
                 "imageSet": [{ 
                     "historic_small": "img/site3/site3_1_hs.png", 
                     "historic_large": "img/site3/site3_1_hl.png", 
+                    "historic_alt":"Two maps overlaid atop one another, with a slider than allows for a comparison between them. The map on the left is titled 'Madison Streets', and shows the street network of the Isthmus, in Madison, Wisconsin. The map on the right is titled 'Madison Landforms', and shows the exaggerated terrain of the Isthmus, with certain landforms highlighted. The State Capitol and Bascom Hill are places with some some elevation, while the majority of the eastern part of the Isthmus is low-lying and labeled as wetland.",
                     "current_small": "img/site3/site3_1_cs.png", 
                     "current_large": "img/site3/site3_1_cl.png", 
+                    "current_alt":"Two maps overlaid atop one another, with a slider than allows for a comparison between them. The map on the left is titled 'Madison Streets', and shows the street network of the Isthmus, in Madison, Wisconsin. The map on the right is titled 'Madison Landforms', and shows the exaggerated terrain of the Isthmus, with certain landforms highlighted. The State Capitol and Bascom Hill are places with some some elevation, while the majority of the eastern part of the Isthmus is low-lying and labeled as wetland.",
                     "audio":"audio/site3/site3_inter.txt",
                     "image_texts": "<b>Interdependencies</b>: The expansion of the city also created a critical interdependency between the physical topography of the city and the built environment. As this map shows, the isthmus neighborhood, which lies between Lake Monona and Lake Mendota, was built on top of marshland that was filled. In what ways do you think that interdependence has become more critical in recent decades?" 
                 }, 
                 { 
                     "historic_small": "img/site3/site3_2_hs.jpg", 
                     "historic_large": "img/site3/site3_2_hl.jpg", 
+                    "historic_alt":"A flood in Madison, Wisconsin in the 1950s. A street is covered with water deep enough to reach the bumpers of a line of old sedans. One car is attempting to drive through a deeper section of water.",
                     "current_small": "img/site3/site3_2_cs.jpg", 
-                    "current_large": "img/site3/site3_2_cl.jpg", 
+                    "current_large": "img/site3/site3_2_cl.jpg",
+                    "current_alt":"Flooding in Madison, Wisconsin in 2018. A street intersection is covered in brown water. A large, gray modern building is located in the background.", 
                     "audio":"audio/site3/site3_ineq.txt",
                     "image_texts": "<b>Inequalities</b>: These images show how this precarious interdependency has led to flooding in this neighborhood, most recently in 2018. In Madison, and globally, some people are more vulnerable than others to the effects of flooding and other extreme climate events. What factors do you think are important in producing unequal degrees of vulnerability?" 
                 }, 
                 { 
                     "current_small": "img/site3/site3_3_cs.jpg", 
                     "current_large": "img/site3/site3_3_cl.jpg", 
+                    "current_alt":"A mostly-sunny day in Madison, Wisconsin. In the background, the capital dome is rising over a series of 4-5 story buildings. The buildings are mostly brick in various shades. There is a busy street in the foreground next to a small grass park.",
                     "audio":"audio/site3/site3_alt.txt",
                     "image_texts": "<b>Alternatives</b>: One of the challenges we face in the 21st century is how to build sustainable cities that can mitigate the threats posed by climate change for everyone, rather than individualizing those risks. How can we build cities in ways that are more sustainable and resilient for all? What kinds of considerations do you think would be important today for cities that were not an issue when the isthmus neighborhood was being constructed in the late-19th century?" 
                 }],
@@ -201,25 +213,31 @@
                 "Address": "115 N Livingston St", 
                 "Scripts": ["In recent decades, the main driver of Madison’s economy has been services, many of which support the university and the state government. But other industries have played an important role in the development of the city too. The Isthmus is where the first factories were established in the city in the late nineteenth century. The manufacturing sector in Madison reflected the dominant system of production of the time: Fordism. Companies invested in the construction of large factories across the Isthmus and directly employed hundreds of assembly line workers in industries ranging from machinery to food processing.","The transition to a service-led or post-Fordist economy in the second half of the 20th century has overlain and altered much of the landscape. But that earlier era of manufacturing remains sedimented within the built environment of the Isthmus.The six-story building you are standing in front of was constructed at the start of the twentieth century. Between 1910-1930, it was home to the Badger State Shoe Company. At its peak, the company employed about 250 workers – of whom half were women – and produced roughly 2,000 pairs of shoes a day. As you explore the factory, think about how the shoe factory was embedded within evolving local, regional, and global economies."], 
                 "textImage": "img/site4_1.png", 
+                "textImageAlt":"A six-story, rectangular, tan brick building, located next to a street intersection.",
                 "imageSet": [{ 
                     "current_small": "img/site4/site4_1_cs.jpg", 
                     "current_large": "img/site4/site4_1_cl.jpg", 
+                    "current_alt":"A very old brick factory from the late 1800s. The factory is three stories and has large windows. There is a horse drawn carriage parked in front.",
                     "historic_small": "img/site4/site4_1_hs.jpg", 
                     "historic_large": "img/site4/site4_1_hl.jpg", 
+                    "historic_alt":"A bar graph labeled 'Shoe Factory Wages: U.S Weekly Average, 1919'. There are two bars on the graph, one labeled 'Men', the other 'Women'. The average weekly wage for men in shoe factories is shown to be $30.91, while it is only $18.17 for women.",
                     "audio":"audio/site4/site4_inter.txt",
                     "image_texts": "<b>Interdependencies</b>: Within the Badger State Shoe factory there were important social divisions of labor, in terms of who did different tasks and how they were compensated for their labor. This graph shows that the gender pay gap was particularly pronounced. To what extent do you think gender inequalities in this shoe factory reflected wider social divisions of labor? To what extent have these dynamics persisted, even as the economy in cities like Madison has changed significantly? " 
                 }, 
                 { 
                     "current_small": "img/site4/site4_2_cs.png", 
                     "current_large": "img/site4/site4_2_cl.png",
+                    "current_alt":"A world map labeled 'Nike Worldwide'. The map uses circles to show which countries have Nike factories, sized based on the number of factories in the country. The same countries are colored based on the average number of workers in per factory, with darker colors representing a larger number of workers per factory. Countries in South and East Asia, such as China, Indonesia, and Thailand, tend to have both a large number of factories and a large number of workers per factory. Countries in Central Ameica, such as Honduras and Nicaragua, tend to have a few number of factories with a large number of workers per factory. While countries in Europe have a low number of factories and a low number of workers per factory. Finally, the U.S has a high number of factories but a low number of workers per factory. Data for the map were provided by Nike.",
                     "audio":"audio/site4/site4_ineq.txt",
                     "image_texts": "<b>Inequalities</b>: As this map shows, the international division of labor in manufacturing has changed dramatically since the second half of the 20th century. Shoes that are sold in Madison today were more likely produced in factories in southeast Asia or South America. Why do you think major brands, such as Nike, choose to have their shoes made in these locations, rather than in cities like Madison?" 
                 },
                 { 
                     "current_small": "img/site4/site4_3_cs.jpg", 
                     "current_large": "img/site4/site4_3_cl.jpg",
+                    "current_alt":"A group of students sitting on the floor in wood-paneled hallway. The students have a variety of posters, reading: 'We Won't Stand for Jansport', 'Cut Jansport', and 'No Death Traps'.",
                     "historic_small": "img/site4/site4_3_hs.jpg", 
                     "historic_large": "img/site4/site4_3_hl.jpg", 
+                    "historic_alt":"A classroom at UW Madison where two brown skinned women sit facing a several rows of full seats. There is a large poster on the wall that reads: 'End Deathtraps in Bangladesh. Student Labor Action Coalition, United Students Against Sweatshops.'",
                     "audio":"audio/site4/site4_alt.txt",
                     "image_texts": "<b>Alternatives</b>: In 2013, a factory located in Rana Plaza, in Bangladesh, collapsed, leading to 1,134 deaths and over 2,000 injuries. The factory was producing apparel for a range of major brands, including some that have a license to produce clothing carrying the label of universities such as UW-Madison. These photos show some of the protests that happened in Madison after the Rana Plaza disaster, demanding that the university cut ties with brands that refused to commit to improving working conditions in their supplier’s factories. How have labor politics had to adjust to the globalization of production networks? " 
                 }], 
@@ -264,23 +282,28 @@
                 "Address": "722 E Main St.", 
                 "Scripts": [ "The development of the isthmus also depended on increasing the supply of energy in the city. The first gaslights appeared along these streets in 1855, and the first electrical lighting arrived in the 1880s. The Madison Gas & Electric Company was established on the Isthmus in 1902. Over the years, the city’s energy needs have been shaped by wider political-ecological crises, most notably climate change. Our changing climate and changing energy needs have created new interdependencies between Madison and other economies and ecologies around the world. For much of the 20th century, the structure you are standing in front of generated power by the burning of coal, which was transported to the city via the railroads. When movements demanding cleaner energy emerged in the late-20th century, a wall was built to try to make this process less visible. Ultimately, however, the plant transitioned from coal to gas. " ],
                 "textImage": "img/site5_1.jpg", 
+                "textImageAlt":"A tall cement wall with brick inlays. In the middle of the wall, there is a metal gate with two doors. The number '3' is outlined towards the top of the left side of the gate.",
                 "imageSet": [{ 
                     "current_small": "img/site5/site5_1_cs.jpg", 
                     "current_large": "img/site5/site5_1_cl.jpg", 
+                    "current_alt":"A map of the U.S with two titles at the top: 'MG&E Gas Sources' and 'Pipeline Incidents'. The map is dark gray, and the Madison Gas and Electric pipelines are yellow, originating in Western Oklahoma and the Mississippi Delta and ending up in Madison. The map also shows white circles representing so-called pipeline incidents, where a certain amount of gas was expelled from the pipeline. Larger circles represent large expulsions of gas, ranging from 100 to 500,000 cubic feet of gas. There are a number of white circles near the MG&E pipeline, though many are clustered off that specific pipeline, located in Southern Texas and Louisiana, as well as throughout Appalachia. There are several larger white circles located due south of Madison.",
                     "audio":"audio/site5/site5_inter.txt",
                     "image_texts": "<b>Interdependencies</b>: Most of the gas that fuels this power plant is imported via underground pipelines from Canada to the North, as well as Oklahoma and the Gulf of Mexico to the South. Madison’s energy needs therefore have important implications for these sites, but also, as this map showing leakages and spillages related to those pipelines shows, people who live on land on which the entire energy infrastructure was constructed. What does this tell us about our responsibilities to people in other parts of the country who are protesting the construction of new pipelines?" 
                 }, 
                 { 
                     "current_small": "img/site5/site5_2_cs.png", 
                     "current_large": "img/site5/site5_2_cl.png", 
+                    "current_alt":"A world map with a title: '% Net CO2 Emissions from Consumption'. The map shows which countries are net importers or exporters of CO2, with countries in shades of red representing net consumers (meaning they net import emissions from other countries, in the form of consumption), and countries in shades of purple represent net producers (meaning they net export emissions to other countries, in the form of production). Most of North America is depicted in light red, suggesting emissions come from consumption, while countries like China are depicted in purple, suggesting their emissions come from production.",
                     "audio":"audio/site5/site5_ineq.txt",
                     "image_texts": "<b>Inequalities</b>: In recent years, countries such as China and India have come under more global scrutiny for their rising CO2 emissions. A significant portion of this increase in emissions is driven by the offshoring of manufacturing to low-wage areas of the world, as we saw at the last site. This map attributes emissions to the place where commodities are consumed rather than produced. What does it tell you about who is most responsible for reducing carbon emissions? " 
                 }, 
                 { 
                     "historic_small": "img/site5/site5_3_hs.png", 
                     "historic_large": "img/site5/site5_3_hl.png", 
+                    "historic_alt":"A map titled: 'Wisconsin's Renewables'. The map depicts renewable energy production in Wisconsin, specifically hydroelectric, wind, solar, and biopower. Individual power plants are represented as circles, colored based on the type of energy production, and sized based on the amount of energy produced in megawatts. Northern Wisconsin has many small hydroelectric dams, while southern and eastern Wisconsin have a small number of very large wind farms.",
                     "current_small": "img/site5/site5_3_cs.jpg", 
                     "current_large": "img/site5/site5_3_cl.jpg", 
+                    "current_alt":"A wind farm in an agricultural area. 6 large, white wind-power windmills rise over a series of wheat fields and farm buildings.",
                     "audio":"audio/site5/site5_alt.txt",
                     "image_texts": "<b>Alternatives</b>: As climate change has become a more urgent political concern, there have been various efforts to support the expansion of clean energy. This map shows the proliferation of renewable energy sources in Wisconsin, most prominently through wind farms. What does this reveal about the interconnections between changing landscapes in urban and rural Wisconsin?  " 
                 }], 
@@ -324,23 +347,28 @@
                 "Address": "133 S Blair St.", 
                 "Scripts": [ "The development of the Isthmus in the early twentieth century created transportation challenges too. More and more raw materials had to be brought into the city and finished goods had to be moved to markets in southern Wisconsin and beyond, and more coal had to be brought in to supply factories and houses with power. The Badger State Shoe Company, for example, sold some of its goods in bulk to a national distributor based in Chicago. Other companies produced agricultural tools and machines that needed to reach farms in rural areas of the Midwest. The primary means through which goods are transported from factory to market have changed significantly since the early twentieth century―as have the distances they travel. But, you can still see evidence of these earlier transportation networks imprinted in the landscape." ], 
                 "textImage": "img/site6_1.png", 
+                "textImageAlt":"A gray, art-deco style building with large black windows in the center. Above the center windows there is a clock surrounded by carved angel wings.",
                 "imageSet": [{ 
                     "current_small": "img/site6/site6_1_cs.jpg", 
                     "current_large": "img/site6/site6_1_cl.jpg", 
+                    "current_alt":"A gray art-deco train station in the early 20th century. The station has a clock at the top, surrounded by angel wings (the same as the previous photo). The street in front of the station is bustling with people and early automobiles.",
                     "audio":"audio/site6/site6_inter.txt",
                     "image_texts": "<b>Interdependencies</b>: As this historical image illustrates, the building you are currently standing in front of used to be a major train station. What cities do you think were connected to Madison by railroad in the early twentieth century, and how has this changed over time?" 
                 }, 
                 { 
                     "current_small": "img/site6/site6_2_cs.jpg", 
                     "current_large": "img/site6/site6_2_cl.jpg", 
+                    "current_alt":"Two aerial photographs showing the eastern side of the Isthmus in Madison, Wisconsin. The photo on the left is from 1937, the photo on the right from 2020. Lake Mendota takes up the upper left quarter of both photos, and Lake Monona the lower right. The main difference between the photos is the greater area and prominence of railroads in 1937, particularly in the lower part of the Isthmus.",
                     "historic_small": "img/site6/site6_2_hs.jpg", 
                     "historic_large": "img/site6/site6_2_hl.jpg", 
+                    "historic_alt":"Two aerial photographs showing the eastern side of the Isthmus in Madison, Wisconsin. The photo on the left is from 1937, the photo on the right from 2020. Lake Mendota takes up the upper left quarter of both photos, and Lake Monona the lower right. The main difference between the photos is the greater area and prominence of railroads in 1937, particularly in the lower part of the Isthmus.",
                     "audio":"audio/site6/site6_ineq.txt",
                     "image_texts": "<b>Inequalities</b>: How much farther do you think shoes produced by a transnational brand like Nike travel today compared to shoes the Badger State Shoe Company produced in the early twentieth century, and what are the implications for the city’s transportation needs? How do you think the globalization of commodity chains has transformed the built environment you are currently standing in?"
                 }, 
                 { 
                     "current_small": "img/site6/site6_3_cs.jpg", 
                     "current_large": "img/site6/site6_3_cl.jpg", 
+                    "current_alt":"A cement bike path at sunset, located right next to Lake Monona. Monona Terrace is in the background, as well some large cement buildings.",
                     "audio":"audio/site6/site6_alt.txt",
                     "image_texts": "<b>Alternatives</b>: In recent decades, many former railroads, like the one seen in this image, have become obsolete. Madison and other cities across the world are grappling with the question of what to do with outmoded transportation infrastrures. What opportunities do you think this creates for the city to develop alternative ways for people to move around Madison? " 
                 }], 
@@ -384,24 +412,29 @@
                 "Description": "The building was constructed in 1910 after the company had originally expanded its production to Madison in 1900. It was designated a landmark by the Madison Landmarks Commission in 1989.", 
                 "Address": "2E Main St", 
                 "Scripts": ["The current state capitol, designed by Architect George Post who also designed the New York Stock Exchange building, was built between 1906 and 1917. After a fire destroyed the previous, smaller building, many thought the new 400,000-square-foot granite building was excessive. The capitol underwent major renovations, costing $140 million,  between 1990 and 2001, which restored rooms to their original appearances and added modern amenities. The heavily visited building, toured by over 50,000 Wisconsin school children each year, has also been home to many political actions. In 2011, tens of thousands of demonstrators protesting “Act 10”, the governor’s proposal effectively ending collective bargaining rights for public employees occupied the building and its surrounds. More recently, demonstrators gathered around the capitol building and surrounding areas in support of the Black Lives Matter movement, which exploded nationally in response to the killing of George Floyd, a Black man, by police in Minneapolis, MI in May 2020. Later that year, protesters again gathered when Jacob Blake was shot by police in Kenosha, WI."],
+                "textImageAlt":"Series of steps leading up to the Wisconsin State Capitol, of which the top dome is partially visible. In the middle of the steps there is a cube covered in garbage bags—the site of a former statue.",
                 "textImage": "img/site7_1.jpg", 
                 "imageSet": [{ 
                     "current_small": "img/site7/site7_1_cs.jpg", 
                     "current_large": "img/site7/site7_1_cl.jpg", 
+                    "current_alt":"The interior of the Wisconsin State Capitol rotunda during a protest. The building is filled with people, shoulder-to-shoulder, many dressed in red, many holding signs. One sign in particular reads: '2 Days Forward, 50 Years Back'.",
                     "audio":"audio/site7/site7_inter.txt",
                     "image_texts": "<b>Interdependencies</b>: The protests that have taken place in this building have both been inspired by and expressed solidarity with protests in other parts of the world. For example, during the Act 10 protests of 2011, some commentators and activists made connections with protests against austerity, inequality, and corruption in places as diverse as Zuccotti Park, New York and Tahrir Square, Egypt. What other global issues have catalyzed people to congregate and express their anger or desire for change? " 
                 }, 
                 { 
                     "current_small": "img/site7/site7_2_cs.jpg",
                     "current_large": "img/site7/site7_2_cl.jpg", 
+                    "current_alt":"A march down State Street in Madison Wisconsin, towards the Wisconsin State Capitol, which looms in the background. The street is full of people, and many are holding various colorful signs. The line of stretches from the vantage point of the photo all the way to the capitol, about a mile.",
                     "audio":"audio/site7/site7_ineq.txt",
                     "image_texts": "<b>Inequalities</b>: More recently, people have gathered to protest systemic injustices based on gender and race. This includes the 2017 Women’s March and the Black Lives Matter protests in 2020. How do such protests draw attention to ongoing reproduction of internal differences and inequities within Madison? How have these inequalities been challenged or sustained by Madison’s shifting global interdependencies? " 
                 }, 
                 { 
                     "current_small": "img/site7/site7_3_cs.jpg", 
                     "current_large": "img/site7/site7_3_cl.jpg",
+                    "current_alt":"A line of people in the street, many wearing COVID masks, hold a large sign reading: 'Black Lives Matter'.",
                     "historic_small": "img/site7/site7_3_hs.jpg", 
                     "historic_large": "img/site7/site7_3_hl.jpg",  
+                    "historic_alt":"A series of three murals on State Street in Madison, Wisconsin in 2020. The mural on the left depicts a large dark-skinned head with a wide open mouth. Inside the mouth, block text reads: 'The U.S Prison System is Legalized Slavery.' The next mural to the right depicts three fists, two black and one tan, with the words 'Silence is Compliance' located above them. Finally, the last mural decpits a heart with vines and flowers growing out of it. There are words in graffiti style: 'Let Black Lives Bloom: Love is in Our Roots'.",
                     "audio":"audio/site7/site7_alt.txt",
                     "image_texts": "<b>Alternatives</b>: Walking back down State Street, which was turned from a 4 lane street to a pedestrian mall in the mid 70s - you can observe many signs of change. During the Covid-19 pandemic, about 20% (31/150) of the businesses on State Street closed. Additionally, about half of the storefronts were damaged during Black Lives Matter Protests in 2020. Many of these storefronts became murals expressing solidarity with Madisonians who protested for social justice and equity. The protests and murals made visible histories and current experiences of racial exclusion in Madison that many residents are unaware of. What role do you think political protests can play in changing the social and physical landscapes that surround us? " 
                 }], 
@@ -446,23 +479,28 @@
                 "Address": "2E Main St", 
                 "Scripts": ["While some people in Madison blamed BLM protestors for destroying businesses on State Street, its store fronts and sense of place have been more drastically altered by ongoing processes of re-development, including an influx of global and national chains on several blocks, as well as the emergence of luxury student housing. This change in housing stock is referred to as ‘gentrification’ – in the case of student-centered luxury housing it is sometimes called ‘studentification’ – and can be seen especially at this block, known as the “Hub on Campus Madison”, which was completed in 2015. A national real estate development firm called Core Spaces built and runs The Hub, as well as other nearby luxury student housing developments, including The James and ōLiv. While this area is designated by the City as a “preferred area for affordable housing”, fewer than 16% of these buildings comprise middle or low-income apartments. Most rents at these properties are high, even by the Madison rental-market standards, which present challenges to many students. To fill the apartments, the Hub and other luxury student-based housing properties heavily recruit students from wealthy regions and areas of the world, including many cities across Asia. "],
                 "textImage": "img/site8_1.jpg", 
+                "textImageAlt":"Looking up at the corner of a tall, modern building (The Hub on State Street, Madison, Wisconsin). The building is mainly glass windows between metal beams. There is a coffee shop on the first floor.",
                 "imageSet": [{ 
                     "current_small": "img/site8/site8_1_cl.jpg", 
                     "current_large": "img/site8/site8_1_cs.jpg", 
+                    "current_alt":"Two images, side-by-side, show the same area of State Street, Madison, Wisconsin. The image on the left, labeled 2014, shows a three-story beige building with a sign reading: 'University Inn'. The image on the right, labeled 2022, shows the corner of a tall, modern building (The Hub on State Street). The building is mainly glass windows between metal beams. There is a coffee shop on the first floor.",
                     "historic_large": "img/site8/site8_1_hl.jpg", 
                     "historic_small": "img/site8/site8_1_hs.jpg", 
+                    "historic_alt":"Two images, side-by-side, show the same area of State Street, Madison, Wisconsin. The image on the left, labeled 2014, shows a three-story beige building with a sign reading: 'University Inn'. The image on the right, labeled 2022, shows the corner of a tall, modern building (The Hub on State Street). The building is mainly glass windows between metal beams. There is a coffee shop on the first floor.",
                     "audio":"audio/site8/site8_inter.txt",
                     "image_texts": "<b>Interdependencies</b>: State Street is a complex landscape that necessarily serves a wide range of Madisonians, including students, staff and faculty from UW as well as concert and museum goers and shoppers from other parts of the city and state. It is also a mixed-use area, with residential and commercial properties in close proximity. Do you think it can serve all of these populations and uses equally? How can/should it balance local/regional needs (local businesses, affordable housing, transportation thoroughfare) with the demands of the global economy? " 
                 }, 
                 { 
                     "current_small": "img/site8/site8_2_cl.jpg", 
                     "current_large": "img/site8/site8_2_cs.jpg",
+                    "current_alt":"A map title: 'State Street Age of Buildings'. The map shows building footprints along State Street in Madison, Wisconsin. Each building is colored based on the period in history in which it was constructed, from 1855 to the present. Older buildings are depicted in yellow, while newer buildings are depicted in blue. Many of the smaller buildings are shown to be older, while there are several large buildings shown to be constructed in the last 20 years.",
                     "audio":"audio/site8/site8_ineq.txt",
                     "image_texts": "<b>Inequalities</b>: Why might it be easier to blame BLM protestors for destroying State Street than to confront changes due to gentrification or studentification?" 
                 }, 
                 { 
                     "current_small": "img/site8/site8_3_cl.jpg", 
                     "current_large": "img/site8/site8_3_cs.jpg", 
+                    "current_alt":"A view down State Street, Madison, Wisconsin on a sunny day. In the background, the Wisconsin State Capitol is barely visible. There are many people walking on the sidewalks and biking in the street.",
                     "audio":"audio/site8/site8_alt.txt",
                     "image_texts": "<b>Alternatives</b>: Looking forward, how do you think State Street–and Madison more broadly–might change in the coming years? Who do you think will be the primary drivers of those changes? " 
                 }], 
