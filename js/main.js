@@ -513,7 +513,8 @@ function callback(data){
                         textModal.show();
                     } 
                     else {
-                        landmarkModal.show();
+                        showText = true;
+                        textModal.show();
                     };
                     visitedSites.push(i);
                 }); 
@@ -603,6 +604,7 @@ function getLocation(map){
   
     function onLocationFound(e){
         let radius = e.accuracy / 2;
+        let circle, locationMarker;
   
         //removes marker and circle before adding a new one
         if (firstLocate===false){
@@ -611,8 +613,8 @@ function getLocation(map){
         }
         //adds location and accuracy information to the map
         if (e.accuracy < 90){
-            let circle = L.circle(e.latlng, radius).addTo(map);
-            let locationMarker = L.marker(e.latlng).addTo(map).bindPopup("You are within " + Math.round(radius) + " meters of this point");
+            circle = L.circle(e.latlng, radius).addTo(map);
+            locationMarker = L.marker(e.latlng).addTo(map).bindPopup("You are within " + Math.round(radius) + " meters of this point");
             firstLocate = false;
         }
         //if accuracy is less than 60m then stop calling locate function
@@ -624,11 +626,15 @@ function getLocation(map){
   
         let cZoom = map.getZoom();
         map.setView(e.latlng, cZoom);
-        removeFoundMarker(circle, locationMarker);
+        if (circle)
+            removeFoundMarker(circle, locationMarker);
     }
   
     map.on('locationfound', onLocationFound);
+
 }
+
+
 //remove location circle marker
 function removeFoundMarker(circle, marker){
     setTimeout(function() {
@@ -636,6 +642,7 @@ function removeFoundMarker(circle, marker){
         map.removeLayer(marker);
     }, 10000);
 }
+
 
 /*CALLOUT*/
 function triggerIconBubble(){
