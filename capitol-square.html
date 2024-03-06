@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Global Madison</title>
+
+        <link rel="stylesheet" href="lib/bootstrap.css">
+        <link rel="stylesheet" href="lib/leaflet/leaflet.css">
+        <link rel="stylesheet" href="lib/juxtapose.css">
+        <link rel="stylesheet" href="css/style.css">
+ 
+    </head>
+
+    <body>
+        <audio controls src="audio/site1/site1_intro1.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+    <!--SPLASH SCREEN-->
+        <div class="modal" id="splash" tabindex="-1" aria-labelledby="splash" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-fullscreen modal-xl">
+                <div id="splash-body" class="modal-content">
+                    <div id="splash-content" class="modal-body">
+                        <h1 id="splash-title">Global Madison: Paths To Change</h1>
+                        <p><em>"It is a sense of place, an understanding of 'its character', which can only be constructed by linking that place to places beyond... What we need, it seems to me, is a global sense of the local, a global sense of place."</em><br><span id="massey">&mdash;Doreen Massey</span></p>
+                        <p>On wide screens, some photos may appear cropped at the bottom. In this situation, reduce your browser's width for better viewing. This website was designed for modern mobile and desktop browsers; you may encounter significant problems on older browsers that do not fully support HTML5 (e.g. IE&lt;10, Safari&lt;6).</p>
+                        <p>The second button below will take you to the map to begin your journey, showing the route from the UW campus to the first landmark. If you are not starting from campus, you can click the first button to get Google Maps directions from your current location to the first landmark.</p>
+                        <div class="red-button-container">
+                            <div class="red-button inline">
+                              <a id="go-to-map" class="red-button-link">
+                                  <b>Go to the Map!</b>
+                              </a>
+                            </div>
+                            <div id="loading">
+                                <img src="img/loading.gif"/>
+                                <span>Loading Offline Cache. Please wait about 30 seconds if you plan to use the module offline...</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--NAVBAR-->
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <div class="container-fluid">
+                <button id="menu-toggle-button" class="menu-toggler collapsed d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-nav" aria-controls="navbar-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    MENU<img class="menu-icon" src="img/icons/menu-white.png">
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-nav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link landmark" href="#" role="button" id="landmark-dropdown-link" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                                <img id="landmark-list" class="landmarks" src="img/icons/landmarks.png" alt="Landmarks" >
+                                <span id="landmark-menu-text">Landmarks</span>
+                                <span id="arrow" class="dropdown-toggle"></span>
+                            </a>
+                            <ul id="landmark-dropdown" class="dropdown-menu" aria-labelledby="landmark-dropdown">
+                                
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link non-landmark" href="#" data-bs-toggle="modal" data-bs-target="#help-modal">
+                                <img class="help" src="img/icons/help.png" alt="Help">
+                                Help
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link non-landmark" href="#" data-bs-toggle="modal" data-bs-target="#about-modal">
+                                <img class="about" src="img/icons/information.png" alt="About">
+                                About
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link non-landmark" href="#" data-bs-toggle="modal" data-bs-target="#text-modal">
+                                <img class="text" src="img/icons/text.png" alt="Text">
+                                Text
+                            </a>
+                        </li>
+                        <!--<li class="nav-item">
+                            <a class="nav-link non-landmark" href="#" data-bs-toggle="modal" data-bs-target="#assignment-modal">
+                                <img class="assignment" src="img/icons/assignment.png" alt="Assignment">
+                                Assignment
+                            </a>
+                        </li>-->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    <!--HELP WINDOW-->
+        <div class="modal fade" id="help-modal" tabindex="-1" aria-labelledby="help-modal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-fullscreen-md-down modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title" id="help-modal-label">Help</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p><em>For PDF instructions, <a href="GlobalMadison_Help.pdf" target="_blank">click here</a>.</em></p>
+                        <ol>
+                          <li><a class="toc" href="#controls">Tour narration</a></li>
+                          <li><a class="toc" href="#landmarks">Navigating to landmarks</a></li>
+                          <li><a class="toc" href="#slideshows">Slideshow prompts</a></li>
+                          <li><a class="toc" href="#lost">Lost?</a></li>
+                          <li><a class="toc" href="#contact">Report a problem</a></li>
+                        </ol>
+                        <h3 id="controls">Navigating to landmarks</h3>
+                            <p>
+                            When you enter the map, you will see a red route line leading you to the first landmark. On a mobile device, you may spread two fingers apart to zoom in to see more detail on the map; on a full-sized device, click or tap the <b>+</b> or <b>-</b> icons to zoom in or out. Follow the red route line to navigate to the landmark. To see your current location on a mobile device, tap the <img src="img/icons/findme.png" alt="findme"> icon (not visible on desktop view). This will activate a blue GPS dot at your location the map. To save your battery, the GPS dot will disappear after ten seconds, but you may reactivate it at any time. <b>Pay attention to your surroundings and use caution in locations marked with the <img src="img/icons/alert40_red.png" style="width: 28px; height: 28px" alt="alert"> icon</b>, which you may click or tap to see a description of the hazard. Your destination is marked with a square red icon. After the first landmark, prior landmarks will be shown in gray. You can zoom directly to a landmark by choosing that landmark in the <span class="menudemo"><img src="img/icons/landmarks.png">Landmarks</span> menu in the menu bar. Only landmarks that are currently active or that you visited previously will appear in the <span class="menudemo"><img src="img/icons/landmarks.png">Landmarks</span> menu. Once you arrive, click or tap the landmark's icon. This will open that landmark's narration.
+                            </p>
+                        <h3 id="landmarks">Landmark narrations</h3>
+                            <p>
+                            When you click on a landmark icon, you are presented with text box containing an image of the landmark and a brief overview of that landmark. Each landmark on the guided tour has a similar background description providing important context for understanding the place and responding to the slideshow prompts. Click <span class="fakeButton"><img src='img/icons/headphones.png' alt='Read Aloud' style="width: 18px; height: 18px; margin-right: 5px;"/>Read Text Aloud</span> to listen to an audio recording of the background description. Click the <span class="fakeButton">next &gt;</span> and <span class="fakeButton">&lt; previous</span> buttons to advance or review the text. When you have reached the end of the narration, clicking the <span class="fakeButton">next &gt;</span> button or the X in the top-right corner will close the narration window and open the slideshow prompts. You may reactivate the narration window at any time by clicking the <span class="menudemo">Text</span> menu button.
+                            </p>
+                        <h3 id="slideshows">Slideshow prompts</h3>
+                            <p>
+                            When the narration window closes after its first viewing for a given landmark, a slideshow with images and question prompts will open automatically. For each landmark, there are three thematic slides: Interdependencies, Inequalities, and Alternatives. Each prompt includes a pair of images comparing the landmark 'then' and 'now.' Use the slider between the images to compare the pair of images by swiping the slider back and forth. Use the white arrow buttons to change the slide. As you think about each prompt, take notes and photographs to support your visual essay. The final slide for each landmark is a button allowing you to <span class="fakeButton">Proceed to the Next Site</span>, which then maps your route to the next location on the guided tour.
+                            </p>
+                        <h3 id="lost">Lost</h3>
+                            <p>
+                                If at any time you get disoriented navigating the Isthmus, you can click the <img src="img/icons/findme.png"> button to show your location on the map. If you need further directions, click on one of the following links to navigate to the next location using Google Maps:
+                            </p>
+                            <a target="_blank" href="https://maps.app.goo.gl/21KbMUdFXEWDTmeF7">Location #1: Bascom Hill Boulder</a><br>
+                            <a target="_blank" href="https://maps.app.goo.gl/FCJW3AyAocNoEDWz9">Location #2: Library Mall</a><br>
+                            <a target="_blank" href="https://maps.app.goo.gl/KiXuTfSnABeRr9547">Location #3: Madison Fountain Map</a><br>
+                            <a target="_blank" href="https://www.google.com/maps/place/Das+Kronenberg+Condominiums/@43.081319,-89.378198,17z/data=!3m1!4b1!4m2!3m1!1s0x88065369f3819705:0x63bf0580f44bbad0">Location #4: Badger State Shoe Factory </a><br>
+                            <a target="_blank" href="https://maps.app.goo.gl/QYgMwoB1RyQuWTr8A">Location #5: MG&E Railroad Door</a><br>
+                            <a target="_blank" href="https://www.google.com/maps/place/200+S+Blair+St,+Madison,+WI+53703/@43.0774133,-89.3767288,17z/data=!4m2!3m1!1s0x8806536b4a2bb4e1:0x7618028ec4564f9">Location #6: Chicago and Northwestern Railroad Station</a><br>
+                            <a target="_blank" href="https://maps.app.goo.gl/bKnuaeftBDrh4cLn6">Location #7: Wisconsin Capitol Steps</a><br>
+                            <a target="_blank" href="https://maps.app.goo.gl/qySKhidF9W9Ge6W59">Location #8: State Street – The Hub</a><br><br>
+                        <h3 id="contact">Report a problem</h3>
+                            <p>
+                            If you notice a bug or other issue, please e-mail a brief description to <a href="mailto:reroth@wisc.edu">reroth@wisc.edu</a>.
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--ABOUT WINDOW-->
+        <div class="modal fade" id="about-modal" tabindex="-1" aria-labelledby="about-modal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-fullscreen-md-down modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title" id="about-modal-label">About this Project</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p><em>Madison's East Isthmus: Paths to Change</em> mobile learning module was created for the Introduction to International Studies (IS101) course at the University of Wisconsin-Madison by Spring 2014 Mobile Cartography Seminar participants Brian Davidson, Julia Janicki, Vanessa Knoppe-Wetzel, Fei Ma, Rashauna Mead, Chelsea Nestel, Caroline Rose, Carl Sack, and Guiming Zhang under the direction of Professor Robert Roth, with the cooperation of International Studies Professor Stephen Young and Teaching Assistant Mario Bruzzone. Narration was written and performed by Stephen Young. Updates were performed 2014-2015 by Carl Sack, and later in 2022 by Gareth Baldrica-Franklin; current version is 2.0. All site content is licensed Creative Commons 3.0 unless otherwise noted below. Questions or suggestions about the project should be directed to Stephen Young (<a href="mailto:sjyoung3@wisc.edu" target="_blank">sjyoung3@wisc.edu</a>) and Robert Roth (<a href="mailto:reroth@wisc.edu" target="_blank">reroth@wisc.edu</a>).</p>
+                        
+                        <hr/>
+                        
+                        <h3>Map Tiles</h3>
+                            <p>Map tiles are Mapbox "Outdoors" Tileset. <a href="https://www.mapbox.com/about/maps/" target="_blank">Copyright Mapbox; data copyright OpenStreetMap Contributors</a>.</p>
+                        
+                        <h3>Slideshow Images</h3>
+                            <p>Wisconsin Historical Society Archive (copyrighted, used with permission):
+                                <ul>
+                                <li>Badger State Shoe Co. Building (ca.1899, Milwaukee)</li>
+                                <li>Crowded Market (ca.1910)</li>
+                                <li>Fight Madison Gas and Electric Rate Increase (ca.1974)</li>
+                                <li>1950 Flood on University Avenue</li>
+                                </ul>
+                            </p>
+                            <p>Gareth Baldrica-Franklin (2021, Creative Commons licensed):
+                                <ul>
+                                <li>Bascom Hill Boulder</li>
+                                <li>Library Mall</li>
+                                <li>Madison Fountain Map</li>
+                                <li>Blount Generating Station Railroad Door</li>
+                                <li>Capitol Steps</li>
+                                <li>The Hub</li>
+                                </ul>
+                            </p>
+                            <p>Carl Sack (2014, Creative Commons licensed):
+                                <ul>
+                                <li>Former Badger State Shoe Company Building (now Das Kronenberg Condominiums)</li>
+                                <li>Former Chicago and NorthWestern Railroad Station (Now Madison Gas &amp; Electric offices)</li>
+                                </ul>
+                            </p>
+                            <p>Others:
+                                <ul>
+                                <li>University of Wisconsin Digital Collections: <a href="https://search.library.wisc.edu/digital/AQ4T6P6PKPXZH683" target="_blank">Photo of Harry Steenbock</a> (ca.1920)</li>
+                                <li>University of Wisconsin Anthropology Department: <a href="https://www.anthropology.wisc.edu/land-acknowledgement/" target="_blank">Photo of Bascom Hill Historic District Plaque</a></li>
+                                <li>Amber Arnold, Wisconsin State Journal: <a href="https://madison.com/wsj/news/local/govt-and-politics/mullins-proposes-major-redevelopment-for-500-block-of-state-street/article_53420d4e-531b-52a1-a427-8cd0a5e57b19.html" target="_blank">Photos of the 500 Block of State Street</a> (2013)</li>
+                                <li>Pixabay: <a href="https://pixabay.com/photos/madison-wisconsin-usa-capital-town-347439/" target="_blank">Photos of Madison</a></li>
+                                <li>Stephen Young: Photo of Bangladeshi Factory Workers speaking to UW-Madison students (2013)</li>
+                                <li>Student Labor Action Committee, UW-Madison: Activist Occupation of UW-Madison Chancellor's Office (2014)</li>
+                                <li>Dual Freq (Wikimedia Commons): <a href="http://en.wikipedia.org/wiki/Mendota_Hills_Wind_Farm#mediaviewer/File:Illinois_wind_farm_near_I-39_exit_82.jpg" target="_blank">Illinois wind farm near I-39 exit 82</a> (2006, Creative Commons)</li>
+                                <li>Friends of the Historic Third Lake Ridge: <a href="http://www.thirdlakeridge.org/" target="_blank">Madison Chicago & Northwestern Railroad Station</a> (ca.1920)</li>
+                                <li>Arthur H. Robinson Map Library, University of Wisconsin-Madison: <a href="http://www.geography.wisc.edu/maplib/index.html" target="_blank">Madison historic aerial photo WU-7-504</a> (United States Department of Agriculture 1937, public domain)</li>
+                                <li>USGS Earth Explorer: <a href="https://earthexplorer.usgs.gov/" target="_blank">Aerial Photo of Madison</a> (2020)</li>
+                                <li>Joe Rowley, CC BY-SA: <a href="https://en.wikipedia.org/wiki/2011_Wisconsin_protests#/media/File:Gov_Walker_Protests1_JR.jpg" target="_blank">Capitol Occupation</a></li>
+                                <li>Sara Dehaan, CC BY-SA: <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Women%27s_march_on_Madison%2C_Wisconsin.jpg/768px-Women%27s_march_on_Madison%2C_Wisconsin.jpg" target="_blank">Women's March</a></li>
+                                <li>The Badger Herald: <a href="https://badgerherald.com/wp-content/uploads/2020/06/FEB4A51A-F61A-4B4F-9C50-7A6AFAA2AB9B.jpeg" target="_blank">Black Lives Matter Protest</a></li>
+                                <li>Clarissa Peterson, CC-BY-SA: <a href="https://www.flickr.com/photos/clarissa/50513906958/" target="_blank">Black Lives Matter State Street Mural</a></li>
+                                <li>Wisconsin State Journal: <a href="https://madison.com/wsj/news/local/govt-and-politics/mullins-proposes-major-redevelopment-for-500-block-of-state-street/article_53420d4e-531b-52a1-a427-8cd0a5e57b19.html" target="_blank">University Inn</a></li>
+                                <li>Richard Hurd, CC-BY-SA: <a href="https://www.flickr.com/photos/rahimageworks/13921220942" target="_blank">Springtime Saturday on State Street</a></li>
+                                </ul>
+                            </p>
+                        
+                        <h3>Map and Chart Data</h3>
+                            <ul>
+                                <li>USDA Census of Agriculture: <a href="http://agcensus.mannlib.cornell.edu/AgCensus/censusParts.do?year=1920" target="_blank">1890-1920 Dairy Production</a></li>
+                                <li>High Country News: <a href="https://github.com/HCN-Digital-Projects/landgrabu-data" target="_blank">Land Grab Parcels</a></li>
+                                <li>Wisconsin State Cartographer's Office: <a href="https://geodata.wisc.edu/catalog/wi-dnr-wisconsin-dem-and-hillshade-from-lidar-index" target="_blank">Wisconsin DEM</a></li>
+                                <li>OpenStreetMap: <a href="https://www.openstreetmap.org/" target="_blank">Madison Streets</a></li>
+                                <li>Bureau of Labor Statistics: <a href="https://fraser.stlouisfed.org/title/wages-hours-labor-boot-shoe-hosiery-underwear-industries-3916/wages-hours-labor-boot-shoe-industry-1907-1920-476881" target="_blank">Wages and Hours of Labor in Boot and Shoe Industry, 1907-1920</a></li>
+                                <li>Nike: <a href="http://manufacturingmap.nikeinc.com/#" target="_blank">Nike Worldwide Factories</a></li>
+                                <li>Madison Gas and Electric Gas Purchases: <a href="https://www.mge.com/about-mge/natural-gas/how-mge-buys-gas" target="_blank">Madison Gas and Electric</a></li>
+                                <li>Pipeline and Hazardous Materials Safety Adminstration: <a href="https://www.phmsa.dot.gov/data-and-statistics/pipeline/distribution-transmission-gathering-lng-and-liquid-accident-and-incident-data" target="_blank">Natural Gas Transmission Incidents</a></li>
+                                <li>Our World in Data: <a href="https://ourworldindata.org/consumption-based-co2" target="_blank">Trade Adjusted Co2 Emissions</a></li>
+                                <li>Energy Information Administration: <a href="https://www.arcgis.com/home/webmap/viewer.html?url=https://services7.arcgis.com/FGr1D95XCGALKXqM/ArcGIS/rest/services/ElectricPowerPlants/FeatureServer&source=sd" target="_blank">U.S Power Plant Data</a></li>
+                                <li>Wisconsin Open Data: <a href="https://geodata.wisc.edu/catalog/countyofdane-parcels" target="_blank">State Street Parcel Data 2022</a></li>
+                            </ul>
+
+                        <h3>Point Cloud Images</h3>
+                            <p>Wisconsin Historical Society Archive (copyrighted, used with permission):
+                                <ul>
+                                <li>500 Block of State Street (1929)</li>
+                                <li>East up State Street (1939)</li>
+                                <li>Orpheum Theatre Under Construction (1926)</li>
+                                <li>205 State Street, Capitol Theater (1927-1985)</li>
+                                <li>Jack Doyle in his Storefront (1978)</li>
+                                <li>Water Tower at East Washington Avenue (ca.1895)</li>
+                                <li>Lamp House (ca.1912)</li>
+                                <li>Market House (1909)</li>
+                                <li>649-653 E Dayton St (Hill's Grocery, ca.1980)</li>
+                                <li>202 N Blount St (Madison Horse Barn, ca.1980)</li>
+                                <li>King Street with Streetcar (ca.1904)</li>
+                                <li>Eben and Roseline Peck Cabin (1837)</li>
+                                <li>Fess Hotel (1977)</li>
+                                <li>The Christian Dick Block</li>
+                                <li>King Street (1954)</li>
+                                </ul>
+                            </p>
+                            <p>Gareth Baldrica-Franklin (2021, Creative Commons licensed):
+                                <ul>
+                                <li>Bascom Hill Lincoln Statue</li>
+                                <li>Reform and Revolt Plaque</li>
+                                <li>North Hall</li>
+                                <li>State Street Vista from Bascom Hill</li>
+                                <li>Science Hall</li>
+                                <li>Humanities Building</li>
+                                <li>Wisconsin Historical Society</li>
+                                <li>Memorial Library</li>
+                                <li>Peace (Elizabeth Link) Park</li>
+                                <li>The Orpheum Theater</li>
+                                <li>Castle and Doyle Building Facade</li>
+                                <li>Fountain Map of Wisconsin</li>
+                                <li>Madison Outdoor Market Plaque</li>
+                                <li>View Down East Washington Avenue</li>
+                                <li>Robert Lamp House Plaque</li>
+                                <li>Mifflin Bike Boulevard</li>
+                                <li>Madison City Market Storefront</li>
+                                <li>Hill's Grocery Sign</li>
+                                <li>City Horse Barn Plaque</li>
+                                <li>Sylvee Theater</li>
+                                <li>Lightbulb Art Along the MG&E Retaining Wall</li>
+                                <li>Madison Gas and Electric Plaque</li>
+                                <li>Railroad Door #1</li>
+                                <li>McCormick-International Harvester Co. Branch House</li>
+                                <li>Peck Cabin Plaque</li>
+                                <li>G.E.F Buildings</li>
+                                <li>Fess Hotel Plaque</li>
+                                <li>Dick Eddy Building Plaque</li>
+                                <li>Majestic Theater Sign</li>
+                                <li>Wisconsin Capitol Rotunda</li>
+                                <li>Wisconsin Capitol Dome</li>
+                                </ul>
+                            </p>
+                            <p>Others:
+                                <ul>
+                                <li>University of Wisconsin Digital Collections: <a href="https://search.library.wisc.edu/digital/AIAA7TV55XWDT68Q" target="_blank">North Hall</a> (ca.1885)</li>
+                                <li>University of Wisconsin Digital Collections: <a href="https://search.library.wisc.edu/digital/AP5BNCDY5MOHM68J" target="_blank">Science Hall</a> (1890)</li>
+                                <li>University of Wisconsin Digital Collections: <a href="https://search.library.wisc.edu/digital/AUQS7JKDTHIPEC8C" target="_blank">Humanities Hall (copyrighted)</a> (ca.1970 - ca.1979)</li>
+                                <li>University of Wisconsin Digital Collections: <a href="https://search.library.wisc.edu/digital/A2OAZZOZ7R6ASG8Q" target="_blank">Wisconsin Historical Society </a> (ca.1900)</li>
+                                <li>University of Wisconsin Digital Collections: <a href="https://search.library.wisc.edu/digital/AHHWIZ2OKQMN438H" target="_blank">Armory and Red Gym</a> (1889)</li>
+                                <li>University of Wisconsin Digital Collections: <a href="https://search.library.wisc.edu/digital/ARYB3R7YSIVRUR8Y" target="_blank">Memorial Library (copyrighted)</a> (ca.1977)</li>
+                                <li>Wikimedia Commons: <a href="https://en.wikipedia.org/wiki/Overture_Center_for_the_Arts#/media/File:Overturemainentrance.jpg" target="_blank">Main entrance of Overture Center for the Arts, Madison, Wisconsin, United States.</a> (Public Domain, 2006)</li>
+                                <li>Friends of the Historic Third Lake Ridge: <a href="http://www.thirdlakeridge.org/" target="_blank">McCormick-International Harvester Company</a> (ca.1899)</li>
+                                <li>James Steakley, CC BY-SA <a href="https://en.wikipedia.org/wiki/Machinery_Row#/media/File:Machinery_Row_Madison.jpg" target="_blank">Machinery Row</a> (2009)</li>
+                               </ul>
+                            </p>
+                        <hr/>
+
+                        <h3>Icon Credits</h3>
+                            <p>Map icons (Labor, Transportation, Power, Housing): Julia Janicki</p>
+                            <p>The below icons were acquired from <a href="http://thenounproject.com/" target="_blank">The Noun Project</a> and licensed under Creative Commons Attribution.</p>
+                            <ul>
+                                <li><em>Headphones</em>: Mourad Mokrane</li>
+                                <li><em>Alert</em>: Juergen Bauer</li>
+                                <li><em>Landmarks</em>: Q. Li</li>
+                                <li><em>School</em>: Marco Livolsi</li>
+                                <li><em>Help</em>: Tommy Kuntze</li>
+                                <li><em>Findme</em>: Ricardo Moreira</li>
+                                <li><em>Coffee</em>: Jacob Halton</li>
+                                <li><em>Scroll</em>: iconsmind.com</li>
+                                <li><em>Shoe</em>: Aleksandr Vector</li>
+                                <li><em>Protest</em>: Juan Pablo Bravo</li>
+                                <li><em>Findme</em>: Ricardo Moreira</li>
+                                <li><em>Globe</em>: Edward Boatman</li>
+                                <li><em>Document</em>: Thomas Le Bas</li>
+                            </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--TEXT SLIDESHOW CONTAINER-->
+        <div class="modal fade" id="text-modal" tabindex="-1" aria-labelledby="text-modal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-fullscreen-md-down modal-xl">
+                <div class="modal-content">
+                    <div id="text-title" class="modal-header">
+                        <div class="red-button-container">
+                            <div id="previous-button-container" class="red-button inline">
+                              <a id="previous-button-text" class="red-button-link previous-button">
+                                  Previous
+                              </a>
+                            </div>
+                            <div id="read-button-container" class="red-button inline">
+                                <a id="read-button" class="red-button-link">
+                                    Read Text Aloud
+                                </a>
+                            </div>
+                            <div id="next-button-container" class="red-button inline">
+                              <a id="next-button-text" class="red-button-link next-button">
+                                  Next
+                              </a>
+                            </div>
+                        </div>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div id="text-content" class="modal-body">
+                        <h3 class="modal-title" id="text-modal-label"></h3>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-md-4">
+                                    <img id="text-image">
+                                </div>
+                                <div class="col-12 col-md-8">
+                                    <p id="text-script"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--LANDMARK SLIDESHOW CONTAINER-->
+        <div class="modal fade" id="landmark-modal" tabindex="-1" aria-labelledby="landmark-modal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-fullscreen-md-down modal-xl">
+                <div class="modal-content" id="landmark-modal-content">
+                    <div id="landmark-title" class="modal-header">
+                        <div class="red-button-container">
+                            <div id="previous-button-container" class="red-button inline">
+                              <a id="previous-button-landmark" class="red-button-link previous-button">
+                                  Previous
+                              </a>
+                            </div>
+                            <div id="next-button-container" class="red-button inline">
+                              <a id="next-button-landmark" class="red-button-link next-button">
+                                  Next
+                              </a>
+                            </div>
+                        </div>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div id="landmark-content" class="modal-body">
+                        <h3 class="modal-title" id="landmark-modal-label"></h3>
+                        <div id="img-comparison"></div>
+                        <p id="landmark-script"></p>
+                        <div id="proceed-container" class="red-button">
+                            <a id="proceed-button" class="red-button-link" style="display:none;">Proceed to Next Landmark</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--POINT FIELD CONTAINER-->
+        <div class="modal fade" id="point-modal" tabindex="-1" aria-labelledby="point-modal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-fullscreen-md-down modal-xl">
+                <div class="modal-content" id="point-modal-content">
+                    <div id="point-field-title" class="modal-header">
+                        <h3 class="modal-title" id="point-modal-label"></h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div id="point-field-body" class="modal-body">
+                        <p id="point-desc"></p>
+                        <div class="container">
+                            <div class="row">
+                                <div id="point-img-0" class="col-12 col-md-6"></div>
+                                <div id="point-img-1" class="col-12 col-md-6"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--ASSIGNMENT WINDOW-->
+        <div class="modal fade" id="assignment-modal" tabindex="-1" aria-labelledby="assignment-modal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-fullscreen-md-down modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title" id="assignment-modal-label">Assignment</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p><em><a href="GMassignment_2015.pdf" target="_blank">Click here for a PDF of the assignment</a></em></p>
+                        <p>Once you’ve completed the walking tour, you need to arrange the notes and images you collected into a coherent, well-organized narrative. The main purpose of the photo essay is to explain how and why Madison’s east isthmus has been transformed through its interconnections with other places. As such, you need to demonstrate that you know what it means to develop “a global sense of place” (see the assigned article by Massey). A complete paper should be 2000 words long  – approximately 6 pages, size 12 font, 1.5 spaced – and must contain the following:</p>
+                            <ul>
+                                <li>A proper title. Please note that “My 101 Photo Essay” is not a proper title. The title should tell us something about the content of your paper – be creative!</li>
+                                <li>At least two sources that you consulted to help develop your analysis. These could be scholarly papers or newspaper/magazine articles. You may want to look for sources that discuss Madison or the Midwest specifically, or for materials that discuss global interdependencies more broadly.</li>
+                                <li>At least two images that you took during the tour. The purpose of using a photograph is to help convey a specific idea or feeling, so pick something that is striking. The images must be correctly labeled and captioned [e.g. “Image 1: Murals on the side of a wall on Williamson Street.]</li>
+                                <li>A properly-formatted bibliography of any articles, books, magazines and websites that you cite in your paper. The bibliography should be in the <a href="http://www.chicagomanualofstyle.org/tools_citationguide.html">Chicago author-date style</a>.</li>
+                            </ul>
+                        <p>Below are some questions to help you organize your essay into different subsections. Please note that these prompts are only meant to guide your essay – you don’t have to follow this outline exactly. However, your paper must have some sort of logical structure and you might find it useful to use 2 or 3 subheadings. </p>
+                            <ol>
+                                <li><em>What is this essay about? (approx. 200 words)</em><br>The introduction should provide a snapshot of the essay. You may want to start with a short vignette to draw the reader in. You should also briefly set out the structure of the essay.</li>
+                                <li><em>What have been some of the key global transformations that have shaped Madison over the last 150 years or so? (400 words)</em><br>The next section should include a brief overview of changing global interdependencies. In particular, you may want to discuss the transition from Fordist to Post-Fordist production systems and contextualize this in relation to global patterns of industrialization/de-industrialization.</li>
+                                <li><em>How are these changes reflected in the landscape of Madison’s East Isthmus? (650 words)</em><br>This section should provide some specific examples of how the global restructuring described above is “sedimented” in landscape of the east isthmus. This would probably be a good place to add your photos.</li>
+                                <li><em>How are changes in Madison are interrelated with changes in other parts of the world? (400 words)</em><br>Relational analysis involves thinking in terms of connections across space. You need to tell the reader how the changes that you’ve described in Madison are linked to changing cultural, political and economic geographies in other parts of the world. Obviously, there are lots of places you could talk about, so identify one or two examples that you find particularly compelling.</li>
+                                <li><em>What does this tell us about how we conceptualize globalization? (350 words)</em><br>In the final section, you need to situate your discussion of Madison in terms of broader debates about how we should conceptualize and study globalization. What are the main points you’ve taken from the experience? What implications does this have for you as an IS Major and as a “global citizen”? Do you think it will change the way you read the landscape in your hometown [be that in Beloit, Beijing or Berlin]?</li>
+                            </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--CONTENT CONTAINR-->
+        <div id="container">
+            <div id="iconClickBubble" class="callout border-callout">
+                <span></span>
+                <b class="border-notch notch"></b>
+                <b class="notch"></b>
+            </div>
+            
+            <div id="map"> 
+        </div>
+
+        <script type="text/javascript" src="lib/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="lib/bootstrap.js"></script>
+        <script type="text/javascript" src="lib/leaflet/leaflet.js"></script>
+        <script type="text/javascript" src="lib/d3.js"></script>
+        <script type="text/javascript" src="lib/juxtapose.js"></script>
+        <script type="text/javascript" src="js/findMeButton.js"></script>
+        <script type="text/javascript" src="js/capitol-square.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,606 @@
+{
+"type": "FeatureCollection",
+"name": "pointField",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ 
+    "type": "Feature", 
+    "properties": { 
+        "id": 3, 
+        "name": "North Hall",
+        "images": [ "point3_1.jpg", "point3_2.jpg" ], 
+        "route": 0, 
+        "captions": ["Side of North Hall, 2021","North Hall, Circa 1885"],
+        "desc":"Constructed in 1851 for $19,000, North Hall began its life as a dormitory, before being converted to a classroom building following a 1884 fire in Science Hall. Today, North Hall holds the distinction of being the oldest building on campus."
+    }, 
+    "geometry": { 
+        "type": "Point", 
+        "coordinates": [ -89.40302366934759, 43.075541224311621 ] 
+    } 
+},
+{ 
+    "type": "Feature", 
+    "properties": { 
+        "id": 2, 
+        "name": "Reform and Revolt Plaque", 
+        "images": [ "point2_1.jpg" ], 
+        "route": 0, 
+        "captions": ["Reform and Revolt Plaque, 2021"],
+        "desc":"This plaque commemorates protests on campus during the Vietnam War in the late 1960s, and was erected in 2001 by the UW Foundation. Sterling Hall, the target of the 1967 bombing, can be seen to the left of Van Vleck Hall befind the plaque. </br>Plaque text: <i>University of Wisconsin students traditionally have been active in political and social causes, and that was never more apparent than during the turbulent 1960s. During that time, students frequently led rallies and demonstrations, many of which protested U.S. involvement in the Vietnam War. Those activities succeeded in mobilizing thousands for and against the war. The tensions and divisions on campus eventually devolved into violence, culminating with the bombing of Sterling Hall, which housed the Army Math Research Center. On August 24, 1970, the explosion killed a Physics researcher, putting a tragic conclusion on a period of protest.</i>"   
+    }, 
+    "geometry": { 
+        "type": "Point", 
+        "coordinates": [ -89.404005144510677, 43.074848328960158 ] 
+    } 
+},
+{ 
+    "type": "Feature", 
+    "properties": { 
+        "id": 1, 
+        "name": "Lincoln Statue", 
+        "images": [ "point1_1.jpg" ], 
+        "route": 0, 
+        "captions": ["Bascom Hill Lincoln Statue, 2021"],
+        "desc": "UW's statue of Abraham Lincoln is a replica of a statue created by Adolph A. Weinman in the 1800s, and was unveiled on Bascom Hill in 1909. Creation of the statue was primarily funded by Richard Lloyd Jones, a noted racist whose newspaper in Tulsa published the article commonly attributed with citing the Tulsa Race Massacre in 1921."
+    }, 
+    "geometry": { 
+        "type": "Point", 
+        "coordinates": [ -89.403648742915124, 43.075316935344439 ] 
+    } 
+},
+{ 
+    "type": "Feature", 
+    "properties": { 
+        "id": 4, 
+        "name": "State Street Vista", 
+        "images": [ "point4_1.jpg" ], 
+        "route": 0, 
+        "captions": ["View of the Capitol from Bascom Hill, 2021"],
+        "desc":"View of State Street and the Wisconsin State Capitol from Bascom Hill. State Street was originally designed to connect the capitol to the university."
+    }, 
+    "geometry": { 
+        "type": "Point", 
+        "coordinates": [ -89.402404078881531, 43.074972489975039 ] 
+    }
+},
+{ 
+    "type": "Feature", 
+    "properties": { 
+        "id": 5, 
+        "name": "Science Hall", 
+        "images": [ "point5_1.jpg", "point5_2.jpg" ], 
+        "route": 0, 
+        "captions": ["Science Hall, 2021","Science Hall, 1890"],
+        "desc":"Science hall was built in 1887 to replace a wooden building that burned in 1884. Originally, the building housed all the sciences on campus."
+    }, 
+    "geometry": { 
+        "type": "Point", 
+        "coordinates": [ -89.401057977470728, 43.075859633131927 ] 
+    }
+},
+{ 
+    "type": "Feature", 
+    "properties": { 
+        "id": 7, 
+        "name": "Wisconsin Historical Society", 
+        "images": [ "point7_1.jpg", "point7_2.jpg" ], 
+        "route": 0, 
+        "captions": ["Wisconsin Historical Society, 2021", "Wisconsin Historical Society, Circa 1900"],
+        "desc":"The Wisconsin Historical Society building was completed in 1914, and is built primarily of limestone in a Beaux-Arts Classical design. The building used to house the university library."
+    }, 
+    "geometry": { 
+        "type": "Point", 
+        "coordinates": [ -89.400114884017938, 43.0753790154086 ] 
+    }
+},
+{ 
+    "type": "Feature", 
+    "properties": { 
+        "id": 6, 
+        "name": "Humanities Building", 
+        "images": [ "point6_1.jpg", "point6_2.jpg" ], 
+        "route": 0, 
+        "captions": ["UW Humanities Building, 2021", "UW Humanities Building, Circa 1970-1979"],
+        "desc":"One of most notorious buildings on the UW Campus, it is often said that the Humanities Building was designed as a riot-proof fortress duing the Vietnam War Protests in the late 1960s. However, in truth, construction began in 1966, before the Vietnam War protests began. Designed by architect Harry Weese, the brutalist building was designed to create one consolidated space to house music, arts, history, and other humanitites programs. Unfortunately, the construction was constrained by budget cuts, and the issues from the cuts, such as poor insulation, unopenable windows, and a lack of rebar beneath exterior concrete, remain pervasive to this day. Currently, there are plans to raze the Humanities Building and replace it with something new."
+    }, 
+    "geometry": { 
+        "type": "Point", 
+        "coordinates": [ -89.400125850220888, 43.074714154677437 ]
+    } 
+},
+{ 
+    "type": "Feature", 
+    "properties": { 
+        "id": 9, 
+        "name": "Gym/Armory", 
+        "images": [ "point9_1.jpg" ], 
+        "route": 0, 
+        "captions": ["The Armory and Gymnasium, 1899"],
+        "desc":"Completed in 1894, the University of Wisconsin Armory was designed to house military equipment and support military training for quelling labor unrest and strikes in the city. After WWI, much of the building was partioned into offices, and the military purpose abandoned. However, the building was used as an ROTC headquarters for a period in the 1960s."
+    }, 
+    "geometry": { 
+        "type": "Point", 
+        "coordinates": [ -89.398420605663816, 43.076276165443055 ] 
+    } 
+},
+{ 
+    "type": "Feature", 
+    "properties": { 
+        "id": 8, 
+        "name": "Memorial Library", 
+        "images": [ "point8_1.jpg", "point8_2.jpg" ], 
+        "route": 0, 
+        "captions": ["Memorial Library, 2021", "Memorial Library, 1977"],
+        "desc":"Construction on the Memorial Library began in 1950, with additions made in 1974 and 1990. Prior to its construction, the Wisconsin Historical Society housed UW-Libraries."
+    }, 
+    "geometry": { 
+        "type": "Point", 
+        "coordinates": [ -89.397949058937428, 43.075322943095351 ] 
+    } 
+},
+{ 
+    "type": "Feature", 
+    "properties": { 
+        "id": 11, 
+        "name": "Historical Streetcar Tracks", 
+        "images": [ "point11_1.jpg" ], 
+        "route": 1, 
+        "captions": ["500 Block of State Street, 1929"], 
+        "desc":"In the early 1900s, State Street was home to a streetcar that connected the UW Campus to the Capitol and other parts of the city. The rising popularity of the automobile eventually caused the city remove the tracks."
+    }, 
+    "geometry": { 
+        "type": "Point", 
+        "coordinates": [ -89.393415219409647, 43.074847828310567 ] 
+    } 
+},
+{ 
+    "type": "Feature", 
+    "properties": { 
+        "id": 13, 
+        "name": "Historical Cars", 
+        "images": [ "point13_1.jpg" ], 
+        "route": 1, 
+        "captions": ["Looking up State Street from Johnson Street, 1939"],
+        "Desc":""
+    }, 
+    "geometry": { 
+        "type": "Point", 
+        "coordinates": [ -89.389895068266142, 43.074799765914335 ] 
+    } 
+},
+{ 
+    "type": "Feature", 
+    "properties": { 
+        "id": 10, 
+        "name": "The Hub (historical)", 
+        "images": [ "point10_1.jpg", "point10_2.jpg" ], 
+        "route": 1, 
+        "captions": ["The University Inn in 2013, replaced by The Hub in 2014","500 Block of State Street in 2013, currently occupied by The Hub"], 
+        "desc":"The current Hub building occupying State Street's 500 Block was constructed in 2013. Previously, the lot was occupied by a hotel (the University Inn), several ethnic restaurants (which were either closed, or displaced), and a parking lot."
+    }, 
+    "geometry": { 
+        "type": "Point", 
+        "coordinates": [ -89.395251373014361, 43.074754206732912 ] 
+    } 
+},
+{ 
+    "type": "Feature", 
+    "properties": { 
+        "id": 14, 
+        "name": "The Orpheum", 
+        "images": [ "point14_1.jpg", "point14_2.jpg" ], 
+        "route": 1, 
+        "captions": ["Orpheum Theater, 2021", "Orpheum Theater Under Construction, 1926"],
+        "desc":"Construced in 1926, the Orpheum Theater originally featured vaudeville shows and  films. It was also the first building in Wisconsin to have air conditioning." 
+    }, 
+    "geometry": { 
+        "type": "Point", 
+        "coordinates": [ -89.388781998667838, 43.074958972457409 ] 
+    } 
+},
+{ 
+    "type": "Feature", 
+    "properties": { 
+        "id": 15, 
+        "name": "Capitol Theater/Civic Center", 
+        "images": [ "point15_1.jpg" ], 
+        "route": 1, "captions": ["Madison Civic Center, 1978"],
+        "desc":"The Capitol Theater was first opened in 1928 as a movie theater, and was converted intoto a concert venue in the 1940s. In the 70s, the theater was repurposed for the Madison Civic Center, which contained an art gallery and two theaters, and lasted until the construction of the Overture Center in 2004."
+    }, 
+    "geometry": { 
+        "type": "Point", 
+        "coordinates": [ -89.388732650754605, 43.074613523772591 ] 
+    } 
+},
+{ 
+    "type": "Feature", 
+    "properties": { 
+        "id": 16, 
+        "name": "Overture", 
+        "images": [ "point16_1.jpg" ], 
+        "route": 1, 
+        "captions": ["Overture Center for the Performing Arts, 2006"],
+        "desc":"The Overture Center opened in 2004, both as a renovation and a replacement of the former Madison Civic Center. Currently, it contains several performance venues, as well as the Madison Museum of Contemporary Art."
+    }, 
+    "geometry": { 
+        "type": "Point", 
+        "coordinates": [ -89.388233688520856, 43.074633549836477 ] 
+    } 
+},
+{ 
+    "type": "Feature", 
+    "properties": { 
+        "id": 17, 
+        "name": "Castle and Doyle Coal", 
+        "images": [ "point17_1.jpg", "point17_2.jpg" ], 
+        "route": 1, 
+        "captions": ["Castle and Doyle Coal Building Facade, 2021","Jack Doyle in the Castle and Doyle Storefront, 1978"],
+        "desc":"The buidling at 125 State Street was originally built in 1856 as a fire station. In 1921, it was remodeled for the Castle & Doyle Fuel Company."
+    }, 
+    "geometry": { 
+        "type": "Point", 
+        "coordinates": [ -89.387531851532742, 43.074643562865973 ] 
+    } 
+},
+{ 
+    "type": "Feature", 
+    "properties": { 
+        "id": 12, 
+        "name": "Peace (Elizabeth Link) Park", 
+        "images": [ "point12_1.jpg", "point12_2.jpg" ], 
+        "route": 1, 
+        "captions": ["Peace Park facing north, 2021","Peace Park facing State Street, 2021"],
+        "desc":"Peace Park is named for Elizabeth Link, a local activist heavily involved with the Madison chapter of the Women's International League of Peace and Freedom. Link died in 1982."
+    }, 
+    "geometry": { 
+        "type": "Point", 
+        "coordinates": [ -89.39268185458819, 43.075069115106885 ] 
+    } 
+},
+{ 
+    "type": "Feature", 
+    "properties": { 
+        "id": 18, 
+        "name": "East Washington Map Fountains", 
+        "images": [ "point18_1.jpg", "point18_2.jpg" ], 
+        "route": 2, 
+        "captions": ["Fountain Map of Wisconsin, 2021","Full view of Wisconsin Fountain, 2021"],
+        "desc":""
+    }, 
+    "geometry": { 
+        "type": "Point", 
+        "coordinates": [ -89.382787597986166, 43.075465627005926 ] 
+    } 
+},
+{ 
+    "type": "Feature", 
+    "properties": { 
+        "id": 19, 
+        "name": "Outdoor Market", 
+        "images": [ "point19_1.jpg", "point19_2.jpg" ], 
+        "route": 2, 
+        "captions": ["Madison Outdoor Market Plaque, 2021","Horse Market on East Washington, circa 1895"],
+        "desc":"Before the invention of the automobile, the monthly Madison Horse Market took place on East Washington between Pinckney and Webster streets. <br/>The outdoor market plaque reads: <i>Located in one of the richest agricultural counties in the country, Madison has always been a market town. But the farming community was out of luck in 1872 when state officials banned the hitching of horses on the interior side of Capitol Square. Farmers had to find a new place to tie their horses when shopping downtown.<br/>They chose the first block of East Washington Avenue, and a popular farmers' market soon developed there. The Madison Budinessmen's Club used the same site from 1890 to 1906 for the Water Tower Horse Market. The city's 1889 water tower, razed in 1920-21, served as a centerpierce.<br/>City leaders relocated the farmers' market to an indoor in 1910, where it was largely unsuccessful. The building still stands as a Madison landmark at the corner of Mifflin and Blount streets. In 1972, public officials and private vendors reinvigorated this agricultural tradition with the debut of the Dane County Farmers' Market.</i>"
+    }, 
+    "geometry": { 
+        "type": "Point", 
+        "coordinates": [ -89.382771148681783, 43.075743984836656 ] 
+    } 
+},
+{ 
+    "type": "Feature", 
+    "properties": { 
+        "id": 20, 
+        "name": "East Wash Viewpoint", 
+        "images": [ "point20_1.jpg" ], 
+        "route": 2, 
+        "captions": ["View down East Washington, 2021"],
+        "desc":""
+    }, 
+    "geometry": { 
+        "type": "Point", 
+        "coordinates": [ -89.382261220245113, 43.076136487255226 ] 
+    } 
+},
+{ 
+    "type": "Feature", 
+    "properties": { 
+        "id": 21, 
+        "name": "Robert Lamp House", 
+        "images": [ "point21_1.jpg", "point21_2.jpg" ], 
+        "route": 2, 
+        "captions": ["Lamp House, circa 1912", "Robert Lamp House Plaque, 2021"],
+        "desc":"The Robert Lamp House (which can be seen from the sidewalk, behind the street-facing houses), was designed by noted architect Frank Lloyd Wright in 1905, and at the time of its construction had views of both lakes Monona and Mendota.<br/>The Robert M. Lamp house plaque reads: <i>Designed by Frank Lloyd Wright in 1902 for his boyhood friend 'Robie' Lamp. The Lamp house design was considered modern for its time and marks a transitional period in Wright's career from the Chicago School to the Prairie School of Architecture. The house was originally sited in its current location to maximize views of both lakes.</i>"
+
+    }, 
+    "geometry": { 
+        "type": "Point", 
+        "coordinates": [ -89.382643666572633, 43.077192826939694 ] 
+    } 
+},
+{ 
+    "type": "Feature", 
+    "properties": { 
+        "id": 22, 
+        "name": "Bike Boulevard", 
+        "images": [ "point22_1.jpg" ],
+        "route": 2, 
+        "captions": ["East Mifflin Street Bike Boulevard, 2021"],
+        "desc":"Madison is known for its extensive bike infrastructure, which includes mixed-use bike boulevards, such as this."
+    }, 
+    "geometry": { 
+        "type": "Point", 
+        "coordinates": [ -89.38208713177346, 43.077793580722535 ] 
+    } 
+},
+{ 
+    "type": "Feature", 
+    "properties": { 
+        "id": 23, 
+        "name": "City Market", 
+        "images": [ "point23_1.jpg", "point23_2.jpg" ], 
+        "route": 2, 
+        "captions": ["Architectural Drawing of the Madison Market House, 1909","City Market Building, 2021"],
+        "desc":"The Madison Market House was commissioned in 1909 to replace the informal farmer's market stands common throughout downtown Madison, and instead house them all under a single roof."
+    }, 
+    "geometry": { 
+        "type": "Point", 
+        "coordinates": [ -89.378037861338115, 43.080817285331612 ] 
+    } 
+},
+{ 
+    "type": "Feature", 
+    "properties": { 
+        "id": 25,
+        "name": "City Horse Barn", 
+        "images": [ "point25_1.jpg", "point25_2.jpg" ], 
+        "route": 2, 
+        "captions": ["City Horse Barn Plaque, 2021","City Horse Barn, Circa 1980"],
+        "desc":"Built in 1914, the building was a part of the City Yards, and housed nine municipal draft horses before its conversion to offices in the 1930s.<br/>City Horse Barn plaque reads: <i>The simple brick structure is a rare survivor of the horse-and-wagon era. Built as part of the old city yards. The barn housed up to none draft horses whose job it was to pull maintenance and service vehicles. Each of the nine windows on the Dayton Street side provided light and air to a seperate horse stall. Doors under the arches at each end led to the Haymow. In the 1930s the barn was converted into offices. The Madison mutual housing association renovated it into offices and two apartments in 1987.</i>"
+    }, 
+    "geometry": { 
+        "type": "Point", 
+        "coordinates": [ -89.379107066124675, 43.081289850847021 ] 
+    } 
+},
+{ 
+    "type": "Feature", 
+    "properties": { 
+        "id": 24, 
+        "name": "Hill's Grocery", 
+        "images": [ "point24_1.jpg", "point24_2.jpg" ], 
+        "route": 2, 
+        "captions": ["Plaque about Hill's Grocery and Madison's first black neighborhood, 2021.","Hill's Grocery, 1984"],
+        "desc":"For over 60 years, Hill's Grocery was a cornerstone of Madison's first African-American neighborhood. Originally, the building housed the Douglass Beneficial Society meeting hall, offered services for local African-American families. John and Amanda Hill bought the building and turned it into a grocery store in 1917, which they operated into the 1980s.<br/>Hill's Grocery sign reads: <i>John Hill first set eyes on Madison while visiting a relative who was attending the University of Wisconsin. He moved his family here from Atlanta in 1910 to join a modest community of about 140 African Americans. <br/> In 1917, Hill bought a house and attached grocery store at Dayton and Blount streets from Reverend Charles Thomas, pastor of St. Paul's African Methodist Episcopal Church. Thomas had purchased the building, formerly used as a boarding house and meeting hall, from civic leader John Turner.<br/> John and Amanda Hill operated Hill's Grocery for more than 50 years. Their daughter, Freddie Mae, was the UW's first African-American graduate. Their neighbors inlcuded the Miller family, who worked to improve the lives of African-American in the city, and Benjamin Butts, a former slave liberated by Wisconsin troops during the Civil War. The Hill building has been designated a Madison landmark for its rich cultural history.</i>"
+    }, 
+    "geometry": { 
+        "type": "Point", 
+        "coordinates": [ -89.378906932921041, 43.081161697847115 ] 
+    } 
+},
+{ 
+    "type": "Feature", 
+    "properties": { 
+        "id": 26, 
+        "name": "2018 Flood", 
+        "images": [ "point26_1.jpg" ], 
+        "route": 3, 
+        "captions": ["Flooding at the intersection of Mifflin and Livingston, August 2018"],
+        "desc": "Record rainfall at the end of August, 2018, caused widespread flooding throughout the isthmus, and other low-lying areas in Madison and its surrounding communities."
+    }, 
+    "geometry": { 
+        "type": "Point", 
+        "coordinates": [ -89.37630245972295, 43.081862531289907 ] 
+    } 
+},
+{ 
+    "type": "Feature", 
+    "properties": { 
+        "id": 27, 
+        "name": "The Sylvee", 
+        "images": [ "point27_1.jpg" ], 
+        "route": 3, 
+        "captions": ["The Sylvee Theater, 2021"],
+        "desc":""
+    }, 
+    "geometry": { 
+        "type": "Point", 
+        "coordinates": [ -89.374377891107088, 43.08069714097536 ] 
+    } 
+},
+{ 
+    "type": "Feature", 
+    "properties": { 
+        "id": 28, 
+        "name": "Main Transformer", 
+        "images": [ "point28_1.jpg" ], 
+        "route": 3, 
+        "captions": ["Lightbulb art along the Madison Gas and Electric facility wall, 2021."],
+        "desc":""
+    }, 
+    "geometry": { 
+        "type": "Point", 
+        "coordinates": [ -89.375222288733426, 43.079836099527931 ] 
+    } 
+},
+{ 
+    "type": "Feature", 
+    "properties": { 
+        "id": 31, 
+        "name": "McCormick-International Harvester Co. Branch House", 
+        "images": [ "point31_1.jpg", "point31_2.jpg" ], 
+        "route": 4, 
+        "captions": ["McCormick-International Harvester Co. Branch House, 2021","McCormick Harvesting Machine Company, circa 1899"],
+        "desc":"Originally built for a McCormick Harvesting Machine Company dealership in 1898, the building was ultimately updgraded into a branch house by the company, before it shut down in the 1940s."
+    }, 
+    "geometry": { 
+        "type": "Point", 
+        "coordinates": [ -89.373785716148376, 43.077689450488826 ] 
+    } 
+},
+{ 
+    "type": "Feature", 
+    "properties": { 
+        "id": 30, 
+        "name": "Railroad Door #1", 
+        "images": [ "point30_1.jpg" ], 
+        "route": 4, 
+        "captions": ["Front facing view of Railroad Door #1, 2021"],
+        "desc":""
+    }, 
+    "geometry": { 
+        "type": "Point", 
+        "coordinates": [ -89.374882336442312, 43.078390323649039 ] 
+    } 
+},
+{ 
+    "type": "Feature", 
+    "properties": { 
+        "id": 33, 
+        "name": "Machinery Row", 
+        "images": [ "point33_1.jpg" ], 
+        "route": 4, 
+        "captions": ["Machinery Row Building, 2009"],
+        "desc":"The building now known as Machinery Row was once several buildings, constructed beginning in 1898, before eventually becoming a single building used primarily to sell farm implements. Today it houses a bicycle shop and offices."
+    }, 
+    "geometry": { 
+        "type": "Point", 
+        "coordinates": [ -89.375052312587869, 43.075983291457362 ] 
+    } 
+},
+{ 
+    "type": "Feature", 
+    "properties": { 
+        "id": 32, 
+        "name": "Railroad Station", 
+        "images": [ "point32_1.jpg" ], 
+        "route": 4, 
+        "captions": ["Madison Chicago & Northwestern Railroad Station, ca.1920"],
+        "desc":"Built in 1910 as an upgrade to the previous Chicago & Northwestern Station, the station served passengers trains with destinations across Wisconsin and the rest of the Midwest. After the postwar decline of passenger trains, the station was purchased by Madison Gas and Electric Company, which moved its offices into the building."
+    }, 
+    "geometry": { 
+        "type": "Point", 
+        "coordinates": [ -89.375973473634787, 43.076652143499437 ] 
+    } 
+},
+{ 
+    "type": "Feature", 
+    "properties": { 
+        "id": 29, 
+        "name": "Madison Gas and Electric Plaque", 
+        "images": [ "point29_1.jpg" ], 
+        "route": 4, 
+        "captions": ["Madison Gas and Electric Powerhouse Plaque, 2021"],
+        "desc":"Plaque reads: <i>The Madison Gas & Electric Powerhouse has been in continuous operation providing electrical power since its construction in 1902. The building is significant for its association with the development of Madison's utility industry and as the location of the city's largest gas and electrical utility company, which was principally responsible for the development of the city's electrical distribution framework. The Classical Revival style facade is of brick and displays classical ornament including pilasters with Ionic capitals, and projecting cornice with dentils.</i>" 
+    }, "geometry": { 
+        "type": "Point", 
+        "coordinates": [ -89.375123592906988, 43.078542512190168 ] 
+    } 
+},
+{ 
+    "type": "Feature", 
+    "properties": { 
+        "id": 35, 
+        "name": "Peck Cabin", 
+        "images": [ "point35_1.jpg", "point35_2.jpg" ], 
+        "route": 5, 
+        "captions": ["Peck Cabin Sign, 2021", "Lithograph of a Painting of Peck Cabin, 1837"],
+        "desc":"Peck cabin was the residence of Madison's first white settlers: Ebenezer and Rosaline Peck. Their building served as a public house.<br/> Peck Cabin plaque reads: <i>Once located here, Peck Cabin-- Madison's first residence, business and post office-- was built by entrepreneurs Ebenezer and Roseline Peck in 1837. Constructing their cabin with adjoining additions near the new territorial capitol site, the Pecks opened their building as a public house and provided food, drink and lodging to visitors and new arrivals. On July 4th, 1837, the Pecks hosted the capitol cornerstone-laying celebrations. Robert Ream assumed the business in 1838, and the cabin remained important to Madison's early development but was demolished in 1857.</i>" 
+    }, 
+    "geometry": { 
+        "type": "Point", 
+        "coordinates": [ -89.379712948837067, 43.07475370608244 ] 
+    } 
+},
+{ 
+    "type": "Feature", 
+    "properties": { 
+        "id": 36, 
+        "name": "G.E.F Buildings", 
+        "images": [ "point36_1.jpg", "point36_2.jpg" ], 
+        "route": 5, 
+        "captions": ["G.E.F #3, 2021","G.E.Fs #3 and #2, 2021"],
+        "desc":"The General Executive Facility (otherwise known as G.E.F) buildings, house various government agencies. G.E.F 2 houses the state Department of Natural Resources, and G.E.F 3 houses the state Department of Public Instruction. Both buildings were constructed in 1978." 
+    }, 
+    "geometry": { 
+        "type": "Point", 
+        "coordinates": [ -89.379948722200268, 43.075130194127262 ] 
+    } 
+},
+{ 
+    "type": "Feature", 
+    "properties": { 
+        "id": 37, 
+        "name": "Fess Hotel", 
+        "images": [ "point37_1.jpg", "point37_2.jpg" ], 
+        "route": 5, 
+        "captions": ["Fess Hotel Plaque, 2021", "View of the Fess Hotel, 1977"],
+        "desc":"George and Anna Fess opened a grocery store and eatery in 1856, before opening a hotel next door. The hotel operated into the 70s, and remained in the Fess family until recently. Fess Hotel plauqe reads: <i>A hotel for the common man throughout its history, the nineteenth century facade of the Fess remains a reminder of the commercial character of the King Street and Doty Street area. George Fess, the original proprietor of the hotel, catered to travelers on the nearby railroad lines and to weekly boarders. After a remodeling in 1901 by architects J.O. Gordon and F. W. Paunack, the lodging was known for a decade as the Central Hotel, though it remained in the Fess family until recently.</i>"
+    },
+    "geometry": { 
+        "type": "Point", 
+        "coordinates": [ -89.380140630751725, 43.074541429888519 ] 
+    } 
+},
+{ 
+    "type": "Feature", 
+    "properties": { 
+        "id": 34, 
+        "name": "King Street Streetcar", 
+        "images": [ "point34_1.jpg" ], 
+        "route": 5, 
+        "captions": ["View of King Street with street car, circa 1904"],
+        "desc":"In the early 1900s, a streetcar line ran down King Street, which operated until the 1930s."
+    }, 
+    "geometry": { 
+        "type": "Point", 
+        "coordinates": [ -89.379153672487178, 43.074617528985982 ] 
+    } 
+},
+{ 
+    "type": "Feature", 
+    "properties": { 
+        "id": 38, 
+        "name": "Dick Eddy Building", 
+        "images": ["point38_1.jpg", "point38_2.jpg", "point38_3.jpg"], 
+        "route": 5, 
+        "captions": ["Dick Eddy Building Plaque, 2021","Dick Eddy Building, 2021","Christian Dick Block, Circa 1890"],
+        "desc": "Originally built in 1889 by Christian W. Dick. Originally, it served as a wholesale liquor business, but later housed a Schlitz Brewery Storefront, a hotel, and a dance studio. Dick Eddy building reads: <i>The imposing Dick Building is a flat-iron building in the Richardsonian Romanesque style, a style in which the local architects, Conover and Porter, were particularly adept. The Dick block was built in part to house Christian Dick's wine and liquor wholesale business. It also housed the Schlitz saloon, Prof. Kehl's Dance Academy and offices. The Eddy building next door was built by E. W. Eddy to house his 'One Minute Lunch Room,' a popular inexpensive eatery.</i>"
+    }, 
+    "geometry": { 
+        "type": "Point", 
+        "coordinates": [ -89.380524447854583, 43.074557450758995 ] 
+    } 
+},
+{ 
+    "type": "Feature", 
+    "properties": { 
+        "id": 39, 
+        "name": "Majestic Theater", 
+        "images": [ "point39_1.jpg", "point39_2.jpg" ], 
+        "route": 5, 
+        "captions": ["Majestic Theater, 2021", "Majestic Theater, 1954"],
+        "desc":"Opened in 1906, the Majestic Theater is Madison's oldest theater. It began as a vaudeville theater, and later became a movie house and a live music venue. Over the course of its lifetime, it has changed ownership 10 times."
+    }, 
+    "geometry": { 
+        "type": "Point", 
+        "coordinates": [ -89.380941163566277, 43.07456145597596 ] 
+    } 
+},
+{ 
+    "type": "Feature", 
+    "properties": { 
+        "id": 40, 
+        "name": "Capitol Rotunda", 
+        "images": [ "point40_1.jpg", "point40_2.jpg" ], 
+        "route": 5, 
+        "captions": ["Wisconsin Capitol Rotunda, 2021","Wisconsin Capitol Dome, 2021"],
+        "desc":""
+    },
+    "geometry": { 
+        "type": "Point", 
+        "coordinates": [ -89.384176193433362, 43.074689622780639 ] 
+    } 
+}
+]
+}

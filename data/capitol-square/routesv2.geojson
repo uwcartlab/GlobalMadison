@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "routesv2",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "id": 0, "depart": "Madison Fountain", "dest": "Capitol/Capitol Steps" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -89.383099449382286, 43.075658374919001 ], [ -89.383849971554568, 43.07625352528467 ], [ -89.384888934432979, 43.075526956639465 ], [ -89.386116498867239, 43.074700013367782 ], [ -89.385901445310736, 43.074712550600815 ] ] ] } }
+]
+}

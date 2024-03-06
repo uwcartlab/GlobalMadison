@@ -1,0 +1,140 @@
+{
+    "type": "FeatureCollection",
+    "name": "PointsofInterestv2",
+    "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+    "features": [
+        { 
+            "type": "Feature", 
+            "properties": { 
+                "id": 0, 
+                "title": "Madison Fountain Map", 
+                "classname": "fountain", 
+                "icon": { 
+                    "iconUrl": "img/icons/street24.png", 
+                    "iconSize": [ 24, 24 ], 
+                    "iconAnchor": [ 12, 12 ], 
+                    "popupAnchor": [ 0, -12 ] 
+                }, "icon_red": { 
+                    "iconUrl": "img/icons/street24_red.png", 
+                    "iconSize": [ 24, 24 ], 
+                    "iconAnchor": [ 12, 12 ], 
+                    "popupAnchor": [ 0, -12 ] 
+                }, "icon_larger": { 
+                    "iconUrl": "img/icons/street36.png", 
+                    "iconSize": [ 36, 36 ], 
+                    "iconAnchor": [ 12, 12 ], 
+                    "popupAnchor": [ 0, -12 ] 
+                }, 
+                "icon_red_larger": { 
+                    "iconUrl": "img/icons/street40_red.png", 
+                    "iconSize": [ 36, 36 ], 
+                    "iconAnchor": [ 12, 12 ], 
+                    "popupAnchor": [ 0, -12 ] 
+                }, 
+                "Description": "The building was constructed in 1910 after the company had originally expanded its production to Madison in 1900. It was designated a landmark by the Madison Landmarks Commission in 1989.", 
+                "Address": "NE Corner of E Washington and N Pinckney", 
+                "Scripts": ["Toward the end of the 19th century, ambitious plans were drawn up to develop the city according to a grid-like structure fanning out from the Capitol. As well as money, the development of the city required raw materials and labor power. The acquisition of these different inputs helps to underscore the idea that Madison always has been a product of broader regional and global flows. Buildings throughout the city were constructed with materials and labor from across the world. For example, the capitol building is made of rock from six different countries and seven different States. Some of the decorative architecture you can see on older buildings reflects the waves of migrants who arrived in the city from Germany and Scandinavia in the second half of the nineteenth century.", "Landscapes also are shaped in ways that reflect inequalities in power between different population groups. Processes of urbanization in the nineteenth century worked to marginalize the rich cultural histories of native populations who have lived in this area since the Isthmus first was formed ten thousand years ago. Racism and discriminatory regulations have continued to restrict racial diversity across the city to this day. Reading the landscape means paying careful attention to these erasures, and that includes the physical geography of the city."],
+                "textImage": "img/site3_1.jpg", 
+                "textImageAlt":"A dark, marble fountain in the shape of a semi-circle. The far point of the semi-circle has a stone column, while the close end has a simplified map of the city of the Madison. The fountain is located at one corner of the Wisconsin Capitol Square.",
+                "imageSet": [{ 
+                    "historic_small": "img/site3/site3_1_hs.png", 
+                    "historic_large": "img/site3/site3_1_hl.png", 
+                    "historic_alt":"Two maps overlaid atop one another, with a slider than allows for a comparison between them. The map on the left is titled 'Madison Streets', and shows the street network of the Isthmus, in Madison, Wisconsin. The map on the right is titled 'Madison Landforms', and shows the exaggerated terrain of the Isthmus, with certain landforms highlighted. The State Capitol and Bascom Hill are places with some some elevation, while the majority of the eastern part of the Isthmus is low-lying and labeled as wetland.",
+                    "current_small": "img/site3/site3_1_cs.png", 
+                    "current_large": "img/site3/site3_1_cl.png", 
+                    "current_alt":"Two maps overlaid atop one another, with a slider than allows for a comparison between them. The map on the left is titled 'Madison Streets', and shows the street network of the Isthmus, in Madison, Wisconsin. The map on the right is titled 'Madison Landforms', and shows the exaggerated terrain of the Isthmus, with certain landforms highlighted. The State Capitol and Bascom Hill are places with some some elevation, while the majority of the eastern part of the Isthmus is low-lying and labeled as wetland.",
+                    "audio":"audio/site3/site3_inter.txt",
+                    "image_texts": "<b>Interdependencies</b>: The expansion of the city also created a critical interdependency between the physical topography of the city and the built environment. As this map shows, the isthmus neighborhood, which lies between Lake Monona and Lake Mendota, was built on top of marshland that was filled. In what ways do you think that interdependence has become more critical in recent decades?" 
+                }, 
+                { 
+                    "historic_small": "img/site3/site3_2_hs.jpg", 
+                    "historic_large": "img/site3/site3_2_hl.jpg", 
+                    "historic_alt":"A flood in Madison, Wisconsin in the 1950s. A street is covered with water deep enough to reach the bumpers of a line of old sedans. One car is attempting to drive through a deeper section of water.",
+                    "current_small": "img/site3/site3_2_cs.jpg", 
+                    "current_large": "img/site3/site3_2_cl.jpg",
+                    "current_alt":"Flooding in Madison, Wisconsin in 2018. A street intersection is covered in brown water. A large, gray modern building is located in the background.", 
+                    "audio":"audio/site3/site3_ineq.txt",
+                    "image_texts": "<b>Inequalities</b>: These images show how this precarious interdependency has led to flooding in this neighborhood, most recently in 2018. In Madison, and globally, some people are more vulnerable than others to the effects of flooding and other extreme climate events. What factors do you think are important in producing unequal degrees of vulnerability?" 
+                }, 
+                { 
+                    "current_small": "img/site3/site3_3_cs.jpg", 
+                    "current_large": "img/site3/site3_3_cl.jpg", 
+                    "current_alt":"A mostly-sunny day in Madison, Wisconsin. In the background, the capital dome is rising over a series of 4-5 story buildings. The buildings are mostly brick in various shades. There is a busy street in the foreground next to a small grass park.",
+                    "audio":"audio/site3/site3_alt.txt",
+                    "image_texts": "<b>Alternatives</b>: One of the challenges we face in the 21st century is how to build sustainable cities that can mitigate the threats posed by climate change for everyone, rather than individualizing those risks. How can we build cities in ways that are more sustainable and resilient for all? What kinds of considerations do you think would be important today for cities that were not an issue when the isthmus neighborhood was being constructed in the late-19th century?" 
+                }],
+                "audio": ["audio/site3/site3_intro1.txt","audio/site3/site3_intro2.txt"] 
+                }, 
+            "geometry": { 
+                "type": "Point", 
+                "coordinates": [ -89.383092595505431, 43.075671391639354 ] 
+            } 
+        },
+        { 
+            "type": "Feature", 
+            "properties": { 
+                "id": 1, 
+                "title": "Wisconsin State Capitol Steps", 
+                "classname": "state_capitol", 
+                "icon": { 
+                    "iconUrl": "img/icons/labor24.png", 
+                    "iconSize": [ 24, 24 ], 
+                    "iconAnchor": [ 12, 12 ], 
+                    "popupAnchor": [ 0, -12 ] 
+                }, 
+                "icon_red": { 
+                    "iconUrl": "img/icons/labor24_red.png", 
+                    "iconSize": [ 24, 24 ], 
+                    "iconAnchor": [ 12, 12 ], 
+                    "popupAnchor": [ 0, -12 ] 
+                }, 
+                "icon_larger": { 
+                    "iconUrl": "img/icons/labor36.png", 
+                    "iconSize": [ 36, 36 ], 
+                    "iconAnchor": [ 12, 12 ], 
+                    "popupAnchor": [ 0, -12 ] 
+                }, 
+                "icon_red_larger": {
+                    "iconUrl": "img/icons/labor40_red.png", 
+                    "iconSize": [ 36, 36 ], 
+                    "iconAnchor": [ 12, 12 ], 
+                    "popupAnchor": [ 0, -12 ] 
+                }, 
+                "Description": "The building was constructed in 1910 after the company had originally expanded its production to Madison in 1900. It was designated a landmark by the Madison Landmarks Commission in 1989.", 
+                "Address": "2E Main St", 
+                "Scripts": ["The current state capitol, designed by Architect George Post who also designed the New York Stock Exchange building, was built between 1906 and 1917. After a fire destroyed the previous, smaller building, many thought the new 400,000-square-foot granite building was excessive. The capitol underwent major renovations, costing $140 million,  between 1990 and 2001, which restored rooms to their original appearances and added modern amenities. The heavily visited building, toured by over 50,000 Wisconsin school children each year, has also been home to many political actions. In 2011, tens of thousands of demonstrators protesting “Act 10”, the governor’s proposal effectively ending collective bargaining rights for public employees occupied the building and its surrounds. More recently, demonstrators gathered around the capitol building and surrounding areas in support of the Black Lives Matter movement, which exploded nationally in response to the killing of George Floyd, a Black man, by police in Minneapolis, MI in May 2020. Later that year, protesters again gathered when Jacob Blake was shot by police in Kenosha, WI."],
+                "textImageAlt":"Series of steps leading up to the Wisconsin State Capitol, of which the top dome is partially visible. In the middle of the steps there is a cube covered in garbage bags—the site of a former statue.",
+                "textImage": "img/site7_1.jpg", 
+                "imageSet": [{ 
+                    "current_small": "img/site7/site7_1_cs.jpg", 
+                    "current_large": "img/site7/site7_1_cl.jpg", 
+                    "current_alt":"The interior of the Wisconsin State Capitol rotunda during a protest. The building is filled with people, shoulder-to-shoulder, many dressed in red, many holding signs. One sign in particular reads: '2 Days Forward, 50 Years Back'.",
+                    "audio":"audio/site7/site7_inter.txt",
+                    "image_texts": "<b>Interdependencies</b>: The protests that have taken place in this building have both been inspired by and expressed solidarity with protests in other parts of the world. For example, during the Act 10 protests of 2011, some commentators and activists made connections with protests against austerity, inequality, and corruption in places as diverse as Zuccotti Park, New York and Tahrir Square, Egypt. What other global issues have catalyzed people to congregate and express their anger or desire for change? " 
+                }, 
+                { 
+                    "current_small": "img/site7/site7_2_cs.jpg",
+                    "current_large": "img/site7/site7_2_cl.jpg", 
+                    "current_alt":"A march down State Street in Madison Wisconsin, towards the Wisconsin State Capitol, which looms in the background. The street is full of people, and many are holding various colorful signs. The line of stretches from the vantage point of the photo all the way to the capitol, about a mile.",
+                    "audio":"audio/site7/site7_ineq.txt",
+                    "image_texts": "<b>Inequalities</b>: More recently, people have gathered to protest systemic injustices based on gender and race. This includes the 2017 Women’s March and the Black Lives Matter protests in 2020. How do such protests draw attention to ongoing reproduction of internal differences and inequities within Madison? How have these inequalities been challenged or sustained by Madison’s shifting global interdependencies? " 
+                }, 
+                { 
+                    "current_small": "img/site7/site7_3_cs.jpg", 
+                    "current_large": "img/site7/site7_3_cl.jpg",
+                    "current_alt":"A line of people in the street, many wearing COVID masks, hold a large sign reading: 'Black Lives Matter'.",
+                    "historic_small": "img/site7/site7_3_hs.jpg", 
+                    "historic_large": "img/site7/site7_3_hl.jpg",  
+                    "historic_alt":"A series of three murals on State Street in Madison, Wisconsin in 2020. The mural on the left depicts a large dark-skinned head with a wide open mouth. Inside the mouth, block text reads: 'The U.S Prison System is Legalized Slavery.' The next mural to the right depicts three fists, two black and one tan, with the words 'Silence is Compliance' located above them. Finally, the last mural decpits a heart with vines and flowers growing out of it. There are words in graffiti style: 'Let Black Lives Bloom: Love is in Our Roots'.",
+                    "audio":"audio/site7/site7_alt.txt",
+                    "image_texts": "<b>Alternatives</b>: Walking back down State Street, which was turned from a 4 lane street to a pedestrian mall in the mid 70s - you can observe many signs of change. During the Covid-19 pandemic, about 20% (31/150) of the businesses on State Street closed. Additionally, about half of the storefronts were damaged during Black Lives Matter Protests in 2020. Many of these storefronts became murals expressing solidarity with Madisonians who protested for social justice and equity. The protests and murals made visible histories and current experiences of racial exclusion in Madison that many residents are unaware of. What role do you think political protests can play in changing the social and physical landscapes that surround us? " 
+                }], 
+                "audio": ["audio/site7/site7_intro1.txt"] 
+                }, 
+            "geometry": { 
+                "type": "Point", 
+                "coordinates": [ -89.385913470378512, 43.07471406778965 ] 
+            }
+        }
+    ]
+}
